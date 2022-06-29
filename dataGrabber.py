@@ -19,6 +19,7 @@ def getQuery(endpoint, queryString, limit):
 	url = "https://atlas.infegy.com/api/v3/" + endpoint + "?api_key=" + key +  "&limit=" + str(limit) + "&q="+ queryString
 
 	data = requests.get(url).json()
+	time.sleep(2)
 	return data
 
 #Calling Function that Identifies a query + target endpoint and returns a dataframe

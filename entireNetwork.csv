@@ -1,608 +1,1082 @@
 ,Affiliated Artist,Weight,Original Artist,Affiliated Genre,Original Genre
-0,Aaliyah,1543,DMX,R&B/Soul,Hip-Hop/Rap
-1,Snoop Dogg,905,DMX,Hip-Hop/Rap,Hip-Hop/Rap
-2,Kanye West,726,DMX,Hip-Hop/Rap,Hip-Hop/Rap
-3,Eminem,749,DMX,Rap,Hip-Hop/Rap
-4,Eminem,749,DMX,Rap,Hip-Hop/Rap
-5,Swizz Beatz,466,DMX,Hip-Hop/Rap,Hip-Hop/Rap
-6,Busta Rhymes,387,DMX,Hip-Hop/Rap,Hip-Hop/Rap
-7,Lil Wayne,327,DMX,Hip-Hop/Rap,Hip-Hop/Rap
-8,Lil Wayne,327,DMX,Hip-Hop/Rap,Hip-Hop/Rap
-9,Rakim,311,DMX,Hip-Hop/Rap,Hip-Hop/Rap
-10,J. Cole,350,DMX,Hip-Hop/Rap,Hip-Hop/Rap
-11,Method Man,293,DMX,Hip-Hop/Rap,Hip-Hop/Rap
-12,Jadakiss,298,DMX,Hip Hop,Hip-Hop/Rap
-13,Kendrick Lamar,271,DMX,Alternative Rap,Hip-Hop/Rap
-14,Ice Cube,240,DMX,Hip-Hop/Rap,Hip-Hop/Rap
-15,Alicia Keys,218,DMX,R&B/Soul,Hip-Hop/Rap
-16,The Notorious B.I.G.,224,DMX,Hip-Hop,Hip-Hop/Rap
-17,LL Cool J,218,DMX,Hip-Hop/Rap,Hip-Hop/Rap
-18,Nicki Minaj,179,DMX,Hip-Hop,Hip-Hop/Rap
-19,Nicki Minaj,179,DMX,Hip-Hop,Hip-Hop/Rap
-20,Aaliyah,108892,Aaliyah,R&B/Soul,R&B/Soul
-21,Kanye West,437,Aaliyah,Hip-Hop/Rap,R&B/Soul
-22,Kendrick Lamar,1029,Aaliyah,Alternative Rap,R&B/Soul
-23,The Notorious B.I.G.,197,Aaliyah,Hip-Hop,R&B/Soul
-24,Nicki Minaj,235,Aaliyah,Hip-Hop,R&B/Soul
-25,Nicki Minaj,235,Aaliyah,Hip-Hop,R&B/Soul
-26,Beyoncé,2181,Aaliyah,Pop,R&B/Soul
-27,Beyoncé,2181,Aaliyah,Pop,R&B/Soul
-28,Missy Elliott,1434,Aaliyah,Hip-Hop/Rap,R&B/Soul
-29,Lil' Kim,1061,Aaliyah,Rap,R&B/Soul
-30,Timbaland,1084,Aaliyah,Hip-Hop/Rap,R&B/Soul
-31,R. Kelly,1033,Aaliyah,R&B/Soul,R&B/Soul
-32,Destiny's Child,629,Aaliyah,R&B/Soul,R&B/Soul
-33,Michael Jackson,542,Aaliyah,Pop,R&B/Soul
-34,Michael Jackson,542,Aaliyah,Pop,R&B/Soul
-35,Chris Brown,442,Aaliyah,Pop,R&B/Soul
-36,Chris Brown,442,Aaliyah,Pop,R&B/Soul
-37,Janet Jackson,430,Aaliyah,R&B/Soul,R&B/Soul
-38,Whitney Houston,391,Aaliyah,Pop,R&B/Soul
-39,Mariah Carey,386,Aaliyah,Pop,R&B/Soul
-40,The Weeknd,355,Aaliyah,R&B/Soul,R&B/Soul
-41,The Weeknd,355,Aaliyah,R&B/Soul,R&B/Soul
-42,Ginuwine,352,Aaliyah,R&B/Soul,R&B/Soul
-43,Pretty Ricky,319,Aaliyah,Hip-Hop/Rap,R&B/Soul
-44,B2K,314,Aaliyah,Hip-Hop/Rap,R&B/Soul
-45,Britney Spears,315,Aaliyah,Pop,R&B/Soul
-46,Britney Spears,315,Aaliyah,Pop,R&B/Soul
-47,Toni Braxton,261,Aaliyah,R&B/Soul,R&B/Soul
-48,Justin Timberlake,231,Aaliyah,Pop,R&B/Soul
-49,Lance Bass,179,Aaliyah,,R&B/Soul
-50,Rihanna,182,Aaliyah,Pop,R&B/Soul
-51,Rihanna,182,Aaliyah,Pop,R&B/Soul
-52,Snoop Dogg,85774,Snoop Dogg,Hip-Hop/Rap,Hip-Hop/Rap
-53,Kanye West,913,Snoop Dogg,Hip-Hop/Rap,Hip-Hop/Rap
-54,Eminem,6686,Snoop Dogg,Rap,Hip-Hop/Rap
-55,Eminem,6686,Snoop Dogg,Rap,Hip-Hop/Rap
-56,Busta Rhymes,421,Snoop Dogg,Hip-Hop/Rap,Hip-Hop/Rap
-57,Lil Wayne,822,Snoop Dogg,Hip-Hop/Rap,Hip-Hop/Rap
-58,Lil Wayne,822,Snoop Dogg,Hip-Hop/Rap,Hip-Hop/Rap
-59,Kendrick Lamar,3907,Snoop Dogg,Alternative Rap,Hip-Hop/Rap
-60,Ice Cube,1015,Snoop Dogg,Hip-Hop/Rap,Hip-Hop/Rap
-61,The Notorious B.I.G.,380,Snoop Dogg,Hip-Hop,Hip-Hop/Rap
-62,Nicki Minaj,933,Snoop Dogg,Hip-Hop,Hip-Hop/Rap
-63,Nicki Minaj,933,Snoop Dogg,Hip-Hop,Hip-Hop/Rap
-64,The Weeknd,404,Snoop Dogg,R&B/Soul,Hip-Hop/Rap
-65,The Weeknd,404,Snoop Dogg,R&B/Soul,Hip-Hop/Rap
-66,Rihanna,559,Snoop Dogg,Pop,Hip-Hop/Rap
-67,Rihanna,559,Snoop Dogg,Pop,Hip-Hop/Rap
-68,Dr. Dre,6468,Snoop Dogg,Hip-Hop/Rap,Hip-Hop/Rap
-69,Wiz Khalifa,1662,Snoop Dogg,Hip-Hop/Rap,Hip-Hop/Rap
-70,Wiz Khalifa,1662,Snoop Dogg,Hip-Hop/Rap,Hip-Hop/Rap
-71,Nate Dogg,990,Snoop Dogg,West Coast Rap,Hip-Hop/Rap
-72,Pharrell Williams,881,Snoop Dogg,Pop,Hip-Hop/Rap
-73,Young Thug,675,Snoop Dogg,Hip-Hop,Hip-Hop/Rap
-74,Katy Perry,642,Snoop Dogg,Pop,Hip-Hop/Rap
-75,Katy Perry,642,Snoop Dogg,Pop,Hip-Hop/Rap
-76,Mac Miller,548,Snoop Dogg,Hip-Hop/Rap,Hip-Hop/Rap
-77,Diana Ross,423,Snoop Dogg,R&B/Soul,Hip-Hop/Rap
-78,Warren G,454,Snoop Dogg,Hip-Hop/Rap,Hip-Hop/Rap
-79,Nipsey Hussle,422,Snoop Dogg,Hip-Hop,Hip-Hop/Rap
-80,Ludacris,372,Snoop Dogg,Hip-Hop/Rap,Hip-Hop/Rap
-81,Snoop Dogg,2168,Eminem,Hip-Hop/Rap,Rap
-82,Snoop Dogg,2168,Eminem,Hip-Hop/Rap,Rap
-83,Kanye West,4031,Eminem,Hip-Hop/Rap,Rap
-84,Kanye West,4031,Eminem,Hip-Hop/Rap,Rap
-85,Eminem,109402,Eminem,Rap,Rap
-86,Eminem,109402,Eminem,Rap,Rap
-87,Eminem,109402,Eminem,Rap,Rap
-88,Eminem,109402,Eminem,Rap,Rap
-89,Lil Wayne,2332,Eminem,Hip-Hop/Rap,Rap
-90,Lil Wayne,2332,Eminem,Hip-Hop/Rap,Rap
-91,Lil Wayne,2332,Eminem,Hip-Hop/Rap,Rap
-92,Lil Wayne,2332,Eminem,Hip-Hop/Rap,Rap
-93,J. Cole,514,Eminem,Hip-Hop/Rap,Rap
-94,J. Cole,514,Eminem,Hip-Hop/Rap,Rap
-95,Kendrick Lamar,2898,Eminem,Alternative Rap,Rap
-96,Kendrick Lamar,2898,Eminem,Alternative Rap,Rap
-97,Ice Cube,356,Eminem,Hip-Hop/Rap,Rap
-98,Ice Cube,356,Eminem,Hip-Hop/Rap,Rap
-99,The Notorious B.I.G.,315,Eminem,Hip-Hop,Rap
-100,The Notorious B.I.G.,315,Eminem,Hip-Hop,Rap
-101,Nicki Minaj,1181,Eminem,Hip-Hop,Rap
-102,Nicki Minaj,1181,Eminem,Hip-Hop,Rap
-103,Nicki Minaj,1181,Eminem,Hip-Hop,Rap
-104,Nicki Minaj,1181,Eminem,Hip-Hop,Rap
-105,Beyoncé,506,Eminem,Pop,Rap
-106,Beyoncé,506,Eminem,Pop,Rap
-107,Beyoncé,506,Eminem,Pop,Rap
-108,Beyoncé,506,Eminem,Pop,Rap
-109,Michael Jackson,285,Eminem,Pop,Rap
-110,Michael Jackson,285,Eminem,Pop,Rap
-111,Michael Jackson,285,Eminem,Pop,Rap
-112,Michael Jackson,285,Eminem,Pop,Rap
-113,Mariah Carey,321,Eminem,Pop,Rap
-114,Mariah Carey,321,Eminem,Pop,Rap
-115,The Weeknd,492,Eminem,R&B/Soul,Rap
-116,The Weeknd,492,Eminem,R&B/Soul,Rap
-117,The Weeknd,492,Eminem,R&B/Soul,Rap
-118,The Weeknd,492,Eminem,R&B/Soul,Rap
-119,Rihanna,468,Eminem,Pop,Rap
-120,Rihanna,468,Eminem,Pop,Rap
-121,Rihanna,468,Eminem,Pop,Rap
-122,Rihanna,468,Eminem,Pop,Rap
-123,Dr. Dre,2378,Eminem,Hip-Hop/Rap,Rap
-124,Dr. Dre,2378,Eminem,Hip-Hop/Rap,Rap
-125,Young Thug,362,Eminem,Hip-Hop,Rap
-126,Young Thug,362,Eminem,Hip-Hop,Rap
-127,Mac Miller,835,Eminem,Hip-Hop/Rap,Rap
-128,Mac Miller,835,Eminem,Hip-Hop/Rap,Rap
-129,Kid Cudi,671,Eminem,Hip-Hop/Rap,Rap
-130,Kid Cudi,671,Eminem,Hip-Hop/Rap,Rap
-131,Taylor Swift,560,Eminem,Pop,Rap
-132,Taylor Swift,560,Eminem,Pop,Rap
-133,Taylor Swift,560,Eminem,Pop,Rap
-134,Taylor Swift,560,Eminem,Pop,Rap
-135,Justin Bieber,666,Eminem,Pop,Rap
-136,Justin Bieber,666,Eminem,Pop,Rap
-137,Justin Bieber,666,Eminem,Pop,Rap
-138,Justin Bieber,666,Eminem,Pop,Rap
-139,Nick Cannon,1198,Eminem,Hip-Hop/Rap,Rap
-140,Nick Cannon,1198,Eminem,Hip-Hop/Rap,Rap
-141,Marshall Law,539,Eminem,,Rap
-142,Marshall Law,539,Eminem,,Rap
-143,Elton John,335,Eminem,Pop/Rock,Rap
-144,Elton John,335,Eminem,Pop/Rock,Rap
-145,Ariana Grande,321,Eminem,Pop,Rap
-146,Ariana Grande,321,Eminem,Pop,Rap
-147,Ariana Grande,321,Eminem,Pop,Rap
-148,Ariana Grande,321,Eminem,Pop,Rap
-149,"Royce da 5'9""",328,Eminem,Hip-Hop/Rap,Rap
-150,"Royce da 5'9""",328,Eminem,Hip-Hop/Rap,Rap
-151,Snoop Dogg,1173,Swizz Beatz,Hip-Hop/Rap,Hip-Hop/Rap
-152,Kanye West,3692,Swizz Beatz,Hip-Hop/Rap,Hip-Hop/Rap
-153,Swizz Beatz,42492,Swizz Beatz,Hip-Hop/Rap,Hip-Hop/Rap
-154,Busta Rhymes,964,Swizz Beatz,Hip-Hop/Rap,Hip-Hop/Rap
-155,Lil Wayne,1377,Swizz Beatz,Hip-Hop/Rap,Hip-Hop/Rap
-156,Lil Wayne,1377,Swizz Beatz,Hip-Hop/Rap,Hip-Hop/Rap
-157,J. Cole,705,Swizz Beatz,Hip-Hop/Rap,Hip-Hop/Rap
-158,Jadakiss,821,Swizz Beatz,Hip Hop,Hip-Hop/Rap
-159,Alicia Keys,6745,Swizz Beatz,R&B/Soul,Hip-Hop/Rap
-160,Nicki Minaj,987,Swizz Beatz,Hip-Hop,Hip-Hop/Rap
-161,Nicki Minaj,987,Swizz Beatz,Hip-Hop,Hip-Hop/Rap
-162,Beyoncé,442,Swizz Beatz,Pop,Hip-Hop/Rap
-163,Beyoncé,442,Swizz Beatz,Pop,Hip-Hop/Rap
-164,Timbaland,6180,Swizz Beatz,Hip-Hop/Rap,Hip-Hop/Rap
-165,Chris Brown,1607,Swizz Beatz,Pop,Hip-Hop/Rap
-166,Chris Brown,1607,Swizz Beatz,Pop,Hip-Hop/Rap
-167,Dr. Dre,442,Swizz Beatz,Hip-Hop/Rap,Hip-Hop/Rap
-168,Pharrell Williams,578,Swizz Beatz,Pop,Hip-Hop/Rap
-169,Nipsey Hussle,412,Swizz Beatz,Hip-Hop,Hip-Hop/Rap
-170,Ludacris,1274,Swizz Beatz,Hip-Hop/Rap,Hip-Hop/Rap
-171,Pusha T,1201,Swizz Beatz,Hip-Hop/Rap,Hip-Hop/Rap
-172,Rick Ross,2142,Swizz Beatz,Hip-Hop/Rap,Hip-Hop/Rap
-173,Justin Bieber,1198,Swizz Beatz,Pop,Hip-Hop/Rap
-174,Justin Bieber,1198,Swizz Beatz,Pop,Hip-Hop/Rap
-175,T-Pain,1312,Swizz Beatz,Hip-Hop/Rap,Hip-Hop/Rap
-176,Tory Lanez,1240,Swizz Beatz,,Hip-Hop/Rap
-177,Bryson Tiller,1143,Swizz Beatz,,Hip-Hop/Rap
-178,Bryson Tiller,1143,Swizz Beatz,R&B,Hip-Hop/Rap
-179,The Diplomats,681,Swizz Beatz,,Hip-Hop/Rap
-180,French Montana,516,Swizz Beatz,Hip-Hop,Hip-Hop/Rap
-181,Meek Mill,570,Swizz Beatz,Hip-Hop,Hip-Hop/Rap
-182,RZA,467,Swizz Beatz,Hip-Hop/Rap,Hip-Hop/Rap
-183,Vic Mensa,333,Swizz Beatz,Hip-Hop/Rap,Hip-Hop/Rap
-184,Killer Mike,344,Swizz Beatz,Hip-Hop/Rap,Hip-Hop/Rap
-185,Snoop Dogg,3205,Busta Rhymes,Hip-Hop/Rap,Hip-Hop/Rap
-186,Kanye West,1980,Busta Rhymes,Hip-Hop/Rap,Hip-Hop/Rap
-187,Eminem,4811,Busta Rhymes,Rap,Hip-Hop/Rap
-188,Eminem,4811,Busta Rhymes,Rap,Hip-Hop/Rap
-189,Swizz Beatz,761,Busta Rhymes,Hip-Hop/Rap,Hip-Hop/Rap
-190,Busta Rhymes,88187,Busta Rhymes,Hip-Hop/Rap,Hip-Hop/Rap
-191,Lil Wayne,2829,Busta Rhymes,Hip-Hop/Rap,Hip-Hop/Rap
-192,Lil Wayne,2829,Busta Rhymes,Hip-Hop/Rap,Hip-Hop/Rap
-193,Rakim,1107,Busta Rhymes,Hip-Hop/Rap,Hip-Hop/Rap
-194,J. Cole,1823,Busta Rhymes,Hip-Hop/Rap,Hip-Hop/Rap
-195,Method Man,1662,Busta Rhymes,Hip-Hop/Rap,Hip-Hop/Rap
-196,Jadakiss,1327,Busta Rhymes,Hip Hop,Hip-Hop/Rap
-197,Kendrick Lamar,2654,Busta Rhymes,Alternative Rap,Hip-Hop/Rap
-198,Ice Cube,1653,Busta Rhymes,Hip-Hop/Rap,Hip-Hop/Rap
-199,The Notorious B.I.G.,2483,Busta Rhymes,Hip-Hop,Hip-Hop/Rap
-200,LL Cool J,1544,Busta Rhymes,Hip-Hop/Rap,Hip-Hop/Rap
-201,Nicki Minaj,1933,Busta Rhymes,Hip-Hop,Hip-Hop/Rap
-202,Nicki Minaj,1933,Busta Rhymes,Hip-Hop,Hip-Hop/Rap
-203,Missy Elliott,1818,Busta Rhymes,Hip-Hop/Rap,Hip-Hop/Rap
-204,Lil' Kim,669,Busta Rhymes,Rap,Hip-Hop/Rap
-205,Chris Brown,1140,Busta Rhymes,Pop,Hip-Hop/Rap
-206,Chris Brown,1140,Busta Rhymes,Pop,Hip-Hop/Rap
-207,Janet Jackson,1704,Busta Rhymes,R&B/Soul,Hip-Hop/Rap
-208,Mariah Carey,2959,Busta Rhymes,Pop,Hip-Hop/Rap
-209,Dr. Dre,1129,Busta Rhymes,Hip-Hop/Rap,Hip-Hop/Rap
-210,Pharrell Williams,735,Busta Rhymes,Pop,Hip-Hop/Rap
-211,Ludacris,1421,Busta Rhymes,Hip-Hop/Rap,Hip-Hop/Rap
-212,Rick Ross,910,Busta Rhymes,Hip-Hop/Rap,Hip-Hop/Rap
-213,Justin Bieber,1097,Busta Rhymes,Pop,Hip-Hop/Rap
-214,Justin Bieber,1097,Busta Rhymes,Pop,Hip-Hop/Rap
-215,Linkin Park,2521,Busta Rhymes,Alternative,Hip-Hop/Rap
-216,Wu-Tang Clan,1265,Busta Rhymes,Hip-Hop,Hip-Hop/Rap
-217,Twista,852,Busta Rhymes,Hip-Hop/Rap,Hip-Hop/Rap
-218,Fat Joe,957,Busta Rhymes,Hip-Hop/Rap,Hip-Hop/Rap
-219,Mobb Deep,922,Busta Rhymes,Hip-Hop/Rap,Hip-Hop/Rap
-220,Raekwon,768,Busta Rhymes,Hip-Hop/Rap,Hip-Hop/Rap
-221,Snoop Dogg,511,Lil Wayne,Hip-Hop/Rap,Hip-Hop/Rap
-222,Snoop Dogg,511,Lil Wayne,Hip-Hop/Rap,Hip-Hop/Rap
-223,Kanye West,4701,Lil Wayne,Hip-Hop/Rap,Hip-Hop/Rap
-224,Kanye West,4701,Lil Wayne,Hip-Hop/Rap,Hip-Hop/Rap
-225,Eminem,4230,Lil Wayne,Rap,Hip-Hop/Rap
-226,Eminem,4230,Lil Wayne,Rap,Hip-Hop/Rap
-227,Eminem,4230,Lil Wayne,Rap,Hip-Hop/Rap
-228,Eminem,4230,Lil Wayne,Rap,Hip-Hop/Rap
-229,Lil Wayne,81128,Lil Wayne,Hip-Hop/Rap,Hip-Hop/Rap
-230,Lil Wayne,81128,Lil Wayne,Hip-Hop/Rap,Hip-Hop/Rap
-231,Lil Wayne,81128,Lil Wayne,Hip-Hop/Rap,Hip-Hop/Rap
-232,Lil Wayne,81128,Lil Wayne,Hip-Hop/Rap,Hip-Hop/Rap
-233,J. Cole,1604,Lil Wayne,Hip-Hop/Rap,Hip-Hop/Rap
-234,J. Cole,1604,Lil Wayne,Hip-Hop/Rap,Hip-Hop/Rap
-235,Kendrick Lamar,2278,Lil Wayne,Alternative Rap,Hip-Hop/Rap
-236,Kendrick Lamar,2278,Lil Wayne,Alternative Rap,Hip-Hop/Rap
-237,Nicki Minaj,4009,Lil Wayne,Hip-Hop,Hip-Hop/Rap
-238,Nicki Minaj,4009,Lil Wayne,Hip-Hop,Hip-Hop/Rap
-239,Nicki Minaj,4009,Lil Wayne,Hip-Hop,Hip-Hop/Rap
-240,Nicki Minaj,4009,Lil Wayne,Hip-Hop,Hip-Hop/Rap
-241,Beyoncé,801,Lil Wayne,Pop,Hip-Hop/Rap
-242,Beyoncé,801,Lil Wayne,Pop,Hip-Hop/Rap
-243,Beyoncé,801,Lil Wayne,Pop,Hip-Hop/Rap
-244,Beyoncé,801,Lil Wayne,Pop,Hip-Hop/Rap
-245,Chris Brown,1310,Lil Wayne,Pop,Hip-Hop/Rap
-246,Chris Brown,1310,Lil Wayne,Pop,Hip-Hop/Rap
-247,Chris Brown,1310,Lil Wayne,Pop,Hip-Hop/Rap
-248,Chris Brown,1310,Lil Wayne,Pop,Hip-Hop/Rap
-249,The Weeknd,1805,Lil Wayne,R&B/Soul,Hip-Hop/Rap
-250,The Weeknd,1805,Lil Wayne,R&B/Soul,Hip-Hop/Rap
-251,The Weeknd,1805,Lil Wayne,R&B/Soul,Hip-Hop/Rap
-252,The Weeknd,1805,Lil Wayne,R&B/Soul,Hip-Hop/Rap
-253,Young Thug,2356,Lil Wayne,Hip-Hop,Hip-Hop/Rap
-254,Young Thug,2356,Lil Wayne,Hip-Hop,Hip-Hop/Rap
-255,Mac Miller,1090,Lil Wayne,Hip-Hop/Rap,Hip-Hop/Rap
-256,Mac Miller,1090,Lil Wayne,Hip-Hop/Rap,Hip-Hop/Rap
-257,Kid Cudi,1464,Lil Wayne,Hip-Hop/Rap,Hip-Hop/Rap
-258,Kid Cudi,1464,Lil Wayne,Hip-Hop/Rap,Hip-Hop/Rap
-259,Pusha T,802,Lil Wayne,Hip-Hop/Rap,Hip-Hop/Rap
-260,Pusha T,802,Lil Wayne,Hip-Hop/Rap,Hip-Hop/Rap
-261,Rick Ross,1757,Lil Wayne,Hip-Hop/Rap,Hip-Hop/Rap
-262,Rick Ross,1757,Lil Wayne,Hip-Hop/Rap,Hip-Hop/Rap
-263,Big Sean,1176,Lil Wayne,,Hip-Hop/Rap
-264,Big Sean,1176,Lil Wayne,,Hip-Hop/Rap
-265,Tory Lanez,814,Lil Wayne,,Hip-Hop/Rap
-266,Tory Lanez,814,Lil Wayne,,Hip-Hop/Rap
-267,Bryson Tiller,502,Lil Wayne,,Hip-Hop/Rap
-268,Bryson Tiller,502,Lil Wayne,,Hip-Hop/Rap
-269,Bryson Tiller,502,Lil Wayne,R&B,Hip-Hop/Rap
-270,Bryson Tiller,502,Lil Wayne,R&B,Hip-Hop/Rap
-271,Meek Mill,639,Lil Wayne,Hip-Hop,Hip-Hop/Rap
-272,Meek Mill,639,Lil Wayne,Hip-Hop,Hip-Hop/Rap
-273,Tyga,2266,Lil Wayne,Hip-Hop/Rap,Hip-Hop/Rap
-274,Tyga,2266,Lil Wayne,Hip-Hop/Rap,Hip-Hop/Rap
-275,DJ Khaled,790,Lil Wayne,Hip-Hop,Hip-Hop/Rap
-276,DJ Khaled,790,Lil Wayne,Hip-Hop,Hip-Hop/Rap
-277,DJ Khaled,790,Lil Wayne,Hip-Hop,Hip-Hop/Rap
-278,DJ Khaled,790,Lil Wayne,Hip-Hop,Hip-Hop/Rap
-279,Snoop Dogg,1519,Rakim,Hip-Hop/Rap,Hip-Hop/Rap
-280,Kanye West,2721,Rakim,Hip-Hop/Rap,Hip-Hop/Rap
-281,Eminem,6626,Rakim,Rap,Hip-Hop/Rap
-282,Eminem,6626,Rakim,Rap,Hip-Hop/Rap
-283,Busta Rhymes,1432,Rakim,Hip-Hop/Rap,Hip-Hop/Rap
-284,Lil Wayne,1473,Rakim,Hip-Hop/Rap,Hip-Hop/Rap
-285,Lil Wayne,1473,Rakim,Hip-Hop/Rap,Hip-Hop/Rap
-286,Rakim,87217,Rakim,Hip-Hop/Rap,Hip-Hop/Rap
-287,J. Cole,809,Rakim,Hip-Hop/Rap,Hip-Hop/Rap
-288,Method Man,1043,Rakim,Hip-Hop/Rap,Hip-Hop/Rap
-289,Jadakiss,783,Rakim,Hip Hop,Hip-Hop/Rap
-290,Kendrick Lamar,1760,Rakim,Alternative Rap,Hip-Hop/Rap
-291,Ice Cube,2391,Rakim,Hip-Hop/Rap,Hip-Hop/Rap
-292,The Notorious B.I.G.,1680,Rakim,Hip-Hop,Hip-Hop/Rap
-293,LL Cool J,2400,Rakim,Hip-Hop/Rap,Hip-Hop/Rap
-294,Dr. Dre,974,Rakim,Hip-Hop/Rap,Hip-Hop/Rap
-295,Wu-Tang Clan,2510,Rakim,Hip-Hop,Hip-Hop/Rap
-296,Mobb Deep,1695,Rakim,Hip-Hop/Rap,Hip-Hop/Rap
-297,Raekwon,974,Rakim,Hip-Hop/Rap,Hip-Hop/Rap
-298,Yandel,2918,Rakim,World/Reggae,Hip-Hop/Rap
-299,KRS-One,1907,Rakim,Hip-Hop/Rap,Hip-Hop/Rap
-300,Big L,1663,Rakim,Hip-Hop/Rap,Hip-Hop/Rap
-301,Slick Rick,1576,Rakim,Hip-Hop/Rap,Hip-Hop/Rap
-302,Public Enemy,1318,Rakim,Hip-Hop/Rap,Hip-Hop/Rap
-303,Gang Starr,1072,Rakim,Hip-Hop/Rap,Hip-Hop/Rap
-304,Snoop Dogg,1024,Method Man,Hip-Hop/Rap,Hip-Hop/Rap
-305,Kanye West,613,Method Man,Hip-Hop/Rap,Hip-Hop/Rap
-306,Eminem,1426,Method Man,Rap,Hip-Hop/Rap
-307,Eminem,1426,Method Man,Rap,Hip-Hop/Rap
-308,Busta Rhymes,998,Method Man,Hip-Hop/Rap,Hip-Hop/Rap
-309,Lil Wayne,414,Method Man,Hip-Hop/Rap,Hip-Hop/Rap
-310,Lil Wayne,414,Method Man,Hip-Hop/Rap,Hip-Hop/Rap
-311,Rakim,428,Method Man,Hip-Hop/Rap,Hip-Hop/Rap
-312,Method Man,50187,Method Man,Hip-Hop/Rap,Hip-Hop/Rap
-313,Jadakiss,482,Method Man,Hip Hop,Hip-Hop/Rap
-314,Ice Cube,676,Method Man,Hip-Hop/Rap,Hip-Hop/Rap
-315,The Notorious B.I.G.,726,Method Man,Hip-Hop,Hip-Hop/Rap
-316,LL Cool J,854,Method Man,Hip-Hop/Rap,Hip-Hop/Rap
-317,RZA,834,Method Man,Hip-Hop/Rap,Hip-Hop/Rap
-318,Wu-Tang Clan,6710,Method Man,Hip-Hop,Hip-Hop/Rap
-319,Raekwon,3347,Method Man,Hip-Hop/Rap,Hip-Hop/Rap
-320,Ghostface Killah,2291,Method Man,Hip-Hop/Rap,Hip-Hop/Rap
-321,Ol' Dirty Bastard,920,Method Man,Hip-Hop/Rap,Hip-Hop/Rap
-322,Wendy Williams,642,Method Man,Rock,Hip-Hop/Rap
-323,Dave East,630,Method Man,Rap,Hip-Hop/Rap
-324,Yo-Yo Ma,488,Method Man,Pop,Hip-Hop/Rap
-325,D'Angelo,420,Method Man,R&B/Soul,Hip-Hop/Rap
-326,Snoop Dogg,850,Jadakiss,Hip-Hop/Rap,Hip Hop
-327,Kanye West,1734,Jadakiss,Hip-Hop/Rap,Hip Hop
-328,Eminem,1136,Jadakiss,Rap,Hip Hop
-329,Eminem,1136,Jadakiss,Rap,Hip Hop
-330,Busta Rhymes,1035,Jadakiss,Hip-Hop/Rap,Hip Hop
-331,Lil Wayne,1096,Jadakiss,Hip-Hop/Rap,Hip Hop
-332,Lil Wayne,1096,Jadakiss,Hip-Hop/Rap,Hip Hop
-333,Jadakiss,105404,Jadakiss,Hip Hop,Hip Hop
-334,Mac Miller,805,Jadakiss,Hip-Hop/Rap,Hip Hop
-335,Pusha T,1795,Jadakiss,Hip-Hop/Rap,Hip Hop
-336,Rick Ross,1368,Jadakiss,Hip-Hop/Rap,Hip Hop
-337,The Diplomats,5677,Jadakiss,,Hip Hop
-338,Fat Joe,1176,Jadakiss,Hip-Hop/Rap,Hip Hop
-339,Raekwon,701,Jadakiss,Hip-Hop/Rap,Hip Hop
-340,Freddie Gibbs,1113,Jadakiss,Hip-Hop,Hip Hop
-341,Fabolous,3354,Jadakiss,Hip-Hop/Rap,Hip Hop
-342,Smoke DZA,2432,Jadakiss,Hip-Hop,Hip Hop
-343,G-Eazy,2234,Jadakiss,Hip-Hop/Rap,Hip Hop
-344,Jhené Aiko,2019,Jadakiss,,Hip Hop
-345,Juelz Santana,1275,Jadakiss,Hip-Hop/Rap,Hip Hop
-346,Sheek Louch,1194,Jadakiss,Hip Hop,Hip Hop
-347,Cam'ron,934,Jadakiss,Comics and Games,Hip Hop
-348,Chief Keef,1080,Jadakiss,Hip-Hop,Hip Hop
-349,Snoop Dogg,2008,Kendrick Lamar,Hip-Hop/Rap,Alternative Rap
-350,Kanye West,6656,Kendrick Lamar,Hip-Hop/Rap,Alternative Rap
-351,Eminem,4209,Kendrick Lamar,Rap,Alternative Rap
-352,Eminem,4209,Kendrick Lamar,Rap,Alternative Rap
-353,Lil Wayne,1860,Kendrick Lamar,Hip-Hop/Rap,Alternative Rap
-354,Lil Wayne,1860,Kendrick Lamar,Hip-Hop/Rap,Alternative Rap
-355,J. Cole,4879,Kendrick Lamar,Hip-Hop/Rap,Alternative Rap
-356,Kendrick Lamar,85484,Kendrick Lamar,Alternative Rap,Alternative Rap
-357,Nicki Minaj,998,Kendrick Lamar,Hip-Hop,Alternative Rap
-358,Nicki Minaj,998,Kendrick Lamar,Hip-Hop,Alternative Rap
-359,Beyoncé,1354,Kendrick Lamar,Pop,Alternative Rap
-360,Beyoncé,1354,Kendrick Lamar,Pop,Alternative Rap
-361,The Weeknd,2116,Kendrick Lamar,R&B/Soul,Alternative Rap
-362,The Weeknd,2116,Kendrick Lamar,R&B/Soul,Alternative Rap
-363,Dr. Dre,1672,Kendrick Lamar,Hip-Hop/Rap,Alternative Rap
-364,Young Thug,1654,Kendrick Lamar,Hip-Hop,Alternative Rap
-365,Mac Miller,1063,Kendrick Lamar,Hip-Hop/Rap,Alternative Rap
-366,Kid Cudi,1274,Kendrick Lamar,Hip-Hop/Rap,Alternative Rap
-367,Taylor Swift,613,Kendrick Lamar,Pop,Alternative Rap
-368,Taylor Swift,613,Kendrick Lamar,Pop,Alternative Rap
-369,Pusha T,768,Kendrick Lamar,Hip-Hop/Rap,Alternative Rap
-370,Frank Ocean,1397,Kendrick Lamar,Hip-Hop/Rap,Alternative Rap
-371,Big Sean,672,Kendrick Lamar,,Alternative Rap
-372,Bryson Tiller,472,Kendrick Lamar,,Alternative Rap
-373,Bryson Tiller,472,Kendrick Lamar,R&B,Alternative Rap
-374,French Montana,501,Kendrick Lamar,Hip-Hop,Alternative Rap
-375,Jay Rock,791,Kendrick Lamar,Hip-Hop/Rap,Alternative Rap
-376,Macklemore,657,Kendrick Lamar,Hip-Hop/Rap,Alternative Rap
-377,Ab-Soul,570,Kendrick Lamar,Hip-Hop/Rap,Alternative Rap
-378,Siri,545,Kendrick Lamar,,Alternative Rap
-379,Schoolboy Q,513,Kendrick Lamar,Rap,Alternative Rap
-380,Snoop Dogg,2382,Ice Cube,Hip-Hop/Rap,Hip-Hop/Rap
-381,Kanye West,2141,Ice Cube,Hip-Hop/Rap,Hip-Hop/Rap
-382,Eminem,2752,Ice Cube,Rap,Hip-Hop/Rap
-383,Eminem,2752,Ice Cube,Rap,Hip-Hop/Rap
-384,Busta Rhymes,402,Ice Cube,Hip-Hop/Rap,Hip-Hop/Rap
-385,Lil Wayne,1396,Ice Cube,Hip-Hop/Rap,Hip-Hop/Rap
-386,Lil Wayne,1396,Ice Cube,Hip-Hop/Rap,Hip-Hop/Rap
-387,Rakim,491,Ice Cube,Hip-Hop/Rap,Hip-Hop/Rap
-388,J. Cole,402,Ice Cube,Hip-Hop/Rap,Hip-Hop/Rap
-389,Method Man,261,Ice Cube,Hip-Hop/Rap,Hip-Hop/Rap
-390,Kendrick Lamar,828,Ice Cube,Alternative Rap,Hip-Hop/Rap
-391,Ice Cube,52790,Ice Cube,Hip-Hop/Rap,Hip-Hop/Rap
-392,The Notorious B.I.G.,549,Ice Cube,Hip-Hop,Hip-Hop/Rap
-393,LL Cool J,457,Ice Cube,Hip-Hop/Rap,Hip-Hop/Rap
-394,Nicki Minaj,540,Ice Cube,Hip-Hop,Hip-Hop/Rap
-395,Nicki Minaj,540,Ice Cube,Hip-Hop,Hip-Hop/Rap
-396,Michael Jackson,244,Ice Cube,Pop,Hip-Hop/Rap
-397,Michael Jackson,244,Ice Cube,Pop,Hip-Hop/Rap
-398,Dr. Dre,1527,Ice Cube,Hip-Hop/Rap,Hip-Hop/Rap
-399,Wu-Tang Clan,386,Ice Cube,Hip-Hop,Hip-Hop/Rap
-400,Mobb Deep,268,Ice Cube,Hip-Hop/Rap,Hip-Hop/Rap
-401,Public Enemy,256,Ice Cube,Hip-Hop/Rap,Hip-Hop/Rap
-402,Eazy-E,665,Ice Cube,Hip-Hop/Rap,Hip-Hop/Rap
-403,E-40,556,Ice Cube,Hip-Hop/Rap,Hip-Hop/Rap
-404,N.W.A,521,Ice Cube,Hip-Hop/Rap,Hip-Hop/Rap
-405,Chance the Rapper,286,Ice Cube,Hip-Hop/Rap,Hip-Hop/Rap
-406,Korn,312,Ice Cube,Alternative,Hip-Hop/Rap
-407,Snoop Dogg,412,Alicia Keys,Hip-Hop/Rap,R&B/Soul
-408,Kanye West,2139,Alicia Keys,Hip-Hop/Rap,R&B/Soul
-409,Swizz Beatz,2157,Alicia Keys,Hip-Hop/Rap,R&B/Soul
-410,Lil Wayne,474,Alicia Keys,Hip-Hop/Rap,R&B/Soul
-411,Lil Wayne,474,Alicia Keys,Hip-Hop/Rap,R&B/Soul
-412,J. Cole,332,Alicia Keys,Hip-Hop/Rap,R&B/Soul
-413,Alicia Keys,90602,Alicia Keys,R&B/Soul,R&B/Soul
-414,Nicki Minaj,983,Alicia Keys,Hip-Hop,R&B/Soul
-415,Nicki Minaj,983,Alicia Keys,Hip-Hop,R&B/Soul
-416,Beyoncé,2840,Alicia Keys,Pop,R&B/Soul
-417,Beyoncé,2840,Alicia Keys,Pop,R&B/Soul
-418,Chris Brown,470,Alicia Keys,Pop,R&B/Soul
-419,Chris Brown,470,Alicia Keys,Pop,R&B/Soul
-420,Whitney Houston,331,Alicia Keys,Pop,R&B/Soul
-421,Mariah Carey,643,Alicia Keys,Pop,R&B/Soul
-422,Pharrell Williams,799,Alicia Keys,Pop,R&B/Soul
-423,Taylor Swift,769,Alicia Keys,Pop,R&B/Soul
-424,Taylor Swift,769,Alicia Keys,Pop,R&B/Soul
-425,Justin Bieber,442,Alicia Keys,Pop,R&B/Soul
-426,Justin Bieber,442,Alicia Keys,Pop,R&B/Soul
-427,Ariana Grande,446,Alicia Keys,Pop,R&B/Soul
-428,Ariana Grande,446,Alicia Keys,Pop,R&B/Soul
-429,John Legend,1177,Alicia Keys,R&B/Soul,R&B/Soul
-430,Boyz II Men,726,Alicia Keys,R&B/Soul,R&B/Soul
-431,Coldplay,707,Alicia Keys,Rock,R&B/Soul
-432,Red Hot Chili Peppers,465,Alicia Keys,Rock,R&B/Soul
-433,Lady Gaga,558,Alicia Keys,Pop,R&B/Soul
-434,Amy Winehouse,392,Alicia Keys,Soul,R&B/Soul
-435,Willow Smith,378,Alicia Keys,R&B,R&B/Soul
-436,Christina Aguilera,388,Alicia Keys,Pop,R&B/Soul
-437,Kehlani,331,Alicia Keys,R&B,R&B/Soul
-438,Shawn Mendes,342,Alicia Keys,Rock,R&B/Soul
-439,John Mayer,305,Alicia Keys,Rock,R&B/Soul
-440,Snoop Dogg,2238,LL Cool J,Hip-Hop/Rap,Hip-Hop/Rap
-441,Kanye West,1774,LL Cool J,Hip-Hop/Rap,Hip-Hop/Rap
-442,Eminem,5670,LL Cool J,Rap,Hip-Hop/Rap
-443,Eminem,5670,LL Cool J,Rap,Hip-Hop/Rap
-444,Busta Rhymes,2183,LL Cool J,Hip-Hop/Rap,Hip-Hop/Rap
-445,Lil Wayne,1552,LL Cool J,Hip-Hop/Rap,Hip-Hop/Rap
-446,Lil Wayne,1552,LL Cool J,Hip-Hop/Rap,Hip-Hop/Rap
-447,Rakim,1964,LL Cool J,Hip-Hop/Rap,Hip-Hop/Rap
-448,Method Man,1417,LL Cool J,Hip-Hop/Rap,Hip-Hop/Rap
-449,Kendrick Lamar,1093,LL Cool J,Alternative Rap,Hip-Hop/Rap
-450,Ice Cube,2305,LL Cool J,Hip-Hop/Rap,Hip-Hop/Rap
-451,The Notorious B.I.G.,1801,LL Cool J,Hip-Hop,Hip-Hop/Rap
-452,LL Cool J,86102,LL Cool J,Hip-Hop/Rap,Hip-Hop/Rap
-453,Beyoncé,767,LL Cool J,Pop,Hip-Hop/Rap
-454,Beyoncé,767,LL Cool J,Pop,Hip-Hop/Rap
-455,Dr. Dre,1201,LL Cool J,Hip-Hop/Rap,Hip-Hop/Rap
-456,Ludacris,1213,LL Cool J,Hip-Hop/Rap,Hip-Hop/Rap
-457,Killer Mike,792,LL Cool J,Hip-Hop/Rap,Hip-Hop/Rap
-458,Wu-Tang Clan,836,LL Cool J,Hip-Hop,Hip-Hop/Rap
-459,Fat Joe,1077,LL Cool J,Hip-Hop/Rap,Hip-Hop/Rap
-460,Mobb Deep,694,LL Cool J,Hip-Hop/Rap,Hip-Hop/Rap
-461,Slick Rick,907,LL Cool J,Hip-Hop/Rap,Hip-Hop/Rap
-462,Public Enemy,1169,LL Cool J,Hip-Hop/Rap,Hip-Hop/Rap
-463,Boyz II Men,909,LL Cool J,R&B/Soul,Hip-Hop/Rap
-464,Jennifer Lopez,1999,LL Cool J,Pop,Hip-Hop/Rap
-465,Beastie Boys,1554,LL Cool J,Punk,Hip-Hop/Rap
-466,Tina Turner,917,LL Cool J,Pop,Hip-Hop/Rap
-467,Queen Latifah,809,LL Cool J,Hip-Hop/Rap,Hip-Hop/Rap
-468,Kanye West,110643,Kanye West,Hip-Hop/Rap,Hip-Hop/Rap
-469,Eminem,1362,Kanye West,Rap,Hip-Hop/Rap
-470,Eminem,1362,Kanye West,Rap,Hip-Hop/Rap
-471,Lil Wayne,1174,Kanye West,Hip-Hop/Rap,Hip-Hop/Rap
-472,Lil Wayne,1174,Kanye West,Hip-Hop/Rap,Hip-Hop/Rap
-473,J. Cole,541,Kanye West,Hip-Hop/Rap,Hip-Hop/Rap
-474,Kendrick Lamar,2428,Kanye West,Alternative Rap,Hip-Hop/Rap
-475,Nicki Minaj,921,Kanye West,Hip-Hop,Hip-Hop/Rap
-476,Nicki Minaj,921,Kanye West,Hip-Hop,Hip-Hop/Rap
-477,Beyoncé,940,Kanye West,Pop,Hip-Hop/Rap
-478,Beyoncé,940,Kanye West,Pop,Hip-Hop/Rap
-479,The Weeknd,1178,Kanye West,R&B/Soul,Hip-Hop/Rap
-480,The Weeknd,1178,Kanye West,R&B/Soul,Hip-Hop/Rap
-481,Rihanna,543,Kanye West,Pop,Hip-Hop/Rap
-482,Rihanna,543,Kanye West,Pop,Hip-Hop/Rap
-483,Pharrell Williams,458,Kanye West,Pop,Hip-Hop/Rap
-484,Young Thug,801,Kanye West,Hip-Hop,Hip-Hop/Rap
-485,Mac Miller,388,Kanye West,Hip-Hop/Rap,Hip-Hop/Rap
-486,Kim Kardashian,3564,Kanye West,,Hip-Hop/Rap
-487,Kid Cudi,2024,Kanye West,Hip-Hop/Rap,Hip-Hop/Rap
-488,Taylor Swift,1445,Kanye West,Pop,Hip-Hop/Rap
-489,Taylor Swift,1445,Kanye West,Pop,Hip-Hop/Rap
-490,Pusha T,921,Kanye West,Hip-Hop/Rap,Hip-Hop/Rap
-491,Frank Ocean,834,Kanye West,Hip-Hop/Rap,Hip-Hop/Rap
-492,Rick Ross,527,Kanye West,Hip-Hop/Rap,Hip-Hop/Rap
-493,Justin Bieber,525,Kanye West,Pop,Hip-Hop/Rap
-494,Justin Bieber,525,Kanye West,Pop,Hip-Hop/Rap
-495,Lil Durk,422,Kanye West,Hip-Hop,Hip-Hop/Rap
-496,Big Sean,409,Kanye West,,Hip-Hop/Rap
-497,Kanye West,898,J. Cole,Hip-Hop/Rap,Hip-Hop/Rap
-498,Eminem,43,J. Cole,Rap,Hip-Hop/Rap
-499,Eminem,43,J. Cole,Rap,Hip-Hop/Rap
-500,J. Cole,15826,J. Cole,Hip-Hop/Rap,Hip-Hop/Rap
-501,Kendrick Lamar,1399,J. Cole,Alternative Rap,Hip-Hop/Rap
-502,Nicki Minaj,96,J. Cole,Hip-Hop,Hip-Hop/Rap
-503,Nicki Minaj,96,J. Cole,Hip-Hop,Hip-Hop/Rap
-504,Beyoncé,57,J. Cole,Pop,Hip-Hop/Rap
-505,Beyoncé,57,J. Cole,Pop,Hip-Hop/Rap
-506,Chris Brown,45,J. Cole,Pop,Hip-Hop/Rap
-507,Chris Brown,45,J. Cole,Pop,Hip-Hop/Rap
-508,The Weeknd,317,J. Cole,R&B/Soul,Hip-Hop/Rap
-509,The Weeknd,317,J. Cole,R&B/Soul,Hip-Hop/Rap
-510,Wiz Khalifa,87,J. Cole,Hip-Hop/Rap,Hip-Hop/Rap
-511,Wiz Khalifa,87,J. Cole,Hip-Hop/Rap,Hip-Hop/Rap
-512,Young Thug,80,J. Cole,Hip-Hop,Hip-Hop/Rap
-513,Mac Miller,455,J. Cole,Hip-Hop/Rap,Hip-Hop/Rap
-514,Nipsey Hussle,92,J. Cole,Hip-Hop,Hip-Hop/Rap
-515,Frank Ocean,98,J. Cole,Hip-Hop/Rap,Hip-Hop/Rap
-516,Rick Ross,75,J. Cole,Hip-Hop/Rap,Hip-Hop/Rap
-517,Lil Durk,93,J. Cole,Hip-Hop,Hip-Hop/Rap
-518,Big Sean,90,J. Cole,,Hip-Hop/Rap
-519,Jay Rock,150,J. Cole,Hip-Hop/Rap,Hip-Hop/Rap
-520,Freddie Gibbs,87,J. Cole,Hip-Hop,Hip-Hop/Rap
-521,Bruno Mars,164,J. Cole,Pop/Rock,Hip-Hop/Rap
-522,Jazmine Sullivan,99,J. Cole,R&B/Soul,Hip-Hop/Rap
-523,Kanye West,11,The Notorious B.I.G.,Hip-Hop/Rap,Hip-Hop
-524,Eminem,10,The Notorious B.I.G.,Rap,Hip-Hop
-525,Eminem,10,The Notorious B.I.G.,Rap,Hip-Hop
-526,Busta Rhymes,18,The Notorious B.I.G.,Hip-Hop/Rap,Hip-Hop
-527,Method Man,8,The Notorious B.I.G.,Hip-Hop/Rap,Hip-Hop
-528,Kendrick Lamar,3,The Notorious B.I.G.,Alternative Rap,Hip-Hop
-529,Alicia Keys,3,The Notorious B.I.G.,R&B/Soul,Hip-Hop
-530,The Notorious B.I.G.,520,The Notorious B.I.G.,Hip-Hop,Hip-Hop
-531,Lil' Kim,7,The Notorious B.I.G.,Rap,Hip-Hop
-532,R. Kelly,14,The Notorious B.I.G.,R&B/Soul,Hip-Hop
-533,Dr. Dre,3,The Notorious B.I.G.,Hip-Hop/Rap,Hip-Hop
-534,Pharrell Williams,3,The Notorious B.I.G.,Pop,Hip-Hop
-535,Wu-Tang Clan,5,The Notorious B.I.G.,Hip-Hop,Hip-Hop
-536,Faith Evans,7,The Notorious B.I.G.,R&B/Soul,Hip-Hop
-537,Bone Thugs-n-Harmony,5,The Notorious B.I.G.,Hip-Hop/Rap,Hip-Hop
-538,Irv Gotti,4,The Notorious B.I.G.,Hip-Hop,Hip-Hop
-539,Kanye West,1158,Nicki Minaj,Hip-Hop/Rap,Hip-Hop
-540,Kanye West,1158,Nicki Minaj,Hip-Hop/Rap,Hip-Hop
-541,Eminem,700,Nicki Minaj,Rap,Hip-Hop
-542,Eminem,700,Nicki Minaj,Rap,Hip-Hop
-543,Eminem,700,Nicki Minaj,Rap,Hip-Hop
-544,Eminem,700,Nicki Minaj,Rap,Hip-Hop
-545,Lil Wayne,1490,Nicki Minaj,Hip-Hop/Rap,Hip-Hop
-546,Lil Wayne,1490,Nicki Minaj,Hip-Hop/Rap,Hip-Hop
-547,Lil Wayne,1490,Nicki Minaj,Hip-Hop/Rap,Hip-Hop
-548,Lil Wayne,1490,Nicki Minaj,Hip-Hop/Rap,Hip-Hop
-549,Kendrick Lamar,414,Nicki Minaj,Alternative Rap,Hip-Hop
-550,Kendrick Lamar,414,Nicki Minaj,Alternative Rap,Hip-Hop
-551,Nicki Minaj,105613,Nicki Minaj,Hip-Hop,Hip-Hop
-552,Nicki Minaj,105613,Nicki Minaj,Hip-Hop,Hip-Hop
-553,Nicki Minaj,105613,Nicki Minaj,Hip-Hop,Hip-Hop
-554,Nicki Minaj,105613,Nicki Minaj,Hip-Hop,Hip-Hop
-555,Beyoncé,4022,Nicki Minaj,Pop,Hip-Hop
-556,Beyoncé,4022,Nicki Minaj,Pop,Hip-Hop
-557,Beyoncé,4022,Nicki Minaj,Pop,Hip-Hop
-558,Beyoncé,4022,Nicki Minaj,Pop,Hip-Hop
-559,Lil' Kim,497,Nicki Minaj,Rap,Hip-Hop
-560,Lil' Kim,497,Nicki Minaj,Rap,Hip-Hop
-561,Chris Brown,411,Nicki Minaj,Pop,Hip-Hop
-562,Chris Brown,411,Nicki Minaj,Pop,Hip-Hop
-563,Chris Brown,411,Nicki Minaj,Pop,Hip-Hop
-564,Chris Brown,411,Nicki Minaj,Pop,Hip-Hop
-565,The Weeknd,506,Nicki Minaj,R&B/Soul,Hip-Hop
-566,The Weeknd,506,Nicki Minaj,R&B/Soul,Hip-Hop
-567,The Weeknd,506,Nicki Minaj,R&B/Soul,Hip-Hop
-568,The Weeknd,506,Nicki Minaj,R&B/Soul,Hip-Hop
-569,Rihanna,1192,Nicki Minaj,Pop,Hip-Hop
-570,Rihanna,1192,Nicki Minaj,Pop,Hip-Hop
-571,Rihanna,1192,Nicki Minaj,Pop,Hip-Hop
-572,Rihanna,1192,Nicki Minaj,Pop,Hip-Hop
-573,Katy Perry,1265,Nicki Minaj,Pop,Hip-Hop
-574,Katy Perry,1265,Nicki Minaj,Pop,Hip-Hop
-575,Katy Perry,1265,Nicki Minaj,Pop,Hip-Hop
-576,Katy Perry,1265,Nicki Minaj,Pop,Hip-Hop
-577,Taylor Swift,1186,Nicki Minaj,Pop,Hip-Hop
-578,Taylor Swift,1186,Nicki Minaj,Pop,Hip-Hop
-579,Taylor Swift,1186,Nicki Minaj,Pop,Hip-Hop
-580,Taylor Swift,1186,Nicki Minaj,Pop,Hip-Hop
-581,Rick Ross,480,Nicki Minaj,Hip-Hop/Rap,Hip-Hop
-582,Rick Ross,480,Nicki Minaj,Hip-Hop/Rap,Hip-Hop
-583,Justin Bieber,476,Nicki Minaj,Pop,Hip-Hop
-584,Justin Bieber,476,Nicki Minaj,Pop,Hip-Hop
-585,Justin Bieber,476,Nicki Minaj,Pop,Hip-Hop
-586,Justin Bieber,476,Nicki Minaj,Pop,Hip-Hop
-587,Ariana Grande,2133,Nicki Minaj,Pop,Hip-Hop
-588,Ariana Grande,2133,Nicki Minaj,Pop,Hip-Hop
-589,Ariana Grande,2133,Nicki Minaj,Pop,Hip-Hop
-590,Ariana Grande,2133,Nicki Minaj,Pop,Hip-Hop
-591,Meek Mill,873,Nicki Minaj,Hip-Hop,Hip-Hop
-592,Meek Mill,873,Nicki Minaj,Hip-Hop,Hip-Hop
-593,Lady Gaga,1027,Nicki Minaj,Pop,Hip-Hop
-594,Lady Gaga,1027,Nicki Minaj,Pop,Hip-Hop
-595,Lana Del Rey,581,Nicki Minaj,Alternative,Hip-Hop
-596,Lana Del Rey,581,Nicki Minaj,Alternative,Hip-Hop
-597,Miley Cyrus,590,Nicki Minaj,Pop,Hip-Hop
-598,Miley Cyrus,590,Nicki Minaj,Pop,Hip-Hop
-599,Miley Cyrus,590,Nicki Minaj,Pop,Hip-Hop
-600,Miley Cyrus,590,Nicki Minaj,Pop,Hip-Hop
-601,Selena Gomez,461,Nicki Minaj,Pop,Hip-Hop
-602,Selena Gomez,461,Nicki Minaj,Pop,Hip-Hop
-603,Selena Gomez,461,Nicki Minaj,Pop,Hip-Hop
-604,Selena Gomez,461,Nicki Minaj,Pop,Hip-Hop
-605,The Chainsmokers,305,Nicki Minaj,House,Hip-Hop
-606,The Chainsmokers,305,Nicki Minaj,House,Hip-Hop
+0,Miley Cyrus,6254,Mark Ronson,Pop,Dance/Electronic
+1,Miley Cyrus,6254,Mark Ronson,Pop,Dance/Electronic
+2,Miley Cyrus,6254,Mark Ronson,Pop,Dance/Electronic
+3,Miley Cyrus,6254,Mark Ronson,Pop,Dance/Electronic
+4,Bruno Mars,5707,Mark Ronson,Pop/Rock,Dance/Electronic
+5,Bruno Mars,5707,Mark Ronson,Pop/Rock,Dance/Electronic
+6,Amy Winehouse,3237,Mark Ronson,Soul,Dance/Electronic
+7,Amy Winehouse,3237,Mark Ronson,Soul,Dance/Electronic
+8,Lady Gaga,2068,Mark Ronson,Pop,Dance/Electronic
+9,Lady Gaga,2068,Mark Ronson,Pop,Dance/Electronic
+10,Diplo,1347,Mark Ronson,Dance,Dance/Electronic
+11,Diplo,1347,Mark Ronson,Dance,Dance/Electronic
+12,Mark Ronson,1095,Mark Ronson,Dance/Electronic,Dance/Electronic
+13,Mark Ronson,1095,Mark Ronson,Dance/Electronic,Dance/Electronic
+14,Lykke Li,766,Mark Ronson,Pop/Rock,Dance/Electronic
+15,Lykke Li,766,Mark Ronson,Pop/Rock,Dance/Electronic
+16,Kacey Musgraves,745,Mark Ronson,Country,Dance/Electronic
+17,Kacey Musgraves,745,Mark Ronson,Country,Dance/Electronic
+18,Taylor Swift,869,Mark Ronson,Pop,Dance/Electronic
+19,Taylor Swift,869,Mark Ronson,Pop,Dance/Electronic
+20,Taylor Swift,869,Mark Ronson,Pop,Dance/Electronic
+21,Taylor Swift,869,Mark Ronson,Pop,Dance/Electronic
+22,Troye Sivan,514,Mark Ronson,,Dance/Electronic
+23,Troye Sivan,514,Mark Ronson,,Dance/Electronic
+24,Beyoncé,526,Mark Ronson,Pop,Dance/Electronic
+25,Beyoncé,526,Mark Ronson,Pop,Dance/Electronic
+26,Beyoncé,526,Mark Ronson,Pop,Dance/Electronic
+27,Beyoncé,526,Mark Ronson,Pop,Dance/Electronic
+28,Ariana Grande,665,Mark Ronson,Pop,Dance/Electronic
+29,Ariana Grande,665,Mark Ronson,Pop,Dance/Electronic
+30,Ariana Grande,665,Mark Ronson,Pop,Dance/Electronic
+31,Ariana Grande,665,Mark Ronson,Pop,Dance/Electronic
+32,Lana Del Rey,395,Mark Ronson,Alternative,Dance/Electronic
+33,Lana Del Rey,395,Mark Ronson,Alternative,Dance/Electronic
+34,Rod Stewart,372,Mark Ronson,Rock,Dance/Electronic
+35,Rod Stewart,372,Mark Ronson,Rock,Dance/Electronic
+36,Shawn Mendes,563,Mark Ronson,Rock,Dance/Electronic
+37,Shawn Mendes,563,Mark Ronson,Rock,Dance/Electronic
+38,Ellie Goulding,400,Mark Ronson,Pop,Dance/Electronic
+39,Ellie Goulding,400,Mark Ronson,Pop,Dance/Electronic
+40,Ellie Goulding,400,Mark Ronson,Pop,Dance/Electronic
+41,Ellie Goulding,400,Mark Ronson,Pop,Dance/Electronic
+42,Angel Olsen,381,Mark Ronson,Rock,Dance/Electronic
+43,Angel Olsen,381,Mark Ronson,Rock,Dance/Electronic
+44,Katy Perry,360,Mark Ronson,Pop,Dance/Electronic
+45,Katy Perry,360,Mark Ronson,Pop,Dance/Electronic
+46,Katy Perry,360,Mark Ronson,Pop,Dance/Electronic
+47,Katy Perry,360,Mark Ronson,Pop,Dance/Electronic
+48,Pharrell Williams,316,Mark Ronson,Pop,Dance/Electronic
+49,Pharrell Williams,316,Mark Ronson,Pop,Dance/Electronic
+50,Gwen Stefani,331,Mark Ronson,Pop,Dance/Electronic
+51,Gwen Stefani,331,Mark Ronson,Pop,Dance/Electronic
+52,Kanye West,339,Mark Ronson,Hip-Hop/Rap,Dance/Electronic
+53,Kanye West,339,Mark Ronson,Hip-Hop/Rap,Dance/Electronic
+54,Tame Impala,351,Mark Ronson,Rock,Dance/Electronic
+55,Tame Impala,351,Mark Ronson,Rock,Dance/Electronic
+56,Justin Bieber,347,Mark Ronson,Pop,Dance/Electronic
+57,Justin Bieber,347,Mark Ronson,Pop,Dance/Electronic
+58,Justin Bieber,347,Mark Ronson,Pop,Dance/Electronic
+59,Justin Bieber,347,Mark Ronson,Pop,Dance/Electronic
+60,Calvin Harris,259,Mark Ronson,Pop,Dance/Electronic
+61,Calvin Harris,259,Mark Ronson,Pop,Dance/Electronic
+62,Daft Punk,250,Mark Ronson,Dance,Dance/Electronic
+63,Daft Punk,250,Mark Ronson,Dance,Dance/Electronic
+64,Foo Fighters,294,Mark Ronson,Rock,Dance/Electronic
+65,Foo Fighters,294,Mark Ronson,Rock,Dance/Electronic
+66,Miley Cyrus,108448,Miley Cyrus,Pop,Pop
+67,Miley Cyrus,108448,Miley Cyrus,Pop,Pop
+68,Miley Cyrus,108448,Miley Cyrus,Pop,Pop
+69,Miley Cyrus,108448,Miley Cyrus,Pop,Pop
+70,Lady Gaga,1496,Miley Cyrus,Pop,Pop
+71,Lady Gaga,1496,Miley Cyrus,Pop,Pop
+72,Taylor Swift,2334,Miley Cyrus,Pop,Pop
+73,Taylor Swift,2334,Miley Cyrus,Pop,Pop
+74,Taylor Swift,2334,Miley Cyrus,Pop,Pop
+75,Taylor Swift,2334,Miley Cyrus,Pop,Pop
+76,Beyoncé,1718,Miley Cyrus,Pop,Pop
+77,Beyoncé,1718,Miley Cyrus,Pop,Pop
+78,Beyoncé,1718,Miley Cyrus,Pop,Pop
+79,Beyoncé,1718,Miley Cyrus,Pop,Pop
+80,Ariana Grande,3529,Miley Cyrus,Pop,Pop
+81,Ariana Grande,3529,Miley Cyrus,Pop,Pop
+82,Ariana Grande,3529,Miley Cyrus,Pop,Pop
+83,Ariana Grande,3529,Miley Cyrus,Pop,Pop
+84,Lana Del Rey,2568,Miley Cyrus,Alternative,Pop
+85,Lana Del Rey,2568,Miley Cyrus,Alternative,Pop
+86,Shawn Mendes,477,Miley Cyrus,Rock,Pop
+87,Shawn Mendes,477,Miley Cyrus,Rock,Pop
+88,Katy Perry,1349,Miley Cyrus,Pop,Pop
+89,Katy Perry,1349,Miley Cyrus,Pop,Pop
+90,Katy Perry,1349,Miley Cyrus,Pop,Pop
+91,Katy Perry,1349,Miley Cyrus,Pop,Pop
+92,Justin Bieber,1599,Miley Cyrus,Pop,Pop
+93,Justin Bieber,1599,Miley Cyrus,Pop,Pop
+94,Justin Bieber,1599,Miley Cyrus,Pop,Pop
+95,Justin Bieber,1599,Miley Cyrus,Pop,Pop
+96,Hannah Montana,2504,Miley Cyrus,Rock,Pop
+97,Hannah Montana,2504,Miley Cyrus,Rock,Pop
+98,Selena Gomez,1875,Miley Cyrus,Pop,Pop
+99,Selena Gomez,1875,Miley Cyrus,Pop,Pop
+100,Selena Gomez,1875,Miley Cyrus,Pop,Pop
+101,Selena Gomez,1875,Miley Cyrus,Pop,Pop
+102,Nicki Minaj,1366,Miley Cyrus,Hip-Hop,Pop
+103,Nicki Minaj,1366,Miley Cyrus,Hip-Hop,Pop
+104,Nicki Minaj,1366,Miley Cyrus,Hip-Hop,Pop
+105,Nicki Minaj,1366,Miley Cyrus,Hip-Hop,Pop
+106,Demi Lovato,1115,Miley Cyrus,Pop,Pop
+107,Demi Lovato,1115,Miley Cyrus,Pop,Pop
+108,Demi Lovato,1115,Miley Cyrus,Pop,Pop
+109,Demi Lovato,1115,Miley Cyrus,Pop,Pop
+110,Britney Spears,967,Miley Cyrus,Pop,Pop
+111,Britney Spears,967,Miley Cyrus,Pop,Pop
+112,Britney Spears,967,Miley Cyrus,Pop,Pop
+113,Britney Spears,967,Miley Cyrus,Pop,Pop
+114,Billy Ray Cyrus,804,Miley Cyrus,Country,Pop
+115,Billy Ray Cyrus,804,Miley Cyrus,Country,Pop
+116,Anitta,440,Miley Cyrus,,Pop
+117,Anitta,440,Miley Cyrus,,Pop
+118,Carly Rae Jepsen,391,Miley Cyrus,Pop,Pop
+119,Carly Rae Jepsen,391,Miley Cyrus,Pop,Pop
+120,The Beatles,376,Miley Cyrus,Pop,Pop
+121,The Beatles,376,Miley Cyrus,Pop,Pop
+122,Rihanna,378,Miley Cyrus,Pop,Pop
+123,Rihanna,378,Miley Cyrus,Pop,Pop
+124,Rihanna,378,Miley Cyrus,Pop,Pop
+125,Rihanna,378,Miley Cyrus,Pop,Pop
+126,The Weeknd,343,Miley Cyrus,R&B/Soul,Pop
+127,The Weeknd,343,Miley Cyrus,R&B/Soul,Pop
+128,The Weeknd,343,Miley Cyrus,R&B/Soul,Pop
+129,The Weeknd,343,Miley Cyrus,R&B/Soul,Pop
+130,Miley Cyrus,280,Bruno Mars,Pop,Pop/Rock
+131,Miley Cyrus,280,Bruno Mars,Pop,Pop/Rock
+132,Bruno Mars,79402,Bruno Mars,Pop/Rock,Pop/Rock
+133,Amy Winehouse,241,Bruno Mars,Soul,Pop/Rock
+134,Lady Gaga,592,Bruno Mars,Pop,Pop/Rock
+135,Taylor Swift,1233,Bruno Mars,Pop,Pop/Rock
+136,Taylor Swift,1233,Bruno Mars,Pop,Pop/Rock
+137,Beyoncé,2320,Bruno Mars,Pop,Pop/Rock
+138,Beyoncé,2320,Bruno Mars,Pop,Pop/Rock
+139,Ariana Grande,709,Bruno Mars,Pop,Pop/Rock
+140,Ariana Grande,709,Bruno Mars,Pop,Pop/Rock
+141,Lana Del Rey,415,Bruno Mars,Alternative,Pop/Rock
+142,Shawn Mendes,283,Bruno Mars,Rock,Pop/Rock
+143,Katy Perry,552,Bruno Mars,Pop,Pop/Rock
+144,Katy Perry,552,Bruno Mars,Pop,Pop/Rock
+145,Kanye West,397,Bruno Mars,Hip-Hop/Rap,Pop/Rock
+146,Justin Bieber,1393,Bruno Mars,Pop,Pop/Rock
+147,Justin Bieber,1393,Bruno Mars,Pop,Pop/Rock
+148,Nicki Minaj,417,Bruno Mars,Hip-Hop,Pop/Rock
+149,Nicki Minaj,417,Bruno Mars,Hip-Hop,Pop/Rock
+150,Britney Spears,257,Bruno Mars,Pop,Pop/Rock
+151,Britney Spears,257,Bruno Mars,Pop,Pop/Rock
+152,The Weeknd,1954,Bruno Mars,R&B/Soul,Pop/Rock
+153,The Weeknd,1954,Bruno Mars,R&B/Soul,Pop/Rock
+154,Coldplay,1221,Bruno Mars,Rock,Pop/Rock
+155,Linkin Park,743,Bruno Mars,Alternative,Pop/Rock
+156,Michael Jackson,688,Bruno Mars,Pop,Pop/Rock
+157,Michael Jackson,688,Bruno Mars,Pop,Pop/Rock
+158,Florence and the Machine,627,Bruno Mars,,Pop/Rock
+159,Iron & Wine,600,Bruno Mars,Indie Rock,Pop/Rock
+160,Angus & Julia Stone,596,Bruno Mars,Alternative Folk,Pop/Rock
+161,Eminem,492,Bruno Mars,Rap,Pop/Rock
+162,Eminem,492,Bruno Mars,Rap,Pop/Rock
+163,Maroon 5,462,Bruno Mars,Pop/Rock,Pop/Rock
+164,Maroon 5,462,Bruno Mars,Pop/Rock,Pop/Rock
+165,Chris Brown,397,Bruno Mars,Pop,Pop/Rock
+166,Chris Brown,397,Bruno Mars,Pop,Pop/Rock
+167,Chris Stapleton,323,Bruno Mars,Country,Pop/Rock
+168,Justin Timberlake,297,Bruno Mars,Pop,Pop/Rock
+169,Gucci Mane,261,Bruno Mars,Hip-Hop/Rap,Pop/Rock
+170,Kendrick Lamar,267,Bruno Mars,Alternative Rap,Pop/Rock
+171,Miley Cyrus,416,Amy Winehouse,Pop,Soul
+172,Miley Cyrus,416,Amy Winehouse,Pop,Soul
+173,Bruno Mars,601,Amy Winehouse,Pop/Rock,Soul
+174,Amy Winehouse,109813,Amy Winehouse,Soul,Soul
+175,Lady Gaga,782,Amy Winehouse,Pop,Soul
+176,Beyoncé,1556,Amy Winehouse,Pop,Soul
+177,Beyoncé,1556,Amy Winehouse,Pop,Soul
+178,Ariana Grande,326,Amy Winehouse,Pop,Soul
+179,Ariana Grande,326,Amy Winehouse,Pop,Soul
+180,Lana Del Rey,1176,Amy Winehouse,Alternative,Soul
+181,Kanye West,744,Amy Winehouse,Hip-Hop/Rap,Soul
+182,Britney Spears,956,Amy Winehouse,Pop,Soul
+183,Britney Spears,956,Amy Winehouse,Pop,Soul
+184,The Beatles,855,Amy Winehouse,Pop,Soul
+185,The Weeknd,329,Amy Winehouse,R&B/Soul,Soul
+186,The Weeknd,329,Amy Winehouse,R&B/Soul,Soul
+187,Michael Jackson,727,Amy Winehouse,Pop,Soul
+188,Michael Jackson,727,Amy Winehouse,Pop,Soul
+189,Kendrick Lamar,269,Amy Winehouse,Alternative Rap,Soul
+190,Lily Allen,837,Amy Winehouse,Pop,Soul
+191,Whitney Houston,692,Amy Winehouse,Pop,Soul
+192,Janis Joplin,677,Amy Winehouse,Rock,Soul
+193,Jimi Hendrix,641,Amy Winehouse,Rock,Soul
+194,David Bowie,586,Amy Winehouse,Glam Rock,Soul
+195,Alicia Keys,544,Amy Winehouse,R&B/Soul,Soul
+196,Alessia Cara,506,Amy Winehouse,Pop,Soul
+197,Arctic Monkeys,437,Amy Winehouse,Alternative,Soul
+198,Freddie Mercury,397,Amy Winehouse,Rock,Soul
+199,Aretha Franklin,383,Amy Winehouse,R&B/Soul,Soul
+200,Maren Morris,369,Amy Winehouse,,Soul
+201,Jim Morrison,383,Amy Winehouse,Rock,Soul
+202,Bob Marley,386,Amy Winehouse,Ska,Soul
+203,Nina Simone,347,Amy Winehouse,Soul,Soul
+204,The Rolling Stones,328,Amy Winehouse,Rock,Soul
+205,Tony Bennett,312,Amy Winehouse,Standards,Soul
+206,Mac Miller,307,Amy Winehouse,Hip-Hop/Rap,Soul
+207,Miranda Lambert,267,Amy Winehouse,Country,Soul
+208,Miranda Lambert,267,Amy Winehouse,Country,Soul
+209,John Lennon,284,Amy Winehouse,Rock,Soul
+210,Miley Cyrus,1092,Lady Gaga,Pop,Pop
+211,Miley Cyrus,1092,Lady Gaga,Pop,Pop
+212,Lady Gaga,78955,Lady Gaga,Pop,Pop
+213,Taylor Swift,2734,Lady Gaga,Pop,Pop
+214,Taylor Swift,2734,Lady Gaga,Pop,Pop
+215,Beyoncé,4749,Lady Gaga,Pop,Pop
+216,Beyoncé,4749,Lady Gaga,Pop,Pop
+217,Ariana Grande,3517,Lady Gaga,Pop,Pop
+218,Ariana Grande,3517,Lady Gaga,Pop,Pop
+219,Lana Del Rey,722,Lady Gaga,Alternative,Pop
+220,Katy Perry,2208,Lady Gaga,Pop,Pop
+221,Katy Perry,2208,Lady Gaga,Pop,Pop
+222,Kanye West,429,Lady Gaga,Hip-Hop/Rap,Pop
+223,Justin Bieber,710,Lady Gaga,Pop,Pop
+224,Justin Bieber,710,Lady Gaga,Pop,Pop
+225,Selena Gomez,690,Lady Gaga,Pop,Pop
+226,Selena Gomez,690,Lady Gaga,Pop,Pop
+227,Nicki Minaj,1474,Lady Gaga,Hip-Hop,Pop
+228,Nicki Minaj,1474,Lady Gaga,Hip-Hop,Pop
+229,Demi Lovato,301,Lady Gaga,Pop,Pop
+230,Demi Lovato,301,Lady Gaga,Pop,Pop
+231,Britney Spears,981,Lady Gaga,Pop,Pop
+232,Britney Spears,981,Lady Gaga,Pop,Pop
+233,Rihanna,658,Lady Gaga,Pop,Pop
+234,Rihanna,658,Lady Gaga,Pop,Pop
+235,The Weeknd,425,Lady Gaga,R&B/Soul,Pop
+236,The Weeknd,425,Lady Gaga,R&B/Soul,Pop
+237,Tony Bennett,940,Lady Gaga,Standards,Pop
+238,Elton John,535,Lady Gaga,Pop/Rock,Pop
+239,Jennifer Lopez,421,Lady Gaga,Pop,Pop
+240,Liza Minnelli,321,Lady Gaga,Adult Contemporary,Pop
+241,Miley Cyrus,141,Lykke Li,Pop,Pop/Rock
+242,Miley Cyrus,141,Lykke Li,Pop,Pop/Rock
+243,Lady Gaga,161,Lykke Li,Pop,Pop/Rock
+244,Lykke Li,15019,Lykke Li,Pop/Rock,Pop/Rock
+245,Taylor Swift,145,Lykke Li,Pop,Pop/Rock
+246,Taylor Swift,145,Lykke Li,Pop,Pop/Rock
+247,Beyoncé,121,Lykke Li,Pop,Pop/Rock
+248,Beyoncé,121,Lykke Li,Pop,Pop/Rock
+249,Ariana Grande,94,Lykke Li,Pop,Pop/Rock
+250,Ariana Grande,94,Lykke Li,Pop,Pop/Rock
+251,Lana Del Rey,614,Lykke Li,Alternative,Pop/Rock
+252,Angel Olsen,83,Lykke Li,Rock,Pop/Rock
+253,Kanye West,105,Lykke Li,Hip-Hop/Rap,Pop/Rock
+254,Tame Impala,123,Lykke Li,Rock,Pop/Rock
+255,Carly Rae Jepsen,147,Lykke Li,Pop,Pop/Rock
+256,The Weeknd,165,Lykke Li,R&B/Soul,Pop/Rock
+257,The Weeknd,165,Lykke Li,R&B/Soul,Pop/Rock
+258,Coldplay,92,Lykke Li,Rock,Pop/Rock
+259,Linkin Park,5006,Lykke Li,Alternative,Pop/Rock
+260,Florence and the Machine,5184,Lykke Li,,Pop/Rock
+261,Iron & Wine,4989,Lykke Li,Indie Rock,Pop/Rock
+262,Angus & Julia Stone,4965,Lykke Li,Alternative Folk,Pop/Rock
+263,David Bowie,74,Lykke Li,Glam Rock,Pop/Rock
+264,Arctic Monkeys,81,Lykke Li,Alternative,Pop/Rock
+265,Skrillex,226,Lykke Li,Electronic,Pop/Rock
+266,Brad Pitt,241,Lykke Li,,Pop/Rock
+267,Bon Iver,185,Lykke Li,Rock,Pop/Rock
+268,Tove Lo,167,Lykke Li,Pop,Pop/Rock
+269,Charli XCX,139,Lykke Li,Pop,Pop/Rock
+270,Radiohead,91,Lykke Li,Rock,Pop/Rock
+271,Gorillaz,82,Lykke Li,Hip-Hop/Rap,Pop/Rock
+272,Santigold,73,Lykke Li,Alternative,Pop/Rock
+273,Miley Cyrus,425,Kacey Musgraves,Pop,Country
+274,Miley Cyrus,425,Kacey Musgraves,Pop,Country
+275,Lady Gaga,936,Kacey Musgraves,Pop,Country
+276,Kacey Musgraves,65621,Kacey Musgraves,Country,Country
+277,Taylor Swift,2209,Kacey Musgraves,Pop,Country
+278,Taylor Swift,2209,Kacey Musgraves,Pop,Country
+279,Troye Sivan,849,Kacey Musgraves,,Country
+280,Beyoncé,817,Kacey Musgraves,Pop,Country
+281,Beyoncé,817,Kacey Musgraves,Pop,Country
+282,Ariana Grande,822,Kacey Musgraves,Pop,Country
+283,Ariana Grande,822,Kacey Musgraves,Pop,Country
+284,Lana Del Rey,3823,Kacey Musgraves,Alternative,Country
+285,Justin Bieber,719,Kacey Musgraves,Pop,Country
+286,Justin Bieber,719,Kacey Musgraves,Pop,Country
+287,Billy Ray Cyrus,590,Kacey Musgraves,Country,Country
+288,Chris Stapleton,766,Kacey Musgraves,Country,Country
+289,Maren Morris,1525,Kacey Musgraves,,Country
+290,Miranda Lambert,1003,Kacey Musgraves,Country,Country
+291,Miranda Lambert,1003,Kacey Musgraves,Country,Country
+292,Elton John,512,Kacey Musgraves,Pop/Rock,Country
+293,John Legend,451,Kacey Musgraves,R&B/Soul,Country
+294,Shania Twain,2223,Kacey Musgraves,Country,Country
+295,Willie Nelson,1041,Kacey Musgraves,Country,Country
+296,Dolly Parton,714,Kacey Musgraves,Country,Country
+297,Weezer,541,Kacey Musgraves,Rock,Country
+298,Carrie Underwood,897,Kacey Musgraves,Country,Country
+299,Carrie Underwood,897,Kacey Musgraves,Country,Country
+300,Keith Urban,686,Kacey Musgraves,Country,Country
+301,Jason Isbell,447,Kacey Musgraves,Americana,Country
+302,Johnny Cash,439,Kacey Musgraves,Country,Country
+303,Eric Church,629,Kacey Musgraves,Country,Country
+304,Miley Cyrus,484,Taylor Swift,Pop,Pop
+305,Miley Cyrus,484,Taylor Swift,Pop,Pop
+306,Miley Cyrus,484,Taylor Swift,Pop,Pop
+307,Miley Cyrus,484,Taylor Swift,Pop,Pop
+308,Lady Gaga,687,Taylor Swift,Pop,Pop
+309,Lady Gaga,687,Taylor Swift,Pop,Pop
+310,Taylor Swift,57828,Taylor Swift,Pop,Pop
+311,Taylor Swift,57828,Taylor Swift,Pop,Pop
+312,Taylor Swift,57828,Taylor Swift,Pop,Pop
+313,Taylor Swift,57828,Taylor Swift,Pop,Pop
+314,Beyoncé,1073,Taylor Swift,Pop,Pop
+315,Beyoncé,1073,Taylor Swift,Pop,Pop
+316,Beyoncé,1073,Taylor Swift,Pop,Pop
+317,Beyoncé,1073,Taylor Swift,Pop,Pop
+318,Ariana Grande,1117,Taylor Swift,Pop,Pop
+319,Ariana Grande,1117,Taylor Swift,Pop,Pop
+320,Ariana Grande,1117,Taylor Swift,Pop,Pop
+321,Ariana Grande,1117,Taylor Swift,Pop,Pop
+322,Lana Del Rey,663,Taylor Swift,Alternative,Pop
+323,Lana Del Rey,663,Taylor Swift,Alternative,Pop
+324,Shawn Mendes,268,Taylor Swift,Rock,Pop
+325,Shawn Mendes,268,Taylor Swift,Rock,Pop
+326,Katy Perry,737,Taylor Swift,Pop,Pop
+327,Katy Perry,737,Taylor Swift,Pop,Pop
+328,Katy Perry,737,Taylor Swift,Pop,Pop
+329,Katy Perry,737,Taylor Swift,Pop,Pop
+330,Kanye West,1239,Taylor Swift,Hip-Hop/Rap,Pop
+331,Kanye West,1239,Taylor Swift,Hip-Hop/Rap,Pop
+332,Justin Bieber,822,Taylor Swift,Pop,Pop
+333,Justin Bieber,822,Taylor Swift,Pop,Pop
+334,Justin Bieber,822,Taylor Swift,Pop,Pop
+335,Justin Bieber,822,Taylor Swift,Pop,Pop
+336,Selena Gomez,697,Taylor Swift,Pop,Pop
+337,Selena Gomez,697,Taylor Swift,Pop,Pop
+338,Selena Gomez,697,Taylor Swift,Pop,Pop
+339,Selena Gomez,697,Taylor Swift,Pop,Pop
+340,Nicki Minaj,508,Taylor Swift,Hip-Hop,Pop
+341,Nicki Minaj,508,Taylor Swift,Hip-Hop,Pop
+342,Nicki Minaj,508,Taylor Swift,Hip-Hop,Pop
+343,Nicki Minaj,508,Taylor Swift,Hip-Hop,Pop
+344,Demi Lovato,173,Taylor Swift,Pop,Pop
+345,Demi Lovato,173,Taylor Swift,Pop,Pop
+346,Demi Lovato,173,Taylor Swift,Pop,Pop
+347,Demi Lovato,173,Taylor Swift,Pop,Pop
+348,The Beatles,175,Taylor Swift,Pop,Pop
+349,The Beatles,175,Taylor Swift,Pop,Pop
+350,Rihanna,194,Taylor Swift,Pop,Pop
+351,Rihanna,194,Taylor Swift,Pop,Pop
+352,Rihanna,194,Taylor Swift,Pop,Pop
+353,Rihanna,194,Taylor Swift,Pop,Pop
+354,The Weeknd,212,Taylor Swift,R&B/Soul,Pop
+355,The Weeknd,212,Taylor Swift,R&B/Soul,Pop
+356,The Weeknd,212,Taylor Swift,R&B/Soul,Pop
+357,The Weeknd,212,Taylor Swift,R&B/Soul,Pop
+358,Miley Cyrus,896,Troye Sivan,Pop,
+359,Miley Cyrus,896,Troye Sivan,Pop,
+360,Bruno Mars,640,Troye Sivan,Pop/Rock,
+361,Lady Gaga,457,Troye Sivan,Pop,
+362,Kacey Musgraves,788,Troye Sivan,Country,
+363,Taylor Swift,1615,Troye Sivan,Pop,
+364,Taylor Swift,1615,Troye Sivan,Pop,
+365,Troye Sivan,54293,Troye Sivan,,
+366,Beyoncé,440,Troye Sivan,Pop,
+367,Beyoncé,440,Troye Sivan,Pop,
+368,Ariana Grande,2961,Troye Sivan,Pop,
+369,Ariana Grande,2961,Troye Sivan,Pop,
+370,Lana Del Rey,2530,Troye Sivan,Alternative,
+371,Shawn Mendes,1685,Troye Sivan,Rock,
+372,Justin Bieber,3439,Troye Sivan,Pop,
+373,Justin Bieber,3439,Troye Sivan,Pop,
+374,Selena Gomez,1285,Troye Sivan,Pop,
+375,Selena Gomez,1285,Troye Sivan,Pop,
+376,Nicki Minaj,1729,Troye Sivan,Hip-Hop,
+377,Nicki Minaj,1729,Troye Sivan,Hip-Hop,
+378,Demi Lovato,1088,Troye Sivan,Pop,
+379,Demi Lovato,1088,Troye Sivan,Pop,
+380,The Weeknd,1686,Troye Sivan,R&B/Soul,
+381,The Weeknd,1686,Troye Sivan,R&B/Soul,
+382,The Chainsmokers,475,Troye Sivan,House,
+383,Charli XCX,828,Troye Sivan,Pop,
+384,Sabrina Carpenter,979,Troye Sivan,,
+385,Madison Beer,953,Troye Sivan,Pop,
+386,Martin Garrix,1033,Troye Sivan,House,
+387,My Chemical Romance,586,Troye Sivan,Alternative,
+388,James Arthur,466,Troye Sivan,Rock,
+389,Miley Cyrus,364,Beyoncé,Pop,Pop
+390,Miley Cyrus,364,Beyoncé,Pop,Pop
+391,Miley Cyrus,364,Beyoncé,Pop,Pop
+392,Miley Cyrus,364,Beyoncé,Pop,Pop
+393,Bruno Mars,328,Beyoncé,Pop/Rock,Pop
+394,Bruno Mars,328,Beyoncé,Pop/Rock,Pop
+395,Lady Gaga,1209,Beyoncé,Pop,Pop
+396,Lady Gaga,1209,Beyoncé,Pop,Pop
+397,Taylor Swift,1183,Beyoncé,Pop,Pop
+398,Taylor Swift,1183,Beyoncé,Pop,Pop
+399,Taylor Swift,1183,Beyoncé,Pop,Pop
+400,Taylor Swift,1183,Beyoncé,Pop,Pop
+401,Beyoncé,107688,Beyoncé,Pop,Pop
+402,Beyoncé,107688,Beyoncé,Pop,Pop
+403,Beyoncé,107688,Beyoncé,Pop,Pop
+404,Beyoncé,107688,Beyoncé,Pop,Pop
+405,Ariana Grande,864,Beyoncé,Pop,Pop
+406,Ariana Grande,864,Beyoncé,Pop,Pop
+407,Ariana Grande,864,Beyoncé,Pop,Pop
+408,Ariana Grande,864,Beyoncé,Pop,Pop
+409,Lana Del Rey,268,Beyoncé,Alternative,Pop
+410,Lana Del Rey,268,Beyoncé,Alternative,Pop
+411,Katy Perry,489,Beyoncé,Pop,Pop
+412,Katy Perry,489,Beyoncé,Pop,Pop
+413,Katy Perry,489,Beyoncé,Pop,Pop
+414,Katy Perry,489,Beyoncé,Pop,Pop
+415,Kanye West,891,Beyoncé,Hip-Hop/Rap,Pop
+416,Kanye West,891,Beyoncé,Hip-Hop/Rap,Pop
+417,Nicki Minaj,1953,Beyoncé,Hip-Hop,Pop
+418,Nicki Minaj,1953,Beyoncé,Hip-Hop,Pop
+419,Nicki Minaj,1953,Beyoncé,Hip-Hop,Pop
+420,Nicki Minaj,1953,Beyoncé,Hip-Hop,Pop
+421,Britney Spears,252,Beyoncé,Pop,Pop
+422,Britney Spears,252,Beyoncé,Pop,Pop
+423,Britney Spears,252,Beyoncé,Pop,Pop
+424,Britney Spears,252,Beyoncé,Pop,Pop
+425,Rihanna,1831,Beyoncé,Pop,Pop
+426,Rihanna,1831,Beyoncé,Pop,Pop
+427,Rihanna,1831,Beyoncé,Pop,Pop
+428,Rihanna,1831,Beyoncé,Pop,Pop
+429,Michael Jackson,400,Beyoncé,Pop,Pop
+430,Michael Jackson,400,Beyoncé,Pop,Pop
+431,Michael Jackson,400,Beyoncé,Pop,Pop
+432,Michael Jackson,400,Beyoncé,Pop,Pop
+433,Kendrick Lamar,293,Beyoncé,Alternative Rap,Pop
+434,Kendrick Lamar,293,Beyoncé,Alternative Rap,Pop
+435,Jennifer Lopez,269,Beyoncé,Pop,Pop
+436,Jennifer Lopez,269,Beyoncé,Pop,Pop
+437,Mariah Carey,338,Beyoncé,Pop,Pop
+438,Mariah Carey,338,Beyoncé,Pop,Pop
+439,Destiny's Child,325,Beyoncé,R&B/Soul,Pop
+440,Destiny's Child,325,Beyoncé,R&B/Soul,Pop
+441,Kehlani,304,Beyoncé,R&B,Pop
+442,Kehlani,304,Beyoncé,R&B,Pop
+443,Jhené Aiko,249,Beyoncé,,Pop
+444,Jhené Aiko,249,Beyoncé,,Pop
+445,Miley Cyrus,1767,Ariana Grande,Pop,Pop
+446,Miley Cyrus,1767,Ariana Grande,Pop,Pop
+447,Miley Cyrus,1767,Ariana Grande,Pop,Pop
+448,Miley Cyrus,1767,Ariana Grande,Pop,Pop
+449,Lady Gaga,2908,Ariana Grande,Pop,Pop
+450,Lady Gaga,2908,Ariana Grande,Pop,Pop
+451,Taylor Swift,3572,Ariana Grande,Pop,Pop
+452,Taylor Swift,3572,Ariana Grande,Pop,Pop
+453,Taylor Swift,3572,Ariana Grande,Pop,Pop
+454,Taylor Swift,3572,Ariana Grande,Pop,Pop
+455,Beyoncé,2281,Ariana Grande,Pop,Pop
+456,Beyoncé,2281,Ariana Grande,Pop,Pop
+457,Beyoncé,2281,Ariana Grande,Pop,Pop
+458,Beyoncé,2281,Ariana Grande,Pop,Pop
+459,Ariana Grande,59648,Ariana Grande,Pop,Pop
+460,Ariana Grande,59648,Ariana Grande,Pop,Pop
+461,Ariana Grande,59648,Ariana Grande,Pop,Pop
+462,Ariana Grande,59648,Ariana Grande,Pop,Pop
+463,Lana Del Rey,1474,Ariana Grande,Alternative,Pop
+464,Lana Del Rey,1474,Ariana Grande,Alternative,Pop
+465,Shawn Mendes,737,Ariana Grande,Rock,Pop
+466,Shawn Mendes,737,Ariana Grande,Rock,Pop
+467,Katy Perry,1113,Ariana Grande,Pop,Pop
+468,Katy Perry,1113,Ariana Grande,Pop,Pop
+469,Katy Perry,1113,Ariana Grande,Pop,Pop
+470,Katy Perry,1113,Ariana Grande,Pop,Pop
+471,Kanye West,571,Ariana Grande,Hip-Hop/Rap,Pop
+472,Kanye West,571,Ariana Grande,Hip-Hop/Rap,Pop
+473,Justin Bieber,2549,Ariana Grande,Pop,Pop
+474,Justin Bieber,2549,Ariana Grande,Pop,Pop
+475,Justin Bieber,2549,Ariana Grande,Pop,Pop
+476,Justin Bieber,2549,Ariana Grande,Pop,Pop
+477,Selena Gomez,1424,Ariana Grande,Pop,Pop
+478,Selena Gomez,1424,Ariana Grande,Pop,Pop
+479,Selena Gomez,1424,Ariana Grande,Pop,Pop
+480,Selena Gomez,1424,Ariana Grande,Pop,Pop
+481,Nicki Minaj,2897,Ariana Grande,Hip-Hop,Pop
+482,Nicki Minaj,2897,Ariana Grande,Hip-Hop,Pop
+483,Nicki Minaj,2897,Ariana Grande,Hip-Hop,Pop
+484,Nicki Minaj,2897,Ariana Grande,Hip-Hop,Pop
+485,Demi Lovato,830,Ariana Grande,Pop,Pop
+486,Demi Lovato,830,Ariana Grande,Pop,Pop
+487,Demi Lovato,830,Ariana Grande,Pop,Pop
+488,Demi Lovato,830,Ariana Grande,Pop,Pop
+489,Britney Spears,345,Ariana Grande,Pop,Pop
+490,Britney Spears,345,Ariana Grande,Pop,Pop
+491,Britney Spears,345,Ariana Grande,Pop,Pop
+492,Britney Spears,345,Ariana Grande,Pop,Pop
+493,Rihanna,361,Ariana Grande,Pop,Pop
+494,Rihanna,361,Ariana Grande,Pop,Pop
+495,Rihanna,361,Ariana Grande,Pop,Pop
+496,Rihanna,361,Ariana Grande,Pop,Pop
+497,The Weeknd,2288,Ariana Grande,R&B/Soul,Pop
+498,The Weeknd,2288,Ariana Grande,R&B/Soul,Pop
+499,The Weeknd,2288,Ariana Grande,R&B/Soul,Pop
+500,The Weeknd,2288,Ariana Grande,R&B/Soul,Pop
+501,Eminem,284,Ariana Grande,Rap,Pop
+502,Eminem,284,Ariana Grande,Rap,Pop
+503,Eminem,284,Ariana Grande,Rap,Pop
+504,Eminem,284,Ariana Grande,Rap,Pop
+505,Mac Miller,627,Ariana Grande,Hip-Hop/Rap,Pop
+506,Mac Miller,627,Ariana Grande,Hip-Hop/Rap,Pop
+507,Mariah Carey,490,Ariana Grande,Pop,Pop
+508,Mariah Carey,490,Ariana Grande,Pop,Pop
+509,Kim Kardashian,268,Ariana Grande,,Pop
+510,Kim Kardashian,268,Ariana Grande,,Pop
+511,Miley Cyrus,1602,Lana Del Rey,Pop,Alternative
+512,Miley Cyrus,1602,Lana Del Rey,Pop,Alternative
+513,Lady Gaga,611,Lana Del Rey,Pop,Alternative
+514,Taylor Swift,1929,Lana Del Rey,Pop,Alternative
+515,Taylor Swift,1929,Lana Del Rey,Pop,Alternative
+516,Beyoncé,857,Lana Del Rey,Pop,Alternative
+517,Beyoncé,857,Lana Del Rey,Pop,Alternative
+518,Ariana Grande,1597,Lana Del Rey,Pop,Alternative
+519,Ariana Grande,1597,Lana Del Rey,Pop,Alternative
+520,Lana Del Rey,103303,Lana Del Rey,Alternative,Alternative
+521,Katy Perry,346,Lana Del Rey,Pop,Alternative
+522,Katy Perry,346,Lana Del Rey,Pop,Alternative
+523,Kanye West,576,Lana Del Rey,Hip-Hop/Rap,Alternative
+524,Tame Impala,263,Lana Del Rey,Rock,Alternative
+525,Justin Bieber,305,Lana Del Rey,Pop,Alternative
+526,Justin Bieber,305,Lana Del Rey,Pop,Alternative
+527,Selena Gomez,259,Lana Del Rey,Pop,Alternative
+528,Selena Gomez,259,Lana Del Rey,Pop,Alternative
+529,Nicki Minaj,850,Lana Del Rey,Hip-Hop,Alternative
+530,Nicki Minaj,850,Lana Del Rey,Hip-Hop,Alternative
+531,The Weeknd,2128,Lana Del Rey,R&B/Soul,Alternative
+532,The Weeknd,2128,Lana Del Rey,R&B/Soul,Alternative
+533,Arctic Monkeys,353,Lana Del Rey,Alternative,Alternative
+534,Mac Miller,601,Lana Del Rey,Hip-Hop/Rap,Alternative
+535,Kehlani,672,Lana Del Rey,R&B,Alternative
+536,Jhené Aiko,682,Lana Del Rey,,Alternative
+537,Frank Ocean,273,Lana Del Rey,Hip-Hop/Rap,Alternative
+538,Miley Cyrus,812,Shawn Mendes,Pop,Rock
+539,Miley Cyrus,812,Shawn Mendes,Pop,Rock
+540,Lady Gaga,315,Shawn Mendes,Pop,Rock
+541,Taylor Swift,2186,Shawn Mendes,Pop,Rock
+542,Taylor Swift,2186,Shawn Mendes,Pop,Rock
+543,Troye Sivan,291,Shawn Mendes,,Rock
+544,Beyoncé,474,Shawn Mendes,Pop,Rock
+545,Beyoncé,474,Shawn Mendes,Pop,Rock
+546,Ariana Grande,2245,Shawn Mendes,Pop,Rock
+547,Ariana Grande,2245,Shawn Mendes,Pop,Rock
+548,Lana Del Rey,356,Shawn Mendes,Alternative,Rock
+549,Shawn Mendes,52620,Shawn Mendes,Rock,Rock
+550,Katy Perry,378,Shawn Mendes,Pop,Rock
+551,Katy Perry,378,Shawn Mendes,Pop,Rock
+552,Kanye West,250,Shawn Mendes,Hip-Hop/Rap,Rock
+553,Justin Bieber,3602,Shawn Mendes,Pop,Rock
+554,Justin Bieber,3602,Shawn Mendes,Pop,Rock
+555,Selena Gomez,997,Shawn Mendes,Pop,Rock
+556,Selena Gomez,997,Shawn Mendes,Pop,Rock
+557,Nicki Minaj,625,Shawn Mendes,Hip-Hop,Rock
+558,Nicki Minaj,625,Shawn Mendes,Hip-Hop,Rock
+559,Demi Lovato,509,Shawn Mendes,Pop,Rock
+560,Demi Lovato,509,Shawn Mendes,Pop,Rock
+561,The Weeknd,278,Shawn Mendes,R&B/Soul,Rock
+562,The Weeknd,278,Shawn Mendes,R&B/Soul,Rock
+563,Coldplay,274,Shawn Mendes,Rock,Rock
+564,Jonas Brothers,530,Shawn Mendes,Pop/Rock,Rock
+565,Sabrina Carpenter,293,Shawn Mendes,,Rock
+566,Charlie Puth,279,Shawn Mendes,Pop,Rock
+567,Sam Smith,288,Shawn Mendes,,Rock
+568,Miley Cyrus,1139,Ellie Goulding,Pop,Pop
+569,Miley Cyrus,1139,Ellie Goulding,Pop,Pop
+570,Miley Cyrus,1139,Ellie Goulding,Pop,Pop
+571,Miley Cyrus,1139,Ellie Goulding,Pop,Pop
+572,Lady Gaga,1301,Ellie Goulding,Pop,Pop
+573,Lady Gaga,1301,Ellie Goulding,Pop,Pop
+574,Diplo,2265,Ellie Goulding,Dance,Pop
+575,Diplo,2265,Ellie Goulding,Dance,Pop
+576,Taylor Swift,2456,Ellie Goulding,Pop,Pop
+577,Taylor Swift,2456,Ellie Goulding,Pop,Pop
+578,Taylor Swift,2456,Ellie Goulding,Pop,Pop
+579,Taylor Swift,2456,Ellie Goulding,Pop,Pop
+580,Beyoncé,1944,Ellie Goulding,Pop,Pop
+581,Beyoncé,1944,Ellie Goulding,Pop,Pop
+582,Beyoncé,1944,Ellie Goulding,Pop,Pop
+583,Beyoncé,1944,Ellie Goulding,Pop,Pop
+584,Ariana Grande,1580,Ellie Goulding,Pop,Pop
+585,Ariana Grande,1580,Ellie Goulding,Pop,Pop
+586,Ariana Grande,1580,Ellie Goulding,Pop,Pop
+587,Ariana Grande,1580,Ellie Goulding,Pop,Pop
+588,Lana Del Rey,1451,Ellie Goulding,Alternative,Pop
+589,Lana Del Rey,1451,Ellie Goulding,Alternative,Pop
+590,Shawn Mendes,720,Ellie Goulding,Rock,Pop
+591,Shawn Mendes,720,Ellie Goulding,Rock,Pop
+592,Ellie Goulding,75281,Ellie Goulding,Pop,Pop
+593,Ellie Goulding,75281,Ellie Goulding,Pop,Pop
+594,Ellie Goulding,75281,Ellie Goulding,Pop,Pop
+595,Ellie Goulding,75281,Ellie Goulding,Pop,Pop
+596,Katy Perry,1467,Ellie Goulding,Pop,Pop
+597,Katy Perry,1467,Ellie Goulding,Pop,Pop
+598,Katy Perry,1467,Ellie Goulding,Pop,Pop
+599,Katy Perry,1467,Ellie Goulding,Pop,Pop
+600,Pharrell Williams,537,Ellie Goulding,Pop,Pop
+601,Pharrell Williams,537,Ellie Goulding,Pop,Pop
+602,Justin Bieber,662,Ellie Goulding,Pop,Pop
+603,Justin Bieber,662,Ellie Goulding,Pop,Pop
+604,Justin Bieber,662,Ellie Goulding,Pop,Pop
+605,Justin Bieber,662,Ellie Goulding,Pop,Pop
+606,Calvin Harris,2077,Ellie Goulding,Pop,Pop
+607,Calvin Harris,2077,Ellie Goulding,Pop,Pop
+608,Selena Gomez,638,Ellie Goulding,Pop,Pop
+609,Selena Gomez,638,Ellie Goulding,Pop,Pop
+610,Selena Gomez,638,Ellie Goulding,Pop,Pop
+611,Selena Gomez,638,Ellie Goulding,Pop,Pop
+612,Nicki Minaj,905,Ellie Goulding,Hip-Hop,Pop
+613,Nicki Minaj,905,Ellie Goulding,Hip-Hop,Pop
+614,Nicki Minaj,905,Ellie Goulding,Hip-Hop,Pop
+615,Nicki Minaj,905,Ellie Goulding,Hip-Hop,Pop
+616,The Weeknd,582,Ellie Goulding,R&B/Soul,Pop
+617,The Weeknd,582,Ellie Goulding,R&B/Soul,Pop
+618,The Weeknd,582,Ellie Goulding,R&B/Soul,Pop
+619,The Weeknd,582,Ellie Goulding,R&B/Soul,Pop
+620,Coldplay,514,Ellie Goulding,Rock,Pop
+621,Coldplay,514,Ellie Goulding,Rock,Pop
+622,Alicia Keys,599,Ellie Goulding,R&B/Soul,Pop
+623,Alicia Keys,599,Ellie Goulding,R&B/Soul,Pop
+624,Jennifer Lopez,574,Ellie Goulding,Pop,Pop
+625,Jennifer Lopez,574,Ellie Goulding,Pop,Pop
+626,Skrillex,1103,Ellie Goulding,Electronic,Pop
+627,Skrillex,1103,Ellie Goulding,Electronic,Pop
+628,Jonas Brothers,852,Ellie Goulding,Pop/Rock,Pop
+629,Jonas Brothers,852,Ellie Goulding,Pop/Rock,Pop
+630,Major Lazer,611,Ellie Goulding,Reggae,Pop
+631,Major Lazer,611,Ellie Goulding,Reggae,Pop
+632,John Legend,793,Ellie Goulding,R&B/Soul,Pop
+633,John Legend,793,Ellie Goulding,R&B/Soul,Pop
+634,Tove Lo,563,Ellie Goulding,Pop,Pop
+635,Tove Lo,563,Ellie Goulding,Pop,Pop
+636,Charlie Puth,595,Ellie Goulding,Pop,Pop
+637,Charlie Puth,595,Ellie Goulding,Pop,Pop
+638,Sam Smith,1484,Ellie Goulding,,Pop
+639,Sam Smith,1484,Ellie Goulding,,Pop
+640,Jessie J,600,Ellie Goulding,Pop,Pop
+641,Jessie J,600,Ellie Goulding,Pop,Pop
+642,Rita Ora,595,Ellie Goulding,Pop,Pop
+643,Rita Ora,595,Ellie Goulding,Pop,Pop
+644,Miley Cyrus,2285,Katy Perry,Pop,Pop
+645,Miley Cyrus,2285,Katy Perry,Pop,Pop
+646,Miley Cyrus,2285,Katy Perry,Pop,Pop
+647,Miley Cyrus,2285,Katy Perry,Pop,Pop
+648,Bruno Mars,434,Katy Perry,Pop/Rock,Pop
+649,Bruno Mars,434,Katy Perry,Pop/Rock,Pop
+650,Lady Gaga,4947,Katy Perry,Pop,Pop
+651,Lady Gaga,4947,Katy Perry,Pop,Pop
+652,Taylor Swift,6127,Katy Perry,Pop,Pop
+653,Taylor Swift,6127,Katy Perry,Pop,Pop
+654,Taylor Swift,6127,Katy Perry,Pop,Pop
+655,Taylor Swift,6127,Katy Perry,Pop,Pop
+656,Beyoncé,4066,Katy Perry,Pop,Pop
+657,Beyoncé,4066,Katy Perry,Pop,Pop
+658,Beyoncé,4066,Katy Perry,Pop,Pop
+659,Beyoncé,4066,Katy Perry,Pop,Pop
+660,Ariana Grande,3193,Katy Perry,Pop,Pop
+661,Ariana Grande,3193,Katy Perry,Pop,Pop
+662,Ariana Grande,3193,Katy Perry,Pop,Pop
+663,Ariana Grande,3193,Katy Perry,Pop,Pop
+664,Lana Del Rey,997,Katy Perry,Alternative,Pop
+665,Lana Del Rey,997,Katy Perry,Alternative,Pop
+666,Shawn Mendes,394,Katy Perry,Rock,Pop
+667,Shawn Mendes,394,Katy Perry,Rock,Pop
+668,Katy Perry,81982,Katy Perry,Pop,Pop
+669,Katy Perry,81982,Katy Perry,Pop,Pop
+670,Katy Perry,81982,Katy Perry,Pop,Pop
+671,Katy Perry,81982,Katy Perry,Pop,Pop
+672,Kanye West,579,Katy Perry,Hip-Hop/Rap,Pop
+673,Kanye West,579,Katy Perry,Hip-Hop/Rap,Pop
+674,Justin Bieber,1216,Katy Perry,Pop,Pop
+675,Justin Bieber,1216,Katy Perry,Pop,Pop
+676,Justin Bieber,1216,Katy Perry,Pop,Pop
+677,Justin Bieber,1216,Katy Perry,Pop,Pop
+678,Selena Gomez,1380,Katy Perry,Pop,Pop
+679,Selena Gomez,1380,Katy Perry,Pop,Pop
+680,Selena Gomez,1380,Katy Perry,Pop,Pop
+681,Selena Gomez,1380,Katy Perry,Pop,Pop
+682,Nicki Minaj,4182,Katy Perry,Hip-Hop,Pop
+683,Nicki Minaj,4182,Katy Perry,Hip-Hop,Pop
+684,Nicki Minaj,4182,Katy Perry,Hip-Hop,Pop
+685,Nicki Minaj,4182,Katy Perry,Hip-Hop,Pop
+686,Demi Lovato,867,Katy Perry,Pop,Pop
+687,Demi Lovato,867,Katy Perry,Pop,Pop
+688,Demi Lovato,867,Katy Perry,Pop,Pop
+689,Demi Lovato,867,Katy Perry,Pop,Pop
+690,Britney Spears,839,Katy Perry,Pop,Pop
+691,Britney Spears,839,Katy Perry,Pop,Pop
+692,Britney Spears,839,Katy Perry,Pop,Pop
+693,Britney Spears,839,Katy Perry,Pop,Pop
+694,Rihanna,1238,Katy Perry,Pop,Pop
+695,Rihanna,1238,Katy Perry,Pop,Pop
+696,Rihanna,1238,Katy Perry,Pop,Pop
+697,Rihanna,1238,Katy Perry,Pop,Pop
+698,The Weeknd,580,Katy Perry,R&B/Soul,Pop
+699,The Weeknd,580,Katy Perry,R&B/Soul,Pop
+700,The Weeknd,580,Katy Perry,R&B/Soul,Pop
+701,The Weeknd,580,Katy Perry,R&B/Soul,Pop
+702,Eminem,307,Katy Perry,Rap,Pop
+703,Eminem,307,Katy Perry,Rap,Pop
+704,Eminem,307,Katy Perry,Rap,Pop
+705,Eminem,307,Katy Perry,Rap,Pop
+706,Mariah Carey,438,Katy Perry,Pop,Pop
+707,Mariah Carey,438,Katy Perry,Pop,Pop
+708,Kim Kardashian,2724,Katy Perry,,Pop
+709,Kim Kardashian,2724,Katy Perry,,Pop
+710,Alesso,646,Katy Perry,,Pop
+711,Alesso,646,Katy Perry,,Pop
+712,Snoop Dogg,526,Katy Perry,Hip-Hop/Rap,Pop
+713,Snoop Dogg,526,Katy Perry,Hip-Hop/Rap,Pop
+714,Miley Cyrus,690,Gwen Stefani,Pop,Pop
+715,Miley Cyrus,690,Gwen Stefani,Pop,Pop
+716,Lady Gaga,711,Gwen Stefani,Pop,Pop
+717,Diplo,542,Gwen Stefani,Dance,Pop
+718,Taylor Swift,1006,Gwen Stefani,Pop,Pop
+719,Taylor Swift,1006,Gwen Stefani,Pop,Pop
+720,Beyoncé,1126,Gwen Stefani,Pop,Pop
+721,Beyoncé,1126,Gwen Stefani,Pop,Pop
+722,Ariana Grande,2162,Gwen Stefani,Pop,Pop
+723,Ariana Grande,2162,Gwen Stefani,Pop,Pop
+724,Lana Del Rey,509,Gwen Stefani,Alternative,Pop
+725,Katy Perry,443,Gwen Stefani,Pop,Pop
+726,Katy Perry,443,Gwen Stefani,Pop,Pop
+727,Pharrell Williams,392,Gwen Stefani,Pop,Pop
+728,Gwen Stefani,73551,Gwen Stefani,Pop,Pop
+729,Nicki Minaj,553,Gwen Stefani,Hip-Hop,Pop
+730,Nicki Minaj,553,Gwen Stefani,Hip-Hop,Pop
+731,Demi Lovato,1031,Gwen Stefani,Pop,Pop
+732,Demi Lovato,1031,Gwen Stefani,Pop,Pop
+733,Britney Spears,645,Gwen Stefani,Pop,Pop
+734,Britney Spears,645,Gwen Stefani,Pop,Pop
+735,Billy Ray Cyrus,526,Gwen Stefani,Country,Pop
+736,Jennifer Lopez,358,Gwen Stefani,Pop,Pop
+737,Jonas Brothers,479,Gwen Stefani,Pop/Rock,Pop
+738,John Legend,1549,Gwen Stefani,R&B/Soul,Pop
+739,Blake Shelton,14596,Gwen Stefani,Country,Pop
+740,Blake Shelton,14596,Gwen Stefani,Country,Pop
+741,Brandi Carlile,620,Gwen Stefani,Singer/Songwriter,Pop
+742,Aerosmith,1113,Gwen Stefani,Rock,Pop
+743,Cyndi Lauper,569,Gwen Stefani,Rock,Pop
+744,Bonnie Raitt,667,Gwen Stefani,Americana,Pop
+745,Mariah Carey,333,Gwen Stefani,Pop,Pop
+746,Missy Elliott,294,Gwen Stefani,Hip-Hop/Rap,Pop
+747,Nelly Furtado,1315,Gwen Stefani,Pop,Pop
+748,Kelly Clarkson,1203,Gwen Stefani,Pop,Pop
+749,Christina Aguilera,582,Gwen Stefani,Pop,Pop
+750,No Doubt,457,Gwen Stefani,Pop,Pop
+751,Gavin Rossdale,482,Gwen Stefani,Rock,Pop
+752,Avril Lavigne,294,Gwen Stefani,Pop,Pop
+753,Miley Cyrus,660,Justin Bieber,Pop,Pop
+754,Miley Cyrus,660,Justin Bieber,Pop,Pop
+755,Miley Cyrus,660,Justin Bieber,Pop,Pop
+756,Miley Cyrus,660,Justin Bieber,Pop,Pop
+757,Bruno Mars,329,Justin Bieber,Pop/Rock,Pop
+758,Bruno Mars,329,Justin Bieber,Pop/Rock,Pop
+759,Lady Gaga,447,Justin Bieber,Pop,Pop
+760,Lady Gaga,447,Justin Bieber,Pop,Pop
+761,Taylor Swift,1252,Justin Bieber,Pop,Pop
+762,Taylor Swift,1252,Justin Bieber,Pop,Pop
+763,Taylor Swift,1252,Justin Bieber,Pop,Pop
+764,Taylor Swift,1252,Justin Bieber,Pop,Pop
+765,Beyoncé,383,Justin Bieber,Pop,Pop
+766,Beyoncé,383,Justin Bieber,Pop,Pop
+767,Beyoncé,383,Justin Bieber,Pop,Pop
+768,Beyoncé,383,Justin Bieber,Pop,Pop
+769,Ariana Grande,1563,Justin Bieber,Pop,Pop
+770,Ariana Grande,1563,Justin Bieber,Pop,Pop
+771,Ariana Grande,1563,Justin Bieber,Pop,Pop
+772,Ariana Grande,1563,Justin Bieber,Pop,Pop
+773,Shawn Mendes,729,Justin Bieber,Rock,Pop
+774,Shawn Mendes,729,Justin Bieber,Rock,Pop
+775,Katy Perry,360,Justin Bieber,Pop,Pop
+776,Katy Perry,360,Justin Bieber,Pop,Pop
+777,Katy Perry,360,Justin Bieber,Pop,Pop
+778,Katy Perry,360,Justin Bieber,Pop,Pop
+779,Kanye West,846,Justin Bieber,Hip-Hop/Rap,Pop
+780,Kanye West,846,Justin Bieber,Hip-Hop/Rap,Pop
+781,Justin Bieber,106928,Justin Bieber,Pop,Pop
+782,Justin Bieber,106928,Justin Bieber,Pop,Pop
+783,Justin Bieber,106928,Justin Bieber,Pop,Pop
+784,Justin Bieber,106928,Justin Bieber,Pop,Pop
+785,Selena Gomez,1232,Justin Bieber,Pop,Pop
+786,Selena Gomez,1232,Justin Bieber,Pop,Pop
+787,Selena Gomez,1232,Justin Bieber,Pop,Pop
+788,Selena Gomez,1232,Justin Bieber,Pop,Pop
+789,Nicki Minaj,476,Justin Bieber,Hip-Hop,Pop
+790,Nicki Minaj,476,Justin Bieber,Hip-Hop,Pop
+791,Nicki Minaj,476,Justin Bieber,Hip-Hop,Pop
+792,Nicki Minaj,476,Justin Bieber,Hip-Hop,Pop
+793,Demi Lovato,453,Justin Bieber,Pop,Pop
+794,Demi Lovato,453,Justin Bieber,Pop,Pop
+795,Demi Lovato,453,Justin Bieber,Pop,Pop
+796,Demi Lovato,453,Justin Bieber,Pop,Pop
+797,The Weeknd,974,Justin Bieber,R&B/Soul,Pop
+798,The Weeknd,974,Justin Bieber,R&B/Soul,Pop
+799,The Weeknd,974,Justin Bieber,R&B/Soul,Pop
+800,The Weeknd,974,Justin Bieber,R&B/Soul,Pop
+801,Michael Jackson,237,Justin Bieber,Pop,Pop
+802,Michael Jackson,237,Justin Bieber,Pop,Pop
+803,Michael Jackson,237,Justin Bieber,Pop,Pop
+804,Michael Jackson,237,Justin Bieber,Pop,Pop
+805,Eminem,371,Justin Bieber,Rap,Pop
+806,Eminem,371,Justin Bieber,Rap,Pop
+807,Eminem,371,Justin Bieber,Rap,Pop
+808,Eminem,371,Justin Bieber,Rap,Pop
+809,Chris Brown,445,Justin Bieber,Pop,Pop
+810,Chris Brown,445,Justin Bieber,Pop,Pop
+811,Chris Brown,445,Justin Bieber,Pop,Pop
+812,Chris Brown,445,Justin Bieber,Pop,Pop
+813,Young Thug,480,Justin Bieber,Hip-Hop,Pop
+814,Young Thug,480,Justin Bieber,Hip-Hop,Pop
+815,Kehlani,314,Justin Bieber,R&B,Pop
+816,Kehlani,314,Justin Bieber,R&B,Pop
+817,Lil Durk,181,Justin Bieber,Hip-Hop,Pop
+818,Lil Durk,181,Justin Bieber,Hip-Hop,Pop
+819,Chance the Rapper,444,Justin Bieber,Hip-Hop/Rap,Pop
+820,Chance the Rapper,444,Justin Bieber,Hip-Hop/Rap,Pop
+821,Jaden Smith,373,Justin Bieber,,Pop
+822,Jaden Smith,373,Justin Bieber,,Pop
+823,Miley Cyrus,560,Calvin Harris,Pop,Pop
+824,Miley Cyrus,560,Calvin Harris,Pop,Pop
+825,Bruno Mars,598,Calvin Harris,Pop/Rock,Pop
+826,Lady Gaga,560,Calvin Harris,Pop,Pop
+827,Diplo,872,Calvin Harris,Dance,Pop
+828,Taylor Swift,1589,Calvin Harris,Pop,Pop
+829,Taylor Swift,1589,Calvin Harris,Pop,Pop
+830,Beyoncé,1030,Calvin Harris,Pop,Pop
+831,Beyoncé,1030,Calvin Harris,Pop,Pop
+832,Ariana Grande,1030,Calvin Harris,Pop,Pop
+833,Ariana Grande,1030,Calvin Harris,Pop,Pop
+834,Lana Del Rey,530,Calvin Harris,Alternative,Pop
+835,Ellie Goulding,1738,Calvin Harris,Pop,Pop
+836,Ellie Goulding,1738,Calvin Harris,Pop,Pop
+837,Katy Perry,1812,Calvin Harris,Pop,Pop
+838,Katy Perry,1812,Calvin Harris,Pop,Pop
+839,Pharrell Williams,1668,Calvin Harris,Pop,Pop
+840,Kanye West,777,Calvin Harris,Hip-Hop/Rap,Pop
+841,Justin Bieber,872,Calvin Harris,Pop,Pop
+842,Justin Bieber,872,Calvin Harris,Pop,Pop
+843,Calvin Harris,78650,Calvin Harris,Pop,Pop
+844,Nicki Minaj,716,Calvin Harris,Hip-Hop,Pop
+845,Nicki Minaj,716,Calvin Harris,Hip-Hop,Pop
+846,Rihanna,1838,Calvin Harris,Pop,Pop
+847,Rihanna,1838,Calvin Harris,Pop,Pop
+848,The Weeknd,3821,Calvin Harris,R&B/Soul,Pop
+849,The Weeknd,3821,Calvin Harris,R&B/Soul,Pop
+850,Coldplay,568,Calvin Harris,Rock,Pop
+851,Eminem,586,Calvin Harris,Rap,Pop
+852,Eminem,586,Calvin Harris,Rap,Pop
+853,Skrillex,1138,Calvin Harris,Electronic,Pop
+854,Young Thug,2015,Calvin Harris,Hip-Hop,Pop
+855,Major Lazer,562,Calvin Harris,Reggae,Pop
+856,David Guetta,3817,Calvin Harris,Electronic,Pop
+857,The Chainsmokers,968,Calvin Harris,House,Pop
+858,Zedd,902,Calvin Harris,Electronic,Pop
+859,Martin Garrix,2959,Calvin Harris,House,Pop
+860,Frank Ocean,2088,Calvin Harris,Hip-Hop/Rap,Pop
+861,Sam Smith,1827,Calvin Harris,,Pop
+862,Alesso,1488,Calvin Harris,,Pop
+863,Big Sean,1106,Calvin Harris,,Pop
+864,Swedish House Mafia,2121,Calvin Harris,Dance,Pop
+865,Steve Aoki,2131,Calvin Harris,Dance,Pop
+866,Tiësto,1670,Calvin Harris,Electronic,Pop
+867,Paul van Dyk,1647,Calvin Harris,Electronic,Pop
+868,Florence Welch,805,Calvin Harris,Alternative,Pop
+869,Afrojack,647,Calvin Harris,Dance,Pop
+870,R3hab,639,Calvin Harris,,Pop
+871,Hardwell,560,Calvin Harris,Electronic/Dance,Pop
+872,Miley Cyrus,549,Foo Fighters,Pop,Rock
+873,Miley Cyrus,549,Foo Fighters,Pop,Rock
+874,Foo Fighters,91841,Foo Fighters,Rock,Rock
+875,The Beatles,896,Foo Fighters,Pop,Rock
+876,Coldplay,829,Foo Fighters,Rock,Rock
+877,Linkin Park,910,Foo Fighters,Alternative,Rock
+878,Arctic Monkeys,500,Foo Fighters,Alternative,Rock
+879,The Rolling Stones,513,Foo Fighters,Rock,Rock
+880,Aerosmith,451,Foo Fighters,Rock,Rock
+881,Radiohead,1003,Foo Fighters,Rock,Rock
+882,Weezer,712,Foo Fighters,Rock,Rock
+883,Paul McCartney,504,Foo Fighters,Rock & Roll,Rock
+884,Bruce Springsteen,436,Foo Fighters,Rock,Rock
+885,Tina Turner,526,Foo Fighters,Pop,Rock
+886,Bee Gees,485,Foo Fighters,Disco,Rock
+887,Led Zeppelin,697,Foo Fighters,Rock,Rock
+888,Cage the Elephant,394,Foo Fighters,Rock,Rock
+889,Pink Floyd,497,Foo Fighters,Prog-Rock/Art Rock,Rock
+890,Dave Grohl,11674,Foo Fighters,Rock,Rock
+891,Pearl Jam,1284,Foo Fighters,Rock,Rock
+892,Red Hot Chili Peppers,1221,Foo Fighters,Rock,Rock
+893,Green Day,1071,Foo Fighters,Punk,Rock
+894,Iron Maiden,805,Foo Fighters,Metal,Rock
+895,AC/DC,863,Foo Fighters,Rock,Rock
+896,Rage Against the Machine,789,Foo Fighters,Rock,Rock
+897,Guns N' Roses,685,Foo Fighters,Rock,Rock
+898,Soundgarden,594,Foo Fighters,Rock,Rock
+899,Queens of the Stone Age,480,Foo Fighters,Rock,Rock
+900,Alice in Chains,449,Foo Fighters,Alternative,Rock
+901,Bruno Mars,569,Pharrell Williams,Pop/Rock,Pop
+902,Taylor Swift,665,Pharrell Williams,Pop,Pop
+903,Taylor Swift,665,Pharrell Williams,Pop,Pop
+904,Beyoncé,1847,Pharrell Williams,Pop,Pop
+905,Beyoncé,1847,Pharrell Williams,Pop,Pop
+906,Ariana Grande,551,Pharrell Williams,Pop,Pop
+907,Ariana Grande,551,Pharrell Williams,Pop,Pop
+908,Katy Perry,2311,Pharrell Williams,Pop,Pop
+909,Katy Perry,2311,Pharrell Williams,Pop,Pop
+910,Pharrell Williams,98317,Pharrell Williams,Pop,Pop
+911,Kanye West,3045,Pharrell Williams,Hip-Hop/Rap,Pop
+912,Calvin Harris,1412,Pharrell Williams,Pop,Pop
+913,Daft Punk,4197,Pharrell Williams,Dance,Pop
+914,Nicki Minaj,972,Pharrell Williams,Hip-Hop,Pop
+915,Nicki Minaj,972,Pharrell Williams,Hip-Hop,Pop
+916,Coldplay,855,Pharrell Williams,Rock,Pop
+917,Justin Timberlake,562,Pharrell Williams,Pop,Pop
+918,Kendrick Lamar,1564,Pharrell Williams,Alternative Rap,Pop
+919,Alicia Keys,1035,Pharrell Williams,R&B/Soul,Pop
+920,Snoop Dogg,1518,Pharrell Williams,Hip-Hop/Rap,Pop
+921,Nile Rodgers,1812,Pharrell Williams,Soul,Pop
+922,Pusha T,1341,Pharrell Williams,Hip-Hop/Rap,Pop
+923,Missy Elliott,1217,Pharrell Williams,Hip-Hop/Rap,Pop
+924,Timbaland,1129,Pharrell Williams,Hip-Hop/Rap,Pop
+925,Big Sean,1173,Pharrell Williams,,Pop
+926,Dr. Dre,1045,Pharrell Williams,Hip-Hop/Rap,Pop
+927,Kid Cudi,742,Pharrell Williams,Hip-Hop/Rap,Pop
+928,Robin Thicke,527,Pharrell Williams,R&B/Soul,Pop
+929,Zara Larsson,406,Pharrell Williams,,Pop
+930,Sara Bareilles,393,Pharrell Williams,Singer/Songwriter,Pop
+931,Diplo,107418,Diplo,Dance,Dance
+932,Ariana Grande,1258,Diplo,Pop,Dance
+933,Ariana Grande,1258,Diplo,Pop,Dance
+934,Ellie Goulding,1397,Diplo,Pop,Dance
+935,Ellie Goulding,1397,Diplo,Pop,Dance
+936,Gwen Stefani,655,Diplo,Pop,Dance
+937,Justin Bieber,1639,Diplo,Pop,Dance
+938,Justin Bieber,1639,Diplo,Pop,Dance
+939,Calvin Harris,655,Diplo,Pop,Dance
+940,Demi Lovato,687,Diplo,Pop,Dance
+941,Demi Lovato,687,Diplo,Pop,Dance
+942,Billy Ray Cyrus,18625,Diplo,Country,Dance
+943,The Weeknd,558,Diplo,R&B/Soul,Dance
+944,The Weeknd,558,Diplo,R&B/Soul,Dance
+945,Skrillex,2243,Diplo,Electronic,Dance
+946,Jonas Brothers,1370,Diplo,Pop/Rock,Dance
+947,Young Thug,1079,Diplo,Hip-Hop,Dance
+948,Major Lazer,1242,Diplo,Reggae,Dance
+949,Dillon Francis,895,Diplo,Dance,Dance
+950,John Legend,768,Diplo,R&B/Soul,Dance
+951,Blake Shelton,656,Diplo,Country,Dance
+952,Blake Shelton,656,Diplo,Country,Dance
+953,Brandi Carlile,643,Diplo,Singer/Songwriter,Dance
+954,Aerosmith,621,Diplo,Rock,Dance
+955,Cyndi Lauper,610,Diplo,Rock,Dance
+956,Bonnie Raitt,609,Diplo,Americana,Dance
+957,Marshmello,648,Diplo,,Dance
+958,David Guetta,852,Diplo,Electronic,Dance
+959,The Chainsmokers,542,Diplo,House,Dance
+960,Zedd,449,Diplo,Electronic,Dance
+961,Taylor Swift,236,Angel Olsen,Pop,Rock
+962,Taylor Swift,236,Angel Olsen,Pop,Rock
+963,Beyoncé,240,Angel Olsen,Pop,Rock
+964,Beyoncé,240,Angel Olsen,Pop,Rock
+965,Lana Del Rey,805,Angel Olsen,Alternative,Rock
+966,Angel Olsen,24002,Angel Olsen,Rock,Rock
+967,Tame Impala,275,Angel Olsen,Rock,Rock
+968,Bon Iver,209,Angel Olsen,Rock,Rock
+969,Charli XCX,265,Angel Olsen,Pop,Rock
+970,Radiohead,229,Angel Olsen,Rock,Rock
+971,Wilco,423,Angel Olsen,Rock,Rock
+972,Fiona Apple,299,Angel Olsen,Pop,Rock
+973,Danny Brown,296,Angel Olsen,Hip-Hop/Rap,Rock
+974,Courtney Barnett,249,Angel Olsen,Alternative,Rock
+975,PJ Harvey,189,Angel Olsen,Rock,Rock
+976,Vampire Weekend,212,Angel Olsen,Indie Rock,Rock
+977,Caroline Polachek,189,Angel Olsen,,Rock
+978,Taylor Swift,1445,Kanye West,Pop,Hip-Hop/Rap
+979,Taylor Swift,1445,Kanye West,Pop,Hip-Hop/Rap
+980,Beyoncé,939,Kanye West,Pop,Hip-Hop/Rap
+981,Beyoncé,939,Kanye West,Pop,Hip-Hop/Rap
+982,Pharrell Williams,458,Kanye West,Pop,Hip-Hop/Rap
+983,Kanye West,110642,Kanye West,Hip-Hop/Rap,Hip-Hop/Rap
+984,Justin Bieber,525,Kanye West,Pop,Hip-Hop/Rap
+985,Justin Bieber,525,Kanye West,Pop,Hip-Hop/Rap
+986,Nicki Minaj,922,Kanye West,Hip-Hop,Hip-Hop/Rap
+987,Nicki Minaj,922,Kanye West,Hip-Hop,Hip-Hop/Rap
+988,Rihanna,544,Kanye West,Pop,Hip-Hop/Rap
+989,Rihanna,544,Kanye West,Pop,Hip-Hop/Rap
+990,The Weeknd,1180,Kanye West,R&B/Soul,Hip-Hop/Rap
+991,The Weeknd,1180,Kanye West,R&B/Soul,Hip-Hop/Rap
+992,Eminem,1364,Kanye West,Rap,Hip-Hop/Rap
+993,Eminem,1364,Kanye West,Rap,Hip-Hop/Rap
+994,Kendrick Lamar,2429,Kanye West,Alternative Rap,Hip-Hop/Rap
+995,Mac Miller,388,Kanye West,Hip-Hop/Rap,Hip-Hop/Rap
+996,Young Thug,800,Kanye West,Hip-Hop,Hip-Hop/Rap
+997,Kim Kardashian,3561,Kanye West,,Hip-Hop/Rap
+998,Frank Ocean,836,Kanye West,Hip-Hop/Rap,Hip-Hop/Rap
+999,Pusha T,921,Kanye West,Hip-Hop/Rap,Hip-Hop/Rap
+1000,Big Sean,409,Kanye West,,Hip-Hop/Rap
+1001,Kid Cudi,2024,Kanye West,Hip-Hop/Rap,Hip-Hop/Rap
+1002,Lil Wayne,1174,Kanye West,Hip-Hop/Rap,Hip-Hop/Rap
+1003,Lil Wayne,1174,Kanye West,Hip-Hop/Rap,Hip-Hop/Rap
+1004,J. Cole,540,Kanye West,Hip-Hop/Rap,Hip-Hop/Rap
+1005,Rick Ross,526,Kanye West,Hip-Hop/Rap,Hip-Hop/Rap
+1006,Lil Durk,419,Kanye West,Hip-Hop,Hip-Hop/Rap
+1007,Lana Del Rey,2257,Tame Impala,Alternative,Rock
+1008,Kanye West,1224,Tame Impala,Hip-Hop/Rap,Rock
+1009,Tame Impala,59305,Tame Impala,Rock,Rock
+1010,Justin Bieber,590,Tame Impala,Pop,Rock
+1011,Justin Bieber,590,Tame Impala,Pop,Rock
+1012,The Beatles,755,Tame Impala,Pop,Rock
+1013,Rihanna,453,Tame Impala,Pop,Rock
+1014,Rihanna,453,Tame Impala,Pop,Rock
+1015,The Weeknd,1326,Tame Impala,R&B/Soul,Rock
+1016,The Weeknd,1326,Tame Impala,R&B/Soul,Rock
+1017,Coldplay,276,Tame Impala,Rock,Rock
+1018,Kendrick Lamar,380,Tame Impala,Alternative Rap,Rock
+1019,Arctic Monkeys,2755,Tame Impala,Alternative,Rock
+1020,Mac Miller,375,Tame Impala,Hip-Hop/Rap,Rock
+1021,Young Thug,397,Tame Impala,Hip-Hop,Rock
+1022,Radiohead,624,Tame Impala,Rock,Rock
+1023,Gorillaz,809,Tame Impala,Hip-Hop/Rap,Rock
+1024,Jhené Aiko,306,Tame Impala,,Rock
+1025,Frank Ocean,1204,Tame Impala,Hip-Hop/Rap,Rock
+1026,Diana Ross,450,Tame Impala,R&B/Soul,Rock
+1027,Kid Cudi,373,Tame Impala,Hip-Hop/Rap,Rock
+1028,Cage the Elephant,751,Tame Impala,Rock,Rock
+1029,Pink Floyd,406,Tame Impala,Prog-Rock/Art Rock,Rock
+1030,Mac DeMarco,402,Tame Impala,Rock,Rock
+1031,Lana Del Rey,228,Daft Punk,Alternative,Dance
+1032,Pharrell Williams,2061,Daft Punk,Pop,Dance
+1033,Kanye West,1047,Daft Punk,Hip-Hop/Rap,Dance
+1034,Tame Impala,211,Daft Punk,Rock,Dance
+1035,Daft Punk,67094,Daft Punk,Dance,Dance
+1036,The Beatles,274,Daft Punk,Pop,Dance
+1037,The Weeknd,1803,Daft Punk,R&B/Soul,Dance
+1038,The Weeknd,1803,Daft Punk,R&B/Soul,Dance
+1039,Coldplay,175,Daft Punk,Rock,Dance
+1040,Linkin Park,139,Daft Punk,Alternative,Dance
+1041,Michael Jackson,220,Daft Punk,Pop,Dance
+1042,Michael Jackson,220,Daft Punk,Pop,Dance
+1043,Eminem,165,Daft Punk,Rap,Dance
+1044,Eminem,165,Daft Punk,Rap,Dance
+1045,Kendrick Lamar,187,Daft Punk,Alternative Rap,Dance
+1046,David Bowie,169,Daft Punk,Glam Rock,Dance
+1047,Arctic Monkeys,165,Daft Punk,Alternative,Dance
+1048,Skrillex,169,Daft Punk,Electronic,Dance
+1049,Radiohead,263,Daft Punk,Rock,Dance
+1050,Gorillaz,544,Daft Punk,Hip-Hop/Rap,Dance
+1051,Nile Rodgers,342,Daft Punk,Soul,Dance
+1052,Pink Floyd,175,Daft Punk,Prog-Rock/Art Rock,Dance
+1053,Bobby Shmurda,1522,Daft Punk,Hip-Hop,Dance
+1054,Julian Casablancas,572,Daft Punk,Alternative,Dance
+1055,The Chemical Brothers,166,Daft Punk,Electronic,Dance
+1056,Rod Stewart,100107,Rod Stewart,Rock,Rock
+1057,The Beatles,1392,Rod Stewart,Pop,Rock
+1058,Michael Jackson,523,Rod Stewart,Pop,Rock
+1059,Michael Jackson,523,Rod Stewart,Pop,Rock
+1060,David Bowie,1199,Rod Stewart,Glam Rock,Rock
+1061,Freddie Mercury,491,Rod Stewart,Rock,Rock
+1062,The Rolling Stones,1594,Rod Stewart,Rock,Rock
+1063,John Lennon,504,Rod Stewart,Rock,Rock
+1064,Elton John,2803,Rod Stewart,Pop/Rock,Rock
+1065,Dolly Parton,432,Rod Stewart,Country,Rock
+1066,Bryan Adams,1126,Rod Stewart,,Rock
+1067,Paul McCartney,886,Rod Stewart,Rock & Roll,Rock
+1068,Eric Clapton,788,Rod Stewart,Blues-Rock,Rock
+1069,Bruce Springsteen,649,Rod Stewart,Rock,Rock
+1070,Cheap Trick,649,Rod Stewart,Rock,Rock
+1071,Tina Turner,628,Rod Stewart,Pop,Rock
+1072,Bee Gees,597,Rod Stewart,Disco,Rock
+1073,Led Zeppelin,571,Rod Stewart,Rock,Rock
+1074,Diana Ross,552,Rod Stewart,R&B/Soul,Rock
+1075,Mick Jagger,535,Rod Stewart,Rock,Rock
+1076,The Jeff Beck Group,557,Rod Stewart,,Rock
+1077,Bob Dylan,551,Rod Stewart,Rock,Rock
+1078,Stevie Wonder,459,Rod Stewart,R&B/Soul,Rock
+1079,Joe Cocker,451,Rod Stewart,Rock,Rock
+1080,Fleetwood Mac,441,Rod Stewart,Rock,Rock

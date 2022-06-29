@@ -1,0 +1,80 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-network@latest/styles/vis-network.css" type="text/css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vis-network@latest/dist/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100%;
+            height: 100%;
+            background-color: #FFFFFF;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"color": "#529C2F", "font": {"color": "black"}, "font_size": 1000, "id": "The Beautiful Girls", "label": "The Beautiful Girls", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003eJessica Simpson\u003cbr\u003eJennifer Lopez\u003cbr\u003eMariah Carey\u003cbr\u003eBeyonc\u00e9", "value": 4}, {"color": "#C3748D", "font": {"color": "black"}, "font_size": 1000, "id": "Jennifer Lopez", "label": "Jennifer Lopez", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eThe Beautiful Girls", "value": 1}, {"color": "#C3748D", "font": {"color": "black"}, "font_size": 1000, "id": "Mariah Carey", "label": "Mariah Carey", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eThe Beautiful Girls", "value": 1}, {"color": "#C3748D", "font": {"color": "black"}, "font_size": 1000, "id": "Jessica Simpson", "label": "Jessica Simpson", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eThe Beautiful Girls", "value": 1}, {"color": "#C3748D", "font": {"color": "black"}, "font_size": 1000, "id": "Beyonc\u00e9", "label": "Beyonc\u00e9", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eThe Beautiful Girls", "value": 1}]);
+        edges = new vis.DataSet([{"color": "darkgrey", "from": "The Beautiful Girls", "labelHighlightBold": true, "opacity": 0.1, "to": "Jennifer Lopez", "value": 279}, {"color": "darkgrey", "from": "The Beautiful Girls", "labelHighlightBold": true, "opacity": 0.1, "to": "Mariah Carey", "value": 211}, {"color": "darkgrey", "from": "The Beautiful Girls", "labelHighlightBold": true, "opacity": 0.1, "to": "Jessica Simpson", "value": 206}, {"color": "darkgrey", "from": "The Beautiful Girls", "labelHighlightBold": true, "opacity": 0.1, "to": "Beyonc\u00e9", "value": 319}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {"nodes": {"font": {"size": 25}}, "physics": {"forceAtlas2Based": {"springLength": 50, "springConstant": 0.205}, "minVelocity": 0.75, "solver": "forceAtlas2Based"}};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>
