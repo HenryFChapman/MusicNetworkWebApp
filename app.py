@@ -34,6 +34,7 @@ def grabListPopulation():
 available_indicators = grabListPopulation()
 
 app = dash.Dash()
+server = app.server
 app.layout = html.Div(
     [
         dcc.Dropdown(
