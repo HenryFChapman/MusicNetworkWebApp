@@ -1,0 +1,80 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-network@latest/styles/vis-network.css" type="text/css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vis-network@latest/dist/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100%;
+            height: 100%;
+            background-color: #FFFFFF;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"color": "#6066C2", "font": {"color": "black"}, "font_size": 1000, "id": "Gary Allan", "label": "Gary Allan", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#6066C2", "font": {"color": "black"}, "font_size": 1000, "id": "Darius Rucker", "label": "Darius Rucker", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eThomas Rhett\u003cbr\u003eBrooks \u0026 Dunn\u003cbr\u003eTim McGraw\u003cbr\u003eDustin Lynch\u003cbr\u003eJon Pardi\u003cbr\u003eJake Owen\u003cbr\u003eDierks Bentley\u003cbr\u003eRascal Flatts\u003cbr\u003eReba McEntire\u003cbr\u003eKelsea Ballerini\u003cbr\u003eKenny Chesney\u003cbr\u003eClint Black\u003cbr\u003eMiranda Lambert\u003cbr\u003eCarrie Underwood\u003cbr\u003eEric Church\u003cbr\u003eHootie \u0026 the Blowfish\u003cbr\u003eMickey Guyton\u003cbr\u003eGary Allan\u003cbr\u003eFlorida Georgia Line\u003cbr\u003eBlake Shelton\u003cbr\u003eLuke Bryan\u003cbr\u003eChris Stapleton\u003cbr\u003eKeith Urban\u003cbr\u003eCharley Pride\u003cbr\u003eZac Brown Band\u003cbr\u003eJason Aldean\u003cbr\u003eBrothers Osborne\u003cbr\u003eTrisha Yearwood\u003cbr\u003eLittle Big Town\u003cbr\u003eBrad Paisley\u003cbr\u003eDolly Parton\u003cbr\u003eOld Crow Medicine Show", "value": 32}, {"color": "#6066C2", "font": {"color": "black"}, "font_size": 1000, "id": "Brad Paisley", "label": "Brad Paisley", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#6066C2", "font": {"color": "black"}, "font_size": 1000, "id": "Tim McGraw", "label": "Tim McGraw", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#6066C2", "font": {"color": "black"}, "font_size": 1000, "id": "Eric Church", "label": "Eric Church", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#6066C2", "font": {"color": "black"}, "font_size": 1000, "id": "Jason Aldean", "label": "Jason Aldean", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#6066C2", "font": {"color": "black"}, "font_size": 1000, "id": "Keith Urban", "label": "Keith Urban", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#6066C2", "font": {"color": "black"}, "font_size": 1000, "id": "Blake Shelton", "label": "Blake Shelton", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#6066C2", "font": {"color": "black"}, "font_size": 1000, "id": "Carrie Underwood", "label": "Carrie Underwood", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#6066C2", "font": {"color": "black"}, "font_size": 1000, "id": "Charley Pride", "label": "Charley Pride", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#6066C2", "font": {"color": "black"}, "font_size": 1000, "id": "Dierks Bentley", "label": "Dierks Bentley", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#6066C2", "font": {"color": "black"}, "font_size": 1000, "id": "Miranda Lambert", "label": "Miranda Lambert", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#6066C2", "font": {"color": "black"}, "font_size": 1000, "id": "Little Big Town", "label": "Little Big Town", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#6066C2", "font": {"color": "black"}, "font_size": 1000, "id": "Zac Brown Band", "label": "Zac Brown Band", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#6066C2", "font": {"color": "black"}, "font_size": 1000, "id": "Kenny Chesney", "label": "Kenny Chesney", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#6066C2", "font": {"color": "black"}, "font_size": 1000, "id": "Chris Stapleton", "label": "Chris Stapleton", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#6066C2", "font": {"color": "black"}, "font_size": 1000, "id": "Brooks \u0026 Dunn", "label": "Brooks \u0026 Dunn", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#6066C2", "font": {"color": "black"}, "font_size": 1000, "id": "Clint Black", "label": "Clint Black", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#6066C2", "font": {"color": "black"}, "font_size": 1000, "id": "Brothers Osborne", "label": "Brothers Osborne", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#6066C2", "font": {"color": "black"}, "font_size": 1000, "id": "Mickey Guyton", "label": "Mickey Guyton", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#6066C2", "font": {"color": "black"}, "font_size": 1000, "id": "Trisha Yearwood", "label": "Trisha Yearwood", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#6066C2", "font": {"color": "black"}, "font_size": 1000, "id": "Rascal Flatts", "label": "Rascal Flatts", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#6066C2", "font": {"color": "black"}, "font_size": 1000, "id": "Dolly Parton", "label": "Dolly Parton", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#6066C2", "font": {"color": "black"}, "font_size": 1000, "id": "Dustin Lynch", "label": "Dustin Lynch", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#D26BFF", "font": {"color": "black"}, "font_size": 1000, "id": "Hootie \u0026 the Blowfish", "label": "Hootie \u0026 the Blowfish", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#550F98", "font": {"color": "black"}, "font_size": 1000, "id": "Luke Bryan", "label": "Luke Bryan", "shape": "dot", "title": "Contemporary Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#550F98", "font": {"color": "black"}, "font_size": 1000, "id": "Reba McEntire", "label": "Reba McEntire", "shape": "dot", "title": "Contemporary Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#550F98", "font": {"color": "black"}, "font_size": 1000, "id": "Thomas Rhett", "label": "Thomas Rhett", "shape": "dot", "title": "Contemporary Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#550F98", "font": {"color": "black"}, "font_size": 1000, "id": "Kelsea Ballerini", "label": "Kelsea Ballerini", "shape": "dot", "title": "Contemporary Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#550F98", "font": {"color": "black"}, "font_size": 1000, "id": "Jake Owen", "label": "Jake Owen", "shape": "dot", "title": "Contemporary Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#550F98", "font": {"color": "black"}, "font_size": 1000, "id": "Florida Georgia Line", "label": "Florida Georgia Line", "shape": "dot", "title": "Contemporary Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#102302", "font": {"color": "black"}, "font_size": 1000, "id": "Jon Pardi", "label": "Jon Pardi", "shape": "dot", "title": "Alternative Country Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}, {"color": "#EBB2E9", "font": {"color": "black"}, "font_size": 1000, "id": "Old Crow Medicine Show", "label": "Old Crow Medicine Show", "shape": "dot", "title": "Americana Neighbors:\u003cbr\u003eDarius Rucker", "value": 1}]);
+        edges = new vis.DataSet([{"color": "darkgrey", "from": "Gary Allan", "labelHighlightBold": true, "opacity": 0.1, "to": "Darius Rucker", "value": 101}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Brad Paisley", "value": 1165}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Tim McGraw", "value": 791}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Eric Church", "value": 737}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Jason Aldean", "value": 723}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Keith Urban", "value": 775}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Blake Shelton", "value": 667}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Carrie Underwood", "value": 789}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Charley Pride", "value": 687}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Dierks Bentley", "value": 588}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Miranda Lambert", "value": 715}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Little Big Town", "value": 473}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Zac Brown Band", "value": 341}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Kenny Chesney", "value": 322}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Chris Stapleton", "value": 373}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Brooks \u0026 Dunn", "value": 360}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Clint Black", "value": 334}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Brothers Osborne", "value": 371}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Mickey Guyton", "value": 327}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Trisha Yearwood", "value": 302}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Rascal Flatts", "value": 296}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Dolly Parton", "value": 273}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Dustin Lynch", "value": 242}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Hootie \u0026 the Blowfish", "value": 1280}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Luke Bryan", "value": 1122}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Reba McEntire", "value": 878}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Thomas Rhett", "value": 771}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Kelsea Ballerini", "value": 595}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Jake Owen", "value": 392}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Florida Georgia Line", "value": 477}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Jon Pardi", "value": 553}, {"color": "darkgrey", "from": "Darius Rucker", "labelHighlightBold": true, "opacity": 0.1, "to": "Old Crow Medicine Show", "value": 360}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {"nodes": {"font": {"size": 25}}, "physics": {"forceAtlas2Based": {"springLength": 50, "springConstant": 0.205}, "minVelocity": 0.75, "solver": "forceAtlas2Based"}};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>
