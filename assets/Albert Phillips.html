@@ -1,0 +1,80 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-network@latest/styles/vis-network.css" type="text/css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vis-network@latest/dist/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100%;
+            height: 100%;
+            background-color: #FFFFFF;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"color": "#46D1EB", "font": {"color": "black"}, "font_size": 1000, "id": "Albert Phillips", "label": "Albert Phillips", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003eElvis Presley", "value": 1}, {"color": "#46D1EB", "font": {"color": "black"}, "font_size": 1000, "id": "Elvis Presley", "label": "Elvis Presley", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003eNatalie Cole\u003cbr\u003eJerry Lee Lewis\u003cbr\u003eTaylor Swift\u003cbr\u003eLisa Marie Presley\u003cbr\u003eThe Rolling Stones\u003cbr\u003eDavid Bowie\u003cbr\u003eJustin Bieber\u003cbr\u003eThe Beatles\u003cbr\u003eMichael Jackson\u003cbr\u003eElton John\u003cbr\u003eDionne Warwick\u003cbr\u003eYo-Yo Ma\u003cbr\u003eMariah Carey\u003cbr\u003eStevie Wonder\u003cbr\u003eNorah Jones\u003cbr\u003eChuck Berry\u003cbr\u003eFrank Sinatra\u003cbr\u003eJohnny Cash\u003cbr\u003eEminem\u003cbr\u003eBurt Bacharach\u003cbr\u003eAlbert Phillips\u003cbr\u003eEtta James\u003cbr\u003eLouis Armstrong\u003cbr\u003eRay Charles\u003cbr\u003eEnya\u003cbr\u003eNat King Cole", "value": 26}, {"color": "#46D1EB", "font": {"color": "black"}, "font_size": 1000, "id": "Jerry Lee Lewis", "label": "Jerry Lee Lewis", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003eElvis Presley", "value": 1}, {"color": "#46D1EB", "font": {"color": "black"}, "font_size": 1000, "id": "Lisa Marie Presley", "label": "Lisa Marie Presley", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003eElvis Presley", "value": 1}, {"color": "#46D1EB", "font": {"color": "black"}, "font_size": 1000, "id": "The Rolling Stones", "label": "The Rolling Stones", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003eElvis Presley", "value": 1}, {"color": "#46D1EB", "font": {"color": "black"}, "font_size": 1000, "id": "Chuck Berry", "label": "Chuck Berry", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003eElvis Presley", "value": 1}, {"color": "#5FFFE0", "font": {"color": "black"}, "font_size": 1000, "id": "The Beatles", "label": "The Beatles", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eElvis Presley", "value": 1}, {"color": "#5FFFE0", "font": {"color": "black"}, "font_size": 1000, "id": "Michael Jackson", "label": "Michael Jackson", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eElvis Presley", "value": 1}, {"color": "#5FFFE0", "font": {"color": "black"}, "font_size": 1000, "id": "Justin Bieber", "label": "Justin Bieber", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eElvis Presley", "value": 1}, {"color": "#5FFFE0", "font": {"color": "black"}, "font_size": 1000, "id": "Norah Jones", "label": "Norah Jones", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eElvis Presley", "value": 1}, {"color": "#5FFFE0", "font": {"color": "black"}, "font_size": 1000, "id": "Mariah Carey", "label": "Mariah Carey", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eElvis Presley", "value": 1}, {"color": "#5FFFE0", "font": {"color": "black"}, "font_size": 1000, "id": "Burt Bacharach", "label": "Burt Bacharach", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eElvis Presley", "value": 1}, {"color": "#5FFFE0", "font": {"color": "black"}, "font_size": 1000, "id": "Yo-Yo Ma", "label": "Yo-Yo Ma", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eElvis Presley", "value": 1}, {"color": "#5FFFE0", "font": {"color": "black"}, "font_size": 1000, "id": "Taylor Swift", "label": "Taylor Swift", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eElvis Presley", "value": 1}, {"color": "#97AF4E", "font": {"color": "black"}, "font_size": 1000, "id": "Ray Charles", "label": "Ray Charles", "shape": "dot", "title": "Vocal Jazz Neighbors:\u003cbr\u003eElvis Presley", "value": 1}, {"color": "#5A22B2", "font": {"color": "black"}, "font_size": 1000, "id": "Frank Sinatra", "label": "Frank Sinatra", "shape": "dot", "title": "Jazz Neighbors:\u003cbr\u003eElvis Presley", "value": 1}, {"color": "#5A22B2", "font": {"color": "black"}, "font_size": 1000, "id": "Louis Armstrong", "label": "Louis Armstrong", "shape": "dot", "title": "Jazz Neighbors:\u003cbr\u003eElvis Presley", "value": 1}, {"color": "#5A22B2", "font": {"color": "black"}, "font_size": 1000, "id": "Nat King Cole", "label": "Nat King Cole", "shape": "dot", "title": "Jazz Neighbors:\u003cbr\u003eElvis Presley", "value": 1}, {"color": "#B4717C", "font": {"color": "black"}, "font_size": 1000, "id": "Johnny Cash", "label": "Johnny Cash", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eElvis Presley", "value": 1}, {"color": "#F50443", "font": {"color": "black"}, "font_size": 1000, "id": "David Bowie", "label": "David Bowie", "shape": "dot", "title": "Glam Rock Neighbors:\u003cbr\u003eElvis Presley", "value": 1}, {"color": "#949673", "font": {"color": "black"}, "font_size": 1000, "id": "Elton John", "label": "Elton John", "shape": "dot", "title": "Pop/Rock Neighbors:\u003cbr\u003eElvis Presley", "value": 1}, {"color": "#9365BB", "font": {"color": "black"}, "font_size": 1000, "id": "Etta James", "label": "Etta James", "shape": "dot", "title": "R\u0026B/Soul Neighbors:\u003cbr\u003eElvis Presley", "value": 1}, {"color": "#9365BB", "font": {"color": "black"}, "font_size": 1000, "id": "Natalie Cole", "label": "Natalie Cole", "shape": "dot", "title": "R\u0026B/Soul Neighbors:\u003cbr\u003eElvis Presley", "value": 1}, {"color": "#9365BB", "font": {"color": "black"}, "font_size": 1000, "id": "Stevie Wonder", "label": "Stevie Wonder", "shape": "dot", "title": "R\u0026B/Soul Neighbors:\u003cbr\u003eElvis Presley", "value": 1}, {"color": "#48BD21", "font": {"color": "black"}, "font_size": 1000, "id": "Dionne Warwick", "label": "Dionne Warwick", "shape": "dot", "title": "Soul Neighbors:\u003cbr\u003eElvis Presley", "value": 1}, {"color": "#9EE327", "font": {"color": "black"}, "font_size": 1000, "id": "Enya", "label": "Enya", "shape": "dot", "title": "World Neighbors:\u003cbr\u003eElvis Presley", "value": 1}, {"color": "#8F21C4", "font": {"color": "black"}, "font_size": 1000, "id": "Eminem", "label": "Eminem", "shape": "dot", "title": "Rap Neighbors:\u003cbr\u003eElvis Presley", "value": 1}]);
+        edges = new vis.DataSet([{"color": "darkgrey", "from": "Albert Phillips", "labelHighlightBold": true, "opacity": 0.1, "to": "Elvis Presley", "value": 29}, {"color": "darkgrey", "from": "Elvis Presley", "labelHighlightBold": true, "opacity": 0.1, "to": "Jerry Lee Lewis", "value": 1200}, {"color": "darkgrey", "from": "Elvis Presley", "labelHighlightBold": true, "opacity": 0.1, "to": "Lisa Marie Presley", "value": 1288}, {"color": "darkgrey", "from": "Elvis Presley", "labelHighlightBold": true, "opacity": 0.1, "to": "The Rolling Stones", "value": 994}, {"color": "darkgrey", "from": "Elvis Presley", "labelHighlightBold": true, "opacity": 0.1, "to": "Chuck Berry", "value": 852}, {"color": "darkgrey", "from": "Elvis Presley", "labelHighlightBold": true, "opacity": 0.1, "to": "The Beatles", "value": 6940}, {"color": "darkgrey", "from": "Elvis Presley", "labelHighlightBold": true, "opacity": 0.1, "to": "Michael Jackson", "value": 3530}, {"color": "darkgrey", "from": "Elvis Presley", "labelHighlightBold": true, "opacity": 0.1, "to": "Justin Bieber", "value": 1296}, {"color": "darkgrey", "from": "Elvis Presley", "labelHighlightBold": true, "opacity": 0.1, "to": "Norah Jones", "value": 956}, {"color": "darkgrey", "from": "Elvis Presley", "labelHighlightBold": true, "opacity": 0.1, "to": "Mariah Carey", "value": 942}, {"color": "darkgrey", "from": "Elvis Presley", "labelHighlightBold": true, "opacity": 0.1, "to": "Burt Bacharach", "value": 918}, {"color": "darkgrey", "from": "Elvis Presley", "labelHighlightBold": true, "opacity": 0.1, "to": "Yo-Yo Ma", "value": 907}, {"color": "darkgrey", "from": "Elvis Presley", "labelHighlightBold": true, "opacity": 0.1, "to": "Taylor Swift", "value": 865}, {"color": "darkgrey", "from": "Elvis Presley", "labelHighlightBold": true, "opacity": 0.1, "to": "Ray Charles", "value": 2453}, {"color": "darkgrey", "from": "Elvis Presley", "labelHighlightBold": true, "opacity": 0.1, "to": "Frank Sinatra", "value": 1907}, {"color": "darkgrey", "from": "Elvis Presley", "labelHighlightBold": true, "opacity": 0.1, "to": "Louis Armstrong", "value": 1189}, {"color": "darkgrey", "from": "Elvis Presley", "labelHighlightBold": true, "opacity": 0.1, "to": "Nat King Cole", "value": 1155}, {"color": "darkgrey", "from": "Elvis Presley", "labelHighlightBold": true, "opacity": 0.1, "to": "Johnny Cash", "value": 1870}, {"color": "darkgrey", "from": "Elvis Presley", "labelHighlightBold": true, "opacity": 0.1, "to": "David Bowie", "value": 1462}, {"color": "darkgrey", "from": "Elvis Presley", "labelHighlightBold": true, "opacity": 0.1, "to": "Elton John", "value": 1299}, {"color": "darkgrey", "from": "Elvis Presley", "labelHighlightBold": true, "opacity": 0.1, "to": "Etta James", "value": 983}, {"color": "darkgrey", "from": "Elvis Presley", "labelHighlightBold": true, "opacity": 0.1, "to": "Natalie Cole", "value": 929}, {"color": "darkgrey", "from": "Elvis Presley", "labelHighlightBold": true, "opacity": 0.1, "to": "Stevie Wonder", "value": 746}, {"color": "darkgrey", "from": "Elvis Presley", "labelHighlightBold": true, "opacity": 0.1, "to": "Dionne Warwick", "value": 941}, {"color": "darkgrey", "from": "Elvis Presley", "labelHighlightBold": true, "opacity": 0.1, "to": "Enya", "value": 924}, {"color": "darkgrey", "from": "Elvis Presley", "labelHighlightBold": true, "opacity": 0.1, "to": "Eminem", "value": 1606}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {"nodes": {"font": {"size": 25}}, "physics": {"forceAtlas2Based": {"springLength": 50, "springConstant": 0.205}, "minVelocity": 0.75, "solver": "forceAtlas2Based"}};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>

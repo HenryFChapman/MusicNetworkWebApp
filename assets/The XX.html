@@ -1,0 +1,80 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-network@latest/styles/vis-network.css" type="text/css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vis-network@latest/dist/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100%;
+            height: 100%;
+            background-color: #FFFFFF;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"color": "#BEC171", "font": {"color": "black"}, "font_size": 1000, "id": "The XX", "label": "The XX", "shape": "dot", "title": "Indie Rock Neighbors:\u003cbr\u003eTove Lo", "value": 1}, {"color": "#3881BB", "font": {"color": "black"}, "font_size": 1000, "id": "Tove Lo", "label": "Tove Lo", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eTaylor Swift\u003cbr\u003eKylie Minogue\u003cbr\u003eNicki Minaj\u003cbr\u003eMajor Lazer\u003cbr\u003eLana Del Rey\u003cbr\u003eAriana Grande\u003cbr\u003eBeyonc\u00e9\u003cbr\u003eLady Gaga\u003cbr\u003eColdplay\u003cbr\u003eKaty Perry\u003cbr\u003eEllie Goulding\u003cbr\u003eThe Weeknd\u003cbr\u003eSelena Gomez\u003cbr\u003eCarly Rae Jepsen\u003cbr\u003eMiley Cyrus\u003cbr\u003eCharli XCX\u003cbr\u003eMartin Garrix\u003cbr\u003eSean Paul\u003cbr\u003eThe XX\u003cbr\u003eBritney Spears\u003cbr\u003eMelanie Martinez", "value": 21}, {"color": "#3881BB", "font": {"color": "black"}, "font_size": 1000, "id": "Charli XCX", "label": "Charli XCX", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eTove Lo", "value": 1}, {"color": "#3881BB", "font": {"color": "black"}, "font_size": 1000, "id": "Taylor Swift", "label": "Taylor Swift", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eTove Lo", "value": 1}, {"color": "#3881BB", "font": {"color": "black"}, "font_size": 1000, "id": "Lady Gaga", "label": "Lady Gaga", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eTove Lo", "value": 1}, {"color": "#3881BB", "font": {"color": "black"}, "font_size": 1000, "id": "Carly Rae Jepsen", "label": "Carly Rae Jepsen", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eTove Lo", "value": 1}, {"color": "#3881BB", "font": {"color": "black"}, "font_size": 1000, "id": "Ariana Grande", "label": "Ariana Grande", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eTove Lo", "value": 1}, {"color": "#3881BB", "font": {"color": "black"}, "font_size": 1000, "id": "Kylie Minogue", "label": "Kylie Minogue", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eTove Lo", "value": 1}, {"color": "#3881BB", "font": {"color": "black"}, "font_size": 1000, "id": "Miley Cyrus", "label": "Miley Cyrus", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eTove Lo", "value": 1}, {"color": "#3881BB", "font": {"color": "black"}, "font_size": 1000, "id": "Beyonc\u00e9", "label": "Beyonc\u00e9", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eTove Lo", "value": 1}, {"color": "#3881BB", "font": {"color": "black"}, "font_size": 1000, "id": "Ellie Goulding", "label": "Ellie Goulding", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eTove Lo", "value": 1}, {"color": "#3881BB", "font": {"color": "black"}, "font_size": 1000, "id": "Katy Perry", "label": "Katy Perry", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eTove Lo", "value": 1}, {"color": "#3881BB", "font": {"color": "black"}, "font_size": 1000, "id": "Selena Gomez", "label": "Selena Gomez", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eTove Lo", "value": 1}, {"color": "#3881BB", "font": {"color": "black"}, "font_size": 1000, "id": "Melanie Martinez", "label": "Melanie Martinez", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eTove Lo", "value": 1}, {"color": "#3881BB", "font": {"color": "black"}, "font_size": 1000, "id": "Britney Spears", "label": "Britney Spears", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eTove Lo", "value": 1}, {"color": "#F01F62", "font": {"color": "black"}, "font_size": 1000, "id": "Lana Del Rey", "label": "Lana Del Rey", "shape": "dot", "title": "Alternative Neighbors:\u003cbr\u003eTove Lo", "value": 1}, {"color": "#A24C7A", "font": {"color": "black"}, "font_size": 1000, "id": "The Weeknd", "label": "The Weeknd", "shape": "dot", "title": "R\u0026B/Soul Neighbors:\u003cbr\u003eTove Lo", "value": 1}, {"color": "#26CFCF", "font": {"color": "black"}, "font_size": 1000, "id": "Martin Garrix", "label": "Martin Garrix", "shape": "dot", "title": "House Neighbors:\u003cbr\u003eTove Lo", "value": 1}, {"color": "#D4DE3D", "font": {"color": "black"}, "font_size": 1000, "id": "Sean Paul", "label": "Sean Paul", "shape": "dot", "title": "Reggaeton y Hip-Hop Neighbors:\u003cbr\u003eTove Lo", "value": 1}, {"color": "#94EB7A", "font": {"color": "black"}, "font_size": 1000, "id": "Nicki Minaj", "label": "Nicki Minaj", "shape": "dot", "title": "Hip-Hop Neighbors:\u003cbr\u003eTove Lo", "value": 1}, {"color": "#0B5A01", "font": {"color": "black"}, "font_size": 1000, "id": "Coldplay", "label": "Coldplay", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003eTove Lo", "value": 1}, {"color": "#C23D1D", "font": {"color": "black"}, "font_size": 1000, "id": "Major Lazer", "label": "Major Lazer", "shape": "dot", "title": "Reggae Neighbors:\u003cbr\u003eTove Lo", "value": 1}]);
+        edges = new vis.DataSet([{"color": "darkgrey", "from": "The XX", "labelHighlightBold": true, "opacity": 0.1, "to": "Tove Lo", "value": 195}, {"color": "darkgrey", "from": "Tove Lo", "labelHighlightBold": true, "opacity": 0.1, "to": "Charli XCX", "value": 2702}, {"color": "darkgrey", "from": "Tove Lo", "labelHighlightBold": true, "opacity": 0.1, "to": "Taylor Swift", "value": 1405}, {"color": "darkgrey", "from": "Tove Lo", "labelHighlightBold": true, "opacity": 0.1, "to": "Lady Gaga", "value": 1274}, {"color": "darkgrey", "from": "Tove Lo", "labelHighlightBold": true, "opacity": 0.1, "to": "Carly Rae Jepsen", "value": 951}, {"color": "darkgrey", "from": "Tove Lo", "labelHighlightBold": true, "opacity": 0.1, "to": "Ariana Grande", "value": 1142}, {"color": "darkgrey", "from": "Tove Lo", "labelHighlightBold": true, "opacity": 0.1, "to": "Kylie Minogue", "value": 822}, {"color": "darkgrey", "from": "Tove Lo", "labelHighlightBold": true, "opacity": 0.1, "to": "Miley Cyrus", "value": 769}, {"color": "darkgrey", "from": "Tove Lo", "labelHighlightBold": true, "opacity": 0.1, "to": "Beyonc\u00e9", "value": 828}, {"color": "darkgrey", "from": "Tove Lo", "labelHighlightBold": true, "opacity": 0.1, "to": "Ellie Goulding", "value": 551}, {"color": "darkgrey", "from": "Tove Lo", "labelHighlightBold": true, "opacity": 0.1, "to": "Katy Perry", "value": 547}, {"color": "darkgrey", "from": "Tove Lo", "labelHighlightBold": true, "opacity": 0.1, "to": "Selena Gomez", "value": 421}, {"color": "darkgrey", "from": "Tove Lo", "labelHighlightBold": true, "opacity": 0.1, "to": "Melanie Martinez", "value": 373}, {"color": "darkgrey", "from": "Tove Lo", "labelHighlightBold": true, "opacity": 0.1, "to": "Britney Spears", "value": 332}, {"color": "darkgrey", "from": "Tove Lo", "labelHighlightBold": true, "opacity": 0.1, "to": "Lana Del Rey", "value": 2193}, {"color": "darkgrey", "from": "Tove Lo", "labelHighlightBold": true, "opacity": 0.1, "to": "The Weeknd", "value": 729}, {"color": "darkgrey", "from": "Tove Lo", "labelHighlightBold": true, "opacity": 0.1, "to": "Martin Garrix", "value": 1041}, {"color": "darkgrey", "from": "Tove Lo", "labelHighlightBold": true, "opacity": 0.1, "to": "Sean Paul", "value": 694}, {"color": "darkgrey", "from": "Tove Lo", "labelHighlightBold": true, "opacity": 0.1, "to": "Nicki Minaj", "value": 421}, {"color": "darkgrey", "from": "Tove Lo", "labelHighlightBold": true, "opacity": 0.1, "to": "Coldplay", "value": 403}, {"color": "darkgrey", "from": "Tove Lo", "labelHighlightBold": true, "opacity": 0.1, "to": "Major Lazer", "value": 360}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {"nodes": {"font": {"size": 25}}, "physics": {"forceAtlas2Based": {"springLength": 50, "springConstant": 0.205}, "minVelocity": 0.75, "solver": "forceAtlas2Based"}};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-network@latest/styles/vis-network.css" type="text/css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vis-network@latest/dist/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100%;
+            height: 100%;
+            background-color: #FFFFFF;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"color": "#EF34DF", "font": {"color": "black"}, "font_size": 1000, "id": "Prince", "label": "Prince", "shape": "dot", "title": "R\u0026B/Soul Neighbors:\u003cbr\u003eMichael Jackson\u003cbr\u003eBeyonc\u00e9", "value": 2}, {"color": "#281A6C", "font": {"color": "black"}, "font_size": 1000, "id": "Michael Jackson", "label": "Michael Jackson", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eThe Jackson 5\u003cbr\u003eTaylor Swift\u003cbr\u003eJustin Bieber\u003cbr\u003eThe Beatles\u003cbr\u003eMariah Carey\u003cbr\u003eStevie Wonder\u003cbr\u003ePrince\u003cbr\u003eBeyonc\u00e9\u003cbr\u003eDiana Ross\u003cbr\u003eLady Gaga\u003cbr\u003eFreddie Mercury\u003cbr\u003ePaul McCartney\u003cbr\u003eElvis Presley\u003cbr\u003eEminem\u003cbr\u003eBruno Mars\u003cbr\u003eThe Weeknd\u003cbr\u003eJanet Jackson\u003cbr\u003eWhitney Houston\u003cbr\u003eChris Brown\u003cbr\u003eKanye West\u003cbr\u003eBritney Spears", "value": 21}, {"color": "#281A6C", "font": {"color": "black"}, "font_size": 1000, "id": "Beyonc\u00e9", "label": "Beyonc\u00e9", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eTaylor Swift\u003cbr\u003eNicki Minaj\u003cbr\u003eMichael Jackson\u003cbr\u003eLana Del Rey\u003cbr\u003eMariah Carey\u003cbr\u003eAriana Grande\u003cbr\u003ePrince\u003cbr\u003eDestiny\u0027s Child\u003cbr\u003eJennifer Lopez\u003cbr\u003eLady Gaga\u003cbr\u003eKehlani\u003cbr\u003eColdplay\u003cbr\u003eBruno Mars\u003cbr\u003eKaty Perry\u003cbr\u003eRihanna\u003cbr\u003eMiley Cyrus\u003cbr\u003eKanye West\u003cbr\u003eKendrick Lamar\u003cbr\u003eBritney Spears", "value": 19}, {"color": "#281A6C", "font": {"color": "black"}, "font_size": 1000, "id": "The Beatles", "label": "The Beatles", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eMichael Jackson", "value": 1}, {"color": "#281A6C", "font": {"color": "black"}, "font_size": 1000, "id": "Whitney Houston", "label": "Whitney Houston", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eMichael Jackson", "value": 1}, {"color": "#281A6C", "font": {"color": "black"}, "font_size": 1000, "id": "Chris Brown", "label": "Chris Brown", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eMichael Jackson", "value": 1}, {"color": "#281A6C", "font": {"color": "black"}, "font_size": 1000, "id": "Taylor Swift", "label": "Taylor Swift", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eMichael Jackson\u003cbr\u003eBeyonc\u00e9", "value": 2}, {"color": "#281A6C", "font": {"color": "black"}, "font_size": 1000, "id": "Britney Spears", "label": "Britney Spears", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eMichael Jackson\u003cbr\u003eBeyonc\u00e9", "value": 2}, {"color": "#281A6C", "font": {"color": "black"}, "font_size": 1000, "id": "Justin Bieber", "label": "Justin Bieber", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eMichael Jackson", "value": 1}, {"color": "#281A6C", "font": {"color": "black"}, "font_size": 1000, "id": "Mariah Carey", "label": "Mariah Carey", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eMichael Jackson\u003cbr\u003eBeyonc\u00e9", "value": 2}, {"color": "#281A6C", "font": {"color": "black"}, "font_size": 1000, "id": "Lady Gaga", "label": "Lady Gaga", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eMichael Jackson\u003cbr\u003eBeyonc\u00e9", "value": 2}, {"color": "#281A6C", "font": {"color": "black"}, "font_size": 1000, "id": "Rihanna", "label": "Rihanna", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eBeyonc\u00e9", "value": 1}, {"color": "#281A6C", "font": {"color": "black"}, "font_size": 1000, "id": "Ariana Grande", "label": "Ariana Grande", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eBeyonc\u00e9", "value": 1}, {"color": "#281A6C", "font": {"color": "black"}, "font_size": 1000, "id": "Katy Perry", "label": "Katy Perry", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eBeyonc\u00e9", "value": 1}, {"color": "#281A6C", "font": {"color": "black"}, "font_size": 1000, "id": "Miley Cyrus", "label": "Miley Cyrus", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eBeyonc\u00e9", "value": 1}, {"color": "#281A6C", "font": {"color": "black"}, "font_size": 1000, "id": "Jennifer Lopez", "label": "Jennifer Lopez", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eBeyonc\u00e9", "value": 1}, {"color": "#EF34DF", "font": {"color": "black"}, "font_size": 1000, "id": "Janet Jackson", "label": "Janet Jackson", "shape": "dot", "title": "R\u0026B/Soul Neighbors:\u003cbr\u003eMichael Jackson", "value": 1}, {"color": "#EF34DF", "font": {"color": "black"}, "font_size": 1000, "id": "The Weeknd", "label": "The Weeknd", "shape": "dot", "title": "R\u0026B/Soul Neighbors:\u003cbr\u003eMichael Jackson", "value": 1}, {"color": "#EF34DF", "font": {"color": "black"}, "font_size": 1000, "id": "The Jackson 5", "label": "The Jackson 5", "shape": "dot", "title": "R\u0026B/Soul Neighbors:\u003cbr\u003eMichael Jackson", "value": 1}, {"color": "#EF34DF", "font": {"color": "black"}, "font_size": 1000, "id": "Stevie Wonder", "label": "Stevie Wonder", "shape": "dot", "title": "R\u0026B/Soul Neighbors:\u003cbr\u003eMichael Jackson", "value": 1}, {"color": "#EF34DF", "font": {"color": "black"}, "font_size": 1000, "id": "Diana Ross", "label": "Diana Ross", "shape": "dot", "title": "R\u0026B/Soul Neighbors:\u003cbr\u003eMichael Jackson", "value": 1}, {"color": "#EF34DF", "font": {"color": "black"}, "font_size": 1000, "id": "Destiny\u0027s Child", "label": "Destiny\u0027s Child", "shape": "dot", "title": "R\u0026B/Soul Neighbors:\u003cbr\u003eBeyonc\u00e9", "value": 1}, {"color": "#5D096D", "font": {"color": "black"}, "font_size": 1000, "id": "Kanye West", "label": "Kanye West", "shape": "dot", "title": "Hip-Hop/Rap Neighbors:\u003cbr\u003eMichael Jackson\u003cbr\u003eBeyonc\u00e9", "value": 2}, {"color": "#E6E704", "font": {"color": "black"}, "font_size": 1000, "id": "Elvis Presley", "label": "Elvis Presley", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003eMichael Jackson", "value": 1}, {"color": "#E6E704", "font": {"color": "black"}, "font_size": 1000, "id": "Freddie Mercury", "label": "Freddie Mercury", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003eMichael Jackson", "value": 1}, {"color": "#E6E704", "font": {"color": "black"}, "font_size": 1000, "id": "Coldplay", "label": "Coldplay", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003eBeyonc\u00e9", "value": 1}, {"color": "#4F0628", "font": {"color": "black"}, "font_size": 1000, "id": "Paul McCartney", "label": "Paul McCartney", "shape": "dot", "title": "Rock \u0026 Roll Neighbors:\u003cbr\u003eMichael Jackson", "value": 1}, {"color": "#2FA4F2", "font": {"color": "black"}, "font_size": 1000, "id": "Eminem", "label": "Eminem", "shape": "dot", "title": "Rap Neighbors:\u003cbr\u003eMichael Jackson", "value": 1}, {"color": "#609795", "font": {"color": "black"}, "font_size": 1000, "id": "Bruno Mars", "label": "Bruno Mars", "shape": "dot", "title": "Pop/Rock Neighbors:\u003cbr\u003eMichael Jackson\u003cbr\u003eBeyonc\u00e9", "value": 2}, {"color": "#09E355", "font": {"color": "black"}, "font_size": 1000, "id": "Nicki Minaj", "label": "Nicki Minaj", "shape": "dot", "title": "Hip-Hop Neighbors:\u003cbr\u003eBeyonc\u00e9", "value": 1}, {"color": "#F60A27", "font": {"color": "black"}, "font_size": 1000, "id": "Kehlani", "label": "Kehlani", "shape": "dot", "title": "R\u0026B Neighbors:\u003cbr\u003eBeyonc\u00e9", "value": 1}, {"color": "#3E6D68", "font": {"color": "black"}, "font_size": 1000, "id": "Kendrick Lamar", "label": "Kendrick Lamar", "shape": "dot", "title": "Alternative Rap Neighbors:\u003cbr\u003eBeyonc\u00e9", "value": 1}, {"color": "#3CDF27", "font": {"color": "black"}, "font_size": 1000, "id": "Lana Del Rey", "label": "Lana Del Rey", "shape": "dot", "title": "Alternative Neighbors:\u003cbr\u003eBeyonc\u00e9", "value": 1}]);
+        edges = new vis.DataSet([{"color": "darkgrey", "from": "Prince", "labelHighlightBold": true, "opacity": 0.1, "to": "Michael Jackson", "value": 354}, {"color": "darkgrey", "from": "Prince", "labelHighlightBold": true, "opacity": 0.1, "to": "Beyonc\u00e9", "value": 186}, {"color": "darkgrey", "from": "Michael Jackson", "labelHighlightBold": true, "opacity": 0.1, "to": "Beyonc\u00e9", "value": 1541}, {"color": "darkgrey", "from": "Michael Jackson", "labelHighlightBold": true, "opacity": 0.1, "to": "The Beatles", "value": 1247}, {"color": "darkgrey", "from": "Michael Jackson", "labelHighlightBold": true, "opacity": 0.1, "to": "Whitney Houston", "value": 809}, {"color": "darkgrey", "from": "Michael Jackson", "labelHighlightBold": true, "opacity": 0.1, "to": "Chris Brown", "value": 664}, {"color": "darkgrey", "from": "Michael Jackson", "labelHighlightBold": true, "opacity": 0.1, "to": "Taylor Swift", "value": 579}, {"color": "darkgrey", "from": "Michael Jackson", "labelHighlightBold": true, "opacity": 0.1, "to": "Britney Spears", "value": 516}, {"color": "darkgrey", "from": "Michael Jackson", "labelHighlightBold": true, "opacity": 0.1, "to": "Justin Bieber", "value": 454}, {"color": "darkgrey", "from": "Michael Jackson", "labelHighlightBold": true, "opacity": 0.1, "to": "Mariah Carey", "value": 371}, {"color": "darkgrey", "from": "Michael Jackson", "labelHighlightBold": true, "opacity": 0.1, "to": "Lady Gaga", "value": 380}, {"color": "darkgrey", "from": "Beyonc\u00e9", "labelHighlightBold": true, "opacity": 0.1, "to": "Taylor Swift", "value": 1184}, {"color": "darkgrey", "from": "Beyonc\u00e9", "labelHighlightBold": true, "opacity": 0.1, "to": "Britney Spears", "value": 252}, {"color": "darkgrey", "from": "Beyonc\u00e9", "labelHighlightBold": true, "opacity": 0.1, "to": "Mariah Carey", "value": 338}, {"color": "darkgrey", "from": "Beyonc\u00e9", "labelHighlightBold": true, "opacity": 0.1, "to": "Lady Gaga", "value": 1208}, {"color": "darkgrey", "from": "Beyonc\u00e9", "labelHighlightBold": true, "opacity": 0.1, "to": "Rihanna", "value": 1825}, {"color": "darkgrey", "from": "Beyonc\u00e9", "labelHighlightBold": true, "opacity": 0.1, "to": "Ariana Grande", "value": 865}, {"color": "darkgrey", "from": "Beyonc\u00e9", "labelHighlightBold": true, "opacity": 0.1, "to": "Katy Perry", "value": 489}, {"color": "darkgrey", "from": "Beyonc\u00e9", "labelHighlightBold": true, "opacity": 0.1, "to": "Miley Cyrus", "value": 364}, {"color": "darkgrey", "from": "Beyonc\u00e9", "labelHighlightBold": true, "opacity": 0.1, "to": "Jennifer Lopez", "value": 269}, {"color": "darkgrey", "from": "Michael Jackson", "labelHighlightBold": true, "opacity": 0.1, "to": "Janet Jackson", "value": 1190}, {"color": "darkgrey", "from": "Michael Jackson", "labelHighlightBold": true, "opacity": 0.1, "to": "The Weeknd", "value": 684}, {"color": "darkgrey", "from": "Michael Jackson", "labelHighlightBold": true, "opacity": 0.1, "to": "The Jackson 5", "value": 750}, {"color": "darkgrey", "from": "Michael Jackson", "labelHighlightBold": true, "opacity": 0.1, "to": "Stevie Wonder", "value": 549}, {"color": "darkgrey", "from": "Michael Jackson", "labelHighlightBold": true, "opacity": 0.1, "to": "Diana Ross", "value": 386}, {"color": "darkgrey", "from": "Beyonc\u00e9", "labelHighlightBold": true, "opacity": 0.1, "to": "Destiny\u0027s Child", "value": 325}, {"color": "darkgrey", "from": "Michael Jackson", "labelHighlightBold": true, "opacity": 0.1, "to": "Kanye West", "value": 983}, {"color": "darkgrey", "from": "Beyonc\u00e9", "labelHighlightBold": true, "opacity": 0.1, "to": "Kanye West", "value": 888}, {"color": "darkgrey", "from": "Michael Jackson", "labelHighlightBold": true, "opacity": 0.1, "to": "Elvis Presley", "value": 427}, {"color": "darkgrey", "from": "Michael Jackson", "labelHighlightBold": true, "opacity": 0.1, "to": "Freddie Mercury", "value": 390}, {"color": "darkgrey", "from": "Beyonc\u00e9", "labelHighlightBold": true, "opacity": 0.1, "to": "Coldplay", "value": 245}, {"color": "darkgrey", "from": "Michael Jackson", "labelHighlightBold": true, "opacity": 0.1, "to": "Paul McCartney", "value": 435}, {"color": "darkgrey", "from": "Michael Jackson", "labelHighlightBold": true, "opacity": 0.1, "to": "Eminem", "value": 358}, {"color": "darkgrey", "from": "Michael Jackson", "labelHighlightBold": true, "opacity": 0.1, "to": "Bruno Mars", "value": 314}, {"color": "darkgrey", "from": "Beyonc\u00e9", "labelHighlightBold": true, "opacity": 0.1, "to": "Bruno Mars", "value": 328}, {"color": "darkgrey", "from": "Beyonc\u00e9", "labelHighlightBold": true, "opacity": 0.1, "to": "Nicki Minaj", "value": 1951}, {"color": "darkgrey", "from": "Beyonc\u00e9", "labelHighlightBold": true, "opacity": 0.1, "to": "Kehlani", "value": 303}, {"color": "darkgrey", "from": "Beyonc\u00e9", "labelHighlightBold": true, "opacity": 0.1, "to": "Kendrick Lamar", "value": 293}, {"color": "darkgrey", "from": "Beyonc\u00e9", "labelHighlightBold": true, "opacity": 0.1, "to": "Lana Del Rey", "value": 268}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {"nodes": {"font": {"size": 25}}, "physics": {"forceAtlas2Based": {"springLength": 50, "springConstant": 0.205}, "minVelocity": 0.75, "solver": "forceAtlas2Based"}};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>

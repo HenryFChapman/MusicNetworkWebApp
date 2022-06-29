@@ -1,0 +1,80 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-network@latest/styles/vis-network.css" type="text/css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vis-network@latest/dist/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100%;
+            height: 100%;
+            background-color: #FFFFFF;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"color": "#24FFC1", "font": {"color": "black"}, "font_size": 1000, "id": "Future", "label": "Future", "shape": "dot", "title": "Hip-Hop/Rap Neighbors:\u003cbr\u003eYoung Thug\u003cbr\u003eKanye West", "value": 2}, {"color": "#24FFC1", "font": {"color": "black"}, "font_size": 1000, "id": "Kanye West", "label": "Kanye West", "shape": "dot", "title": "Hip-Hop/Rap Neighbors:\u003cbr\u003eKid Cudi\u003cbr\u003eTaylor Swift\u003cbr\u003eFrank Ocean\u003cbr\u003eRick Ross\u003cbr\u003eNicki Minaj\u003cbr\u003eJustin Bieber\u003cbr\u003eLil Wayne\u003cbr\u003eLil Durk\u003cbr\u003eBeyonc\u00e9\u003cbr\u003eYoung Thug\u003cbr\u003eMac Miller\u003cbr\u003eFuture\u003cbr\u003ePharrell Williams\u003cbr\u003eEminem\u003cbr\u003eThe Weeknd\u003cbr\u003ePusha T\u003cbr\u003eRihanna\u003cbr\u003eJ. Cole\u003cbr\u003eKendrick Lamar", "value": 19}, {"color": "#24FFC1", "font": {"color": "black"}, "font_size": 1000, "id": "Kid Cudi", "label": "Kid Cudi", "shape": "dot", "title": "Hip-Hop/Rap Neighbors:\u003cbr\u003eYoung Thug\u003cbr\u003eKanye West", "value": 2}, {"color": "#24FFC1", "font": {"color": "black"}, "font_size": 1000, "id": "Lil Wayne", "label": "Lil Wayne", "shape": "dot", "title": "Hip-Hop/Rap Neighbors:\u003cbr\u003eYoung Thug\u003cbr\u003eKanye West", "value": 2}, {"color": "#24FFC1", "font": {"color": "black"}, "font_size": 1000, "id": "Pusha T", "label": "Pusha T", "shape": "dot", "title": "Hip-Hop/Rap Neighbors:\u003cbr\u003eYoung Thug\u003cbr\u003eKanye West", "value": 2}, {"color": "#24FFC1", "font": {"color": "black"}, "font_size": 1000, "id": "Frank Ocean", "label": "Frank Ocean", "shape": "dot", "title": "Hip-Hop/Rap Neighbors:\u003cbr\u003eKanye West", "value": 1}, {"color": "#24FFC1", "font": {"color": "black"}, "font_size": 1000, "id": "J. Cole", "label": "J. Cole", "shape": "dot", "title": "Hip-Hop/Rap Neighbors:\u003cbr\u003eYoung Thug\u003cbr\u003eKanye West", "value": 2}, {"color": "#24FFC1", "font": {"color": "black"}, "font_size": 1000, "id": "Rick Ross", "label": "Rick Ross", "shape": "dot", "title": "Hip-Hop/Rap Neighbors:\u003cbr\u003eKanye West", "value": 1}, {"color": "#24FFC1", "font": {"color": "black"}, "font_size": 1000, "id": "Mac Miller", "label": "Mac Miller", "shape": "dot", "title": "Hip-Hop/Rap Neighbors:\u003cbr\u003eYoung Thug\u003cbr\u003eKanye West", "value": 2}, {"color": "#A7B4C3", "font": {"color": "black"}, "font_size": 1000, "id": "Young Thug", "label": "Young Thug", "shape": "dot", "title": "Hip-Hop Neighbors:\u003cbr\u003eKid Cudi\u003cbr\u003eNicki Minaj\u003cbr\u003eJustin Bieber\u003cbr\u003eLil Wayne\u003cbr\u003eLil Durk\u003cbr\u003eMeek Mill\u003cbr\u003eBryson Tiller\u003cbr\u003eMac Miller\u003cbr\u003eFuture\u003cbr\u003eEminem\u003cbr\u003eChief Keef\u003cbr\u003eThe Weeknd\u003cbr\u003eBilly Ray Cyrus\u003cbr\u003ePusha T\u003cbr\u003eJ. Cole\u003cbr\u003eKanye West\u003cbr\u003eChris Brown\u003cbr\u003eKendrick Lamar\u003cbr\u003eBobby Shmurda\u003cbr\u003eGucci Mane", "value": 20}, {"color": "#24FFC1", "font": {"color": "black"}, "font_size": 1000, "id": "Gucci Mane", "label": "Gucci Mane", "shape": "dot", "title": "Hip-Hop/Rap Neighbors:\u003cbr\u003eYoung Thug", "value": 1}, {"color": "#A7B4C3", "font": {"color": "black"}, "font_size": 1000, "id": "Nicki Minaj", "label": "Nicki Minaj", "shape": "dot", "title": "Hip-Hop Neighbors:\u003cbr\u003eYoung Thug\u003cbr\u003eKanye West", "value": 2}, {"color": "#A7B4C3", "font": {"color": "black"}, "font_size": 1000, "id": "Lil Durk", "label": "Lil Durk", "shape": "dot", "title": "Hip-Hop Neighbors:\u003cbr\u003eYoung Thug\u003cbr\u003eKanye West", "value": 2}, {"color": "#A7B4C3", "font": {"color": "black"}, "font_size": 1000, "id": "Meek Mill", "label": "Meek Mill", "shape": "dot", "title": "Hip-Hop Neighbors:\u003cbr\u003eYoung Thug", "value": 1}, {"color": "#A7B4C3", "font": {"color": "black"}, "font_size": 1000, "id": "Chief Keef", "label": "Chief Keef", "shape": "dot", "title": "Hip-Hop Neighbors:\u003cbr\u003eYoung Thug", "value": 1}, {"color": "#A7B4C3", "font": {"color": "black"}, "font_size": 1000, "id": "Bobby Shmurda", "label": "Bobby Shmurda", "shape": "dot", "title": "Hip-Hop Neighbors:\u003cbr\u003eYoung Thug", "value": 1}, {"color": "#98C65E", "font": {"color": "black"}, "font_size": 1000, "id": "Kendrick Lamar", "label": "Kendrick Lamar", "shape": "dot", "title": "Alternative Rap Neighbors:\u003cbr\u003eYoung Thug\u003cbr\u003eKanye West", "value": 2}, {"color": "#D389EF", "font": {"color": "black"}, "font_size": 1000, "id": "Taylor Swift", "label": "Taylor Swift", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eKanye West", "value": 1}, {"color": "#D389EF", "font": {"color": "black"}, "font_size": 1000, "id": "Beyonc\u00e9", "label": "Beyonc\u00e9", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eKanye West", "value": 1}, {"color": "#D389EF", "font": {"color": "black"}, "font_size": 1000, "id": "Rihanna", "label": "Rihanna", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eKanye West", "value": 1}, {"color": "#D389EF", "font": {"color": "black"}, "font_size": 1000, "id": "Justin Bieber", "label": "Justin Bieber", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eYoung Thug\u003cbr\u003eKanye West", "value": 2}, {"color": "#D389EF", "font": {"color": "black"}, "font_size": 1000, "id": "Pharrell Williams", "label": "Pharrell Williams", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eKanye West", "value": 1}, {"color": "#D389EF", "font": {"color": "black"}, "font_size": 1000, "id": "Chris Brown", "label": "Chris Brown", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eYoung Thug", "value": 1}, {"color": "#7BC4E2", "font": {"color": "black"}, "font_size": 1000, "id": "Eminem", "label": "Eminem", "shape": "dot", "title": "Rap Neighbors:\u003cbr\u003eYoung Thug\u003cbr\u003eKanye West", "value": 2}, {"color": "#6DEFD8", "font": {"color": "black"}, "font_size": 1000, "id": "The Weeknd", "label": "The Weeknd", "shape": "dot", "title": "R\u0026B/Soul Neighbors:\u003cbr\u003eYoung Thug\u003cbr\u003eKanye West", "value": 2}, {"color": "#4F90FF", "font": {"color": "black"}, "font_size": 1000, "id": "Billy Ray Cyrus", "label": "Billy Ray Cyrus", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eYoung Thug", "value": 1}, {"color": "#34D2C9", "font": {"color": "black"}, "font_size": 1000, "id": "Bryson Tiller", "label": "Bryson Tiller", "shape": "dot", "title": "R\u0026B Neighbors:\u003cbr\u003eYoung Thug", "value": 1}]);
+        edges = new vis.DataSet([{"color": "darkgrey", "from": "Future", "labelHighlightBold": true, "opacity": 0.1, "to": "Kanye West", "value": 221}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Kid Cudi", "value": 2022}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Lil Wayne", "value": 1173}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Pusha T", "value": 921}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Frank Ocean", "value": 834}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "J. Cole", "value": 541}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Rick Ross", "value": 524}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Mac Miller", "value": 388}, {"color": "darkgrey", "from": "Young Thug", "labelHighlightBold": true, "opacity": 0.1, "to": "Kanye West", "value": 2039}, {"color": "darkgrey", "from": "Young Thug", "labelHighlightBold": true, "opacity": 0.1, "to": "Kid Cudi", "value": 1138}, {"color": "darkgrey", "from": "Young Thug", "labelHighlightBold": true, "opacity": 0.1, "to": "Lil Wayne", "value": 1693}, {"color": "darkgrey", "from": "Young Thug", "labelHighlightBold": true, "opacity": 0.1, "to": "Pusha T", "value": 453}, {"color": "darkgrey", "from": "Young Thug", "labelHighlightBold": true, "opacity": 0.1, "to": "J. Cole", "value": 1388}, {"color": "darkgrey", "from": "Young Thug", "labelHighlightBold": true, "opacity": 0.1, "to": "Mac Miller", "value": 509}, {"color": "darkgrey", "from": "Young Thug", "labelHighlightBold": true, "opacity": 0.1, "to": "Gucci Mane", "value": 537}, {"color": "darkgrey", "from": "Future", "labelHighlightBold": true, "opacity": 0.1, "to": "Young Thug", "value": 111}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Nicki Minaj", "value": 921}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Lil Durk", "value": 431}, {"color": "darkgrey", "from": "Young Thug", "labelHighlightBold": true, "opacity": 0.1, "to": "Nicki Minaj", "value": 585}, {"color": "darkgrey", "from": "Young Thug", "labelHighlightBold": true, "opacity": 0.1, "to": "Lil Durk", "value": 1302}, {"color": "darkgrey", "from": "Young Thug", "labelHighlightBold": true, "opacity": 0.1, "to": "Meek Mill", "value": 1381}, {"color": "darkgrey", "from": "Young Thug", "labelHighlightBold": true, "opacity": 0.1, "to": "Chief Keef", "value": 1556}, {"color": "darkgrey", "from": "Young Thug", "labelHighlightBold": true, "opacity": 0.1, "to": "Bobby Shmurda", "value": 967}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Kendrick Lamar", "value": 2426}, {"color": "darkgrey", "from": "Young Thug", "labelHighlightBold": true, "opacity": 0.1, "to": "Kendrick Lamar", "value": 1381}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Taylor Swift", "value": 1446}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Beyonc\u00e9", "value": 940}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Rihanna", "value": 543}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Justin Bieber", "value": 525}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Pharrell Williams", "value": 458}, {"color": "darkgrey", "from": "Young Thug", "labelHighlightBold": true, "opacity": 0.1, "to": "Justin Bieber", "value": 1000}, {"color": "darkgrey", "from": "Young Thug", "labelHighlightBold": true, "opacity": 0.1, "to": "Chris Brown", "value": 1633}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Eminem", "value": 1361}, {"color": "darkgrey", "from": "Young Thug", "labelHighlightBold": true, "opacity": 0.1, "to": "Eminem", "value": 719}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "The Weeknd", "value": 1179}, {"color": "darkgrey", "from": "Young Thug", "labelHighlightBold": true, "opacity": 0.1, "to": "The Weeknd", "value": 1418}, {"color": "darkgrey", "from": "Young Thug", "labelHighlightBold": true, "opacity": 0.1, "to": "Billy Ray Cyrus", "value": 706}, {"color": "darkgrey", "from": "Young Thug", "labelHighlightBold": true, "opacity": 0.1, "to": "Bryson Tiller", "value": 438}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {"nodes": {"font": {"size": 25}}, "physics": {"forceAtlas2Based": {"springLength": 50, "springConstant": 0.205}, "minVelocity": 0.75, "solver": "forceAtlas2Based"}};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>

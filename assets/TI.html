@@ -1,0 +1,80 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-network@latest/styles/vis-network.css" type="text/css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vis-network@latest/dist/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100%;
+            height: 100%;
+            background-color: #FFFFFF;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"color": "#34A79B", "font": {"color": "black"}, "font_size": 1000, "id": "Lil Wayne", "label": "Lil Wayne", "shape": "dot", "title": "Hip-Hop/Rap Neighbors:\u003cbr\u003eMac Miller\u003cbr\u003eBryson Tiller\u003cbr\u003eSnoop Dogg\u003cbr\u003eKid Cudi\u003cbr\u003eTyga\u003cbr\u003eEminem\u003cbr\u003eDJ Khaled\u003cbr\u003eKanye West\u003cbr\u003eChris Brown\u003cbr\u003eThe Weeknd\u003cbr\u003eKendrick Lamar\u003cbr\u003eRick Ross\u003cbr\u003eMeek Mill\u003cbr\u003eNicki Minaj\u003cbr\u003eYoung Thug\u003cbr\u003eBeyonc\u00e9\u003cbr\u003ePusha T\u003cbr\u003eJ. Cole", "value": 18}, {"color": "#34A79B", "font": {"color": "black"}, "font_size": 1000, "id": "Kanye West", "label": "Kanye West", "shape": "dot", "title": "Hip-Hop/Rap Neighbors:\u003cbr\u003eMac Miller\u003cbr\u003eKid Cudi\u003cbr\u003eEminem\u003cbr\u003eRihanna\u003cbr\u003eTaylor Swift\u003cbr\u003eLil Durk\u003cbr\u003eFrank Ocean\u003cbr\u003eJustin Bieber\u003cbr\u003ePharrell Williams\u003cbr\u003eThe Weeknd\u003cbr\u003eKendrick Lamar\u003cbr\u003eRick Ross\u003cbr\u003eBeyonc\u00e9\u003cbr\u003eNicki Minaj\u003cbr\u003eYoung Thug\u003cbr\u003ePusha T\u003cbr\u003eLil Wayne\u003cbr\u003eJ. Cole", "value": 18}, {"color": "#34A79B", "font": {"color": "black"}, "font_size": 1000, "id": "Tyga", "label": "Tyga", "shape": "dot", "title": "Hip-Hop/Rap Neighbors:\u003cbr\u003eLil Wayne", "value": 1}, {"color": "#34A79B", "font": {"color": "black"}, "font_size": 1000, "id": "Rick Ross", "label": "Rick Ross", "shape": "dot", "title": "Hip-Hop/Rap Neighbors:\u003cbr\u003eLil Wayne\u003cbr\u003eKanye West", "value": 2}, {"color": "#34A79B", "font": {"color": "black"}, "font_size": 1000, "id": "J. Cole", "label": "J. Cole", "shape": "dot", "title": "Hip-Hop/Rap Neighbors:\u003cbr\u003eLil Wayne\u003cbr\u003eKanye West", "value": 2}, {"color": "#34A79B", "font": {"color": "black"}, "font_size": 1000, "id": "Kid Cudi", "label": "Kid Cudi", "shape": "dot", "title": "Hip-Hop/Rap Neighbors:\u003cbr\u003eLil Wayne\u003cbr\u003eKanye West", "value": 2}, {"color": "#34A79B", "font": {"color": "black"}, "font_size": 1000, "id": "Mac Miller", "label": "Mac Miller", "shape": "dot", "title": "Hip-Hop/Rap Neighbors:\u003cbr\u003eLil Wayne\u003cbr\u003eKanye West", "value": 2}, {"color": "#34A79B", "font": {"color": "black"}, "font_size": 1000, "id": "Pusha T", "label": "Pusha T", "shape": "dot", "title": "Hip-Hop/Rap Neighbors:\u003cbr\u003eLil Wayne\u003cbr\u003eKanye West", "value": 2}, {"color": "#34A79B", "font": {"color": "black"}, "font_size": 1000, "id": "Snoop Dogg", "label": "Snoop Dogg", "shape": "dot", "title": "Hip-Hop/Rap Neighbors:\u003cbr\u003eLil Wayne", "value": 1}, {"color": "#34A79B", "font": {"color": "black"}, "font_size": 1000, "id": "Frank Ocean", "label": "Frank Ocean", "shape": "dot", "title": "Hip-Hop/Rap Neighbors:\u003cbr\u003eKanye West", "value": 1}, {"color": "#3846E0", "font": {"color": "black"}, "font_size": 1000, "id": "Eminem", "label": "Eminem", "shape": "dot", "title": "Rap Neighbors:\u003cbr\u003eLil Wayne\u003cbr\u003eKanye West", "value": 2}, {"color": "#E4E2D5", "font": {"color": "black"}, "font_size": 1000, "id": "Nicki Minaj", "label": "Nicki Minaj", "shape": "dot", "title": "Hip-Hop Neighbors:\u003cbr\u003eLil Wayne\u003cbr\u003eKanye West", "value": 2}, {"color": "#E4E2D5", "font": {"color": "black"}, "font_size": 1000, "id": "Young Thug", "label": "Young Thug", "shape": "dot", "title": "Hip-Hop Neighbors:\u003cbr\u003eLil Wayne\u003cbr\u003eKanye West", "value": 2}, {"color": "#E4E2D5", "font": {"color": "black"}, "font_size": 1000, "id": "DJ Khaled", "label": "DJ Khaled", "shape": "dot", "title": "Hip-Hop Neighbors:\u003cbr\u003eLil Wayne", "value": 1}, {"color": "#E4E2D5", "font": {"color": "black"}, "font_size": 1000, "id": "Meek Mill", "label": "Meek Mill", "shape": "dot", "title": "Hip-Hop Neighbors:\u003cbr\u003eLil Wayne", "value": 1}, {"color": "#E4E2D5", "font": {"color": "black"}, "font_size": 1000, "id": "Lil Durk", "label": "Lil Durk", "shape": "dot", "title": "Hip-Hop Neighbors:\u003cbr\u003eKanye West", "value": 1}, {"color": "#69F7AE", "font": {"color": "black"}, "font_size": 1000, "id": "Kendrick Lamar", "label": "Kendrick Lamar", "shape": "dot", "title": "Alternative Rap Neighbors:\u003cbr\u003eLil Wayne\u003cbr\u003eKanye West", "value": 2}, {"color": "#93014E", "font": {"color": "black"}, "font_size": 1000, "id": "The Weeknd", "label": "The Weeknd", "shape": "dot", "title": "R\u0026B/Soul Neighbors:\u003cbr\u003eLil Wayne\u003cbr\u003eKanye West", "value": 2}, {"color": "#A57000", "font": {"color": "black"}, "font_size": 1000, "id": "Chris Brown", "label": "Chris Brown", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eLil Wayne", "value": 1}, {"color": "#A57000", "font": {"color": "black"}, "font_size": 1000, "id": "Beyonc\u00e9", "label": "Beyonc\u00e9", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eLil Wayne\u003cbr\u003eKanye West", "value": 2}, {"color": "#A57000", "font": {"color": "black"}, "font_size": 1000, "id": "Taylor Swift", "label": "Taylor Swift", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eKanye West", "value": 1}, {"color": "#A57000", "font": {"color": "black"}, "font_size": 1000, "id": "Rihanna", "label": "Rihanna", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eKanye West", "value": 1}, {"color": "#A57000", "font": {"color": "black"}, "font_size": 1000, "id": "Justin Bieber", "label": "Justin Bieber", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eKanye West", "value": 1}, {"color": "#A57000", "font": {"color": "black"}, "font_size": 1000, "id": "Pharrell Williams", "label": "Pharrell Williams", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eKanye West", "value": 1}, {"color": "#EA2D3D", "font": {"color": "black"}, "font_size": 1000, "id": "Bryson Tiller", "label": "Bryson Tiller", "shape": "dot", "title": "R\u0026B Neighbors:\u003cbr\u003eLil Wayne", "value": 1}]);
+        edges = new vis.DataSet([{"color": "darkgrey", "from": "Lil Wayne", "labelHighlightBold": true, "opacity": 0.1, "to": "Kanye West", "value": 4701}, {"color": "darkgrey", "from": "Lil Wayne", "labelHighlightBold": true, "opacity": 0.1, "to": "Tyga", "value": 2266}, {"color": "darkgrey", "from": "Lil Wayne", "labelHighlightBold": true, "opacity": 0.1, "to": "Rick Ross", "value": 1757}, {"color": "darkgrey", "from": "Lil Wayne", "labelHighlightBold": true, "opacity": 0.1, "to": "J. Cole", "value": 1604}, {"color": "darkgrey", "from": "Lil Wayne", "labelHighlightBold": true, "opacity": 0.1, "to": "Kid Cudi", "value": 1464}, {"color": "darkgrey", "from": "Lil Wayne", "labelHighlightBold": true, "opacity": 0.1, "to": "Mac Miller", "value": 1090}, {"color": "darkgrey", "from": "Lil Wayne", "labelHighlightBold": true, "opacity": 0.1, "to": "Pusha T", "value": 802}, {"color": "darkgrey", "from": "Lil Wayne", "labelHighlightBold": true, "opacity": 0.1, "to": "Snoop Dogg", "value": 511}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Rick Ross", "value": 527}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "J. Cole", "value": 541}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Kid Cudi", "value": 2024}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Mac Miller", "value": 388}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Pusha T", "value": 921}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Frank Ocean", "value": 833}, {"color": "darkgrey", "from": "Lil Wayne", "labelHighlightBold": true, "opacity": 0.1, "to": "Eminem", "value": 4230}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Eminem", "value": 1361}, {"color": "darkgrey", "from": "Lil Wayne", "labelHighlightBold": true, "opacity": 0.1, "to": "Nicki Minaj", "value": 4010}, {"color": "darkgrey", "from": "Lil Wayne", "labelHighlightBold": true, "opacity": 0.1, "to": "Young Thug", "value": 2357}, {"color": "darkgrey", "from": "Lil Wayne", "labelHighlightBold": true, "opacity": 0.1, "to": "DJ Khaled", "value": 790}, {"color": "darkgrey", "from": "Lil Wayne", "labelHighlightBold": true, "opacity": 0.1, "to": "Meek Mill", "value": 639}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Nicki Minaj", "value": 921}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Young Thug", "value": 801}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Lil Durk", "value": 421}, {"color": "darkgrey", "from": "Lil Wayne", "labelHighlightBold": true, "opacity": 0.1, "to": "Kendrick Lamar", "value": 2279}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Kendrick Lamar", "value": 2427}, {"color": "darkgrey", "from": "Lil Wayne", "labelHighlightBold": true, "opacity": 0.1, "to": "The Weeknd", "value": 1805}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "The Weeknd", "value": 1179}, {"color": "darkgrey", "from": "Lil Wayne", "labelHighlightBold": true, "opacity": 0.1, "to": "Chris Brown", "value": 1310}, {"color": "darkgrey", "from": "Lil Wayne", "labelHighlightBold": true, "opacity": 0.1, "to": "Beyonc\u00e9", "value": 801}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Beyonc\u00e9", "value": 940}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Taylor Swift", "value": 1445}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Rihanna", "value": 543}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Justin Bieber", "value": 525}, {"color": "darkgrey", "from": "Kanye West", "labelHighlightBold": true, "opacity": 0.1, "to": "Pharrell Williams", "value": 458}, {"color": "darkgrey", "from": "Lil Wayne", "labelHighlightBold": true, "opacity": 0.1, "to": "Bryson Tiller", "value": 502}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {"nodes": {"font": {"size": 25}}, "physics": {"forceAtlas2Based": {"springLength": 50, "springConstant": 0.205}, "minVelocity": 0.75, "solver": "forceAtlas2Based"}};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>

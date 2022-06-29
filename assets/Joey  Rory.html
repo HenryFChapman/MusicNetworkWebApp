@@ -1,0 +1,80 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-network@latest/styles/vis-network.css" type="text/css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vis-network@latest/dist/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100%;
+            height: 100%;
+            background-color: #FFFFFF;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"color": "#79460B", "font": {"color": "black"}, "font_size": 1000, "id": "Joey + Rory", "label": "Joey + Rory", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eEmmylou Harris\u003cbr\u003eTravis Barker\u003cbr\u003eJohn Michael Montgomery\u003cbr\u003eJohn Legend\u003cbr\u003eTaylor Swift\u003cbr\u003eMerle Haggard\u003cbr\u003eToby Keith\u003cbr\u003eDolly Parton\u003cbr\u003eWillie Nelson\u003cbr\u003eReba McEntire\u003cbr\u003eRandy Travis\u003cbr\u003eVince Gill\u003cbr\u003eAlan Jackson\u003cbr\u003eJohnny Cash\u003cbr\u003eJames Arthur\u003cbr\u003eTerri Clark\u003cbr\u003eJason Aldean\u003cbr\u003eLee Ann Womack\u003cbr\u003eHeidi Feek", "value": 19}, {"color": "#79460B", "font": {"color": "black"}, "font_size": 1000, "id": "Dolly Parton", "label": "Dolly Parton", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eLinda Ronstadt\u003cbr\u003eRuPaul\u003cbr\u003eEmmylou Harris\u003cbr\u003ePatti LaBelle\u003cbr\u003eWhitney Houston\u003cbr\u003eBeyonc\u00e9\u003cbr\u003eCarrie Underwood\u003cbr\u003eDuran Duran\u003cbr\u003eTaylor Swift\u003cbr\u003eNeil Young\u003cbr\u003eWillie Nelson\u003cbr\u003eReba McEntire\u003cbr\u003eKenny Rogers\u003cbr\u003eJohnny Cash\u003cbr\u003eLoretta Lynn\u003cbr\u003eMiley Cyrus\u003cbr\u003eEminem\u003cbr\u003eJoey + Rory\u003cbr\u003eLionel Richie", "value": 19}, {"color": "#79460B", "font": {"color": "black"}, "font_size": 1000, "id": "Terri Clark", "label": "Terri Clark", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eJoey + Rory", "value": 1}, {"color": "#79460B", "font": {"color": "black"}, "font_size": 1000, "id": "Randy Travis", "label": "Randy Travis", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eJoey + Rory", "value": 1}, {"color": "#79460B", "font": {"color": "black"}, "font_size": 1000, "id": "Willie Nelson", "label": "Willie Nelson", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDolly Parton\u003cbr\u003eJoey + Rory", "value": 2}, {"color": "#79460B", "font": {"color": "black"}, "font_size": 1000, "id": "Alan Jackson", "label": "Alan Jackson", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eJoey + Rory", "value": 1}, {"color": "#79460B", "font": {"color": "black"}, "font_size": 1000, "id": "Jason Aldean", "label": "Jason Aldean", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eJoey + Rory", "value": 1}, {"color": "#79460B", "font": {"color": "black"}, "font_size": 1000, "id": "Vince Gill", "label": "Vince Gill", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eJoey + Rory", "value": 1}, {"color": "#79460B", "font": {"color": "black"}, "font_size": 1000, "id": "Toby Keith", "label": "Toby Keith", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eJoey + Rory", "value": 1}, {"color": "#79460B", "font": {"color": "black"}, "font_size": 1000, "id": "Merle Haggard", "label": "Merle Haggard", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eJoey + Rory", "value": 1}, {"color": "#79460B", "font": {"color": "black"}, "font_size": 1000, "id": "John Michael Montgomery", "label": "John Michael Montgomery", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eJoey + Rory", "value": 1}, {"color": "#79460B", "font": {"color": "black"}, "font_size": 1000, "id": "Johnny Cash", "label": "Johnny Cash", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDolly Parton\u003cbr\u003eJoey + Rory", "value": 2}, {"color": "#79460B", "font": {"color": "black"}, "font_size": 1000, "id": "Kenny Rogers", "label": "Kenny Rogers", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDolly Parton", "value": 1}, {"color": "#79460B", "font": {"color": "black"}, "font_size": 1000, "id": "Carrie Underwood", "label": "Carrie Underwood", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDolly Parton", "value": 1}, {"color": "#79460B", "font": {"color": "black"}, "font_size": 1000, "id": "Loretta Lynn", "label": "Loretta Lynn", "shape": "dot", "title": "Country Neighbors:\u003cbr\u003eDolly Parton", "value": 1}, {"color": "#26281B", "font": {"color": "black"}, "font_size": 1000, "id": "Emmylou Harris", "label": "Emmylou Harris", "shape": "dot", "title": "Blues/Folk Neighbors:\u003cbr\u003eDolly Parton\u003cbr\u003eJoey + Rory", "value": 2}, {"color": "#9BD406", "font": {"color": "black"}, "font_size": 1000, "id": "Reba McEntire", "label": "Reba McEntire", "shape": "dot", "title": "Contemporary Country Neighbors:\u003cbr\u003eDolly Parton\u003cbr\u003eJoey + Rory", "value": 2}, {"color": "#9C1DA1", "font": {"color": "black"}, "font_size": 1000, "id": "Heidi Feek", "label": "Heidi Feek", "shape": "dot", "title": "Americana Neighbors:\u003cbr\u003eJoey + Rory", "value": 1}, {"color": "#9C1DA1", "font": {"color": "black"}, "font_size": 1000, "id": "Lee Ann Womack", "label": "Lee Ann Womack", "shape": "dot", "title": "Americana Neighbors:\u003cbr\u003eJoey + Rory", "value": 1}, {"color": "#14095E", "font": {"color": "black"}, "font_size": 1000, "id": "James Arthur", "label": "James Arthur", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003eJoey + Rory", "value": 1}, {"color": "#14095E", "font": {"color": "black"}, "font_size": 1000, "id": "Linda Ronstadt", "label": "Linda Ronstadt", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003eDolly Parton", "value": 1}, {"color": "#796700", "font": {"color": "black"}, "font_size": 1000, "id": "Taylor Swift", "label": "Taylor Swift", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eDolly Parton\u003cbr\u003eJoey + Rory", "value": 2}, {"color": "#796700", "font": {"color": "black"}, "font_size": 1000, "id": "Whitney Houston", "label": "Whitney Houston", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eDolly Parton", "value": 1}, {"color": "#796700", "font": {"color": "black"}, "font_size": 1000, "id": "Miley Cyrus", "label": "Miley Cyrus", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eDolly Parton", "value": 1}, {"color": "#796700", "font": {"color": "black"}, "font_size": 1000, "id": "Beyonc\u00e9", "label": "Beyonc\u00e9", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eDolly Parton", "value": 1}, {"color": "#AB749E", "font": {"color": "black"}, "font_size": 1000, "id": "John Legend", "label": "John Legend", "shape": "dot", "title": "R\u0026B/Soul Neighbors:\u003cbr\u003eJoey + Rory", "value": 1}, {"color": "#36959C", "font": {"color": "black"}, "font_size": 1000, "id": "Travis Barker", "label": "Travis Barker", "shape": "dot", "title": "Hip-Hop/Rap Neighbors:\u003cbr\u003eJoey + Rory", "value": 1}, {"color": "#21FBDB", "font": {"color": "black"}, "font_size": 1000, "id": "Patti LaBelle", "label": "Patti LaBelle", "shape": "dot", "title": "Soul Neighbors:\u003cbr\u003eDolly Parton", "value": 1}, {"color": "#90B700", "font": {"color": "black"}, "font_size": 1000, "id": "Eminem", "label": "Eminem", "shape": "dot", "title": "Rap Neighbors:\u003cbr\u003eDolly Parton", "value": 1}, {"color": "#061F8A", "font": {"color": "black"}, "font_size": 1000, "id": "Neil Young", "label": "Neil Young", "shape": "dot", "title": "Alternative Neighbors:\u003cbr\u003eDolly Parton", "value": 1}, {"color": "#061F8A", "font": {"color": "black"}, "font_size": 1000, "id": "Lionel Richie", "label": "Lionel Richie", "shape": "dot", "title": "Alternative Neighbors:\u003cbr\u003eDolly Parton", "value": 1}, {"color": "#DE4297", "font": {"color": "black"}, "font_size": 1000, "id": "RuPaul", "label": "RuPaul", "shape": "dot", "title": "House Neighbors:\u003cbr\u003eDolly Parton", "value": 1}, {"color": "#F3462E", "font": {"color": "black"}, "font_size": 1000, "id": "Duran Duran", "label": "Duran Duran", "shape": "dot", "title": "New Wave Neighbors:\u003cbr\u003eDolly Parton", "value": 1}]);
+        edges = new vis.DataSet([{"color": "darkgrey", "from": "Joey + Rory", "labelHighlightBold": true, "opacity": 0.1, "to": "Dolly Parton", "value": 9}, {"color": "darkgrey", "from": "Joey + Rory", "labelHighlightBold": true, "opacity": 0.1, "to": "Terri Clark", "value": 6}, {"color": "darkgrey", "from": "Joey + Rory", "labelHighlightBold": true, "opacity": 0.1, "to": "Randy Travis", "value": 5}, {"color": "darkgrey", "from": "Joey + Rory", "labelHighlightBold": true, "opacity": 0.1, "to": "Willie Nelson", "value": 8}, {"color": "darkgrey", "from": "Joey + Rory", "labelHighlightBold": true, "opacity": 0.1, "to": "Alan Jackson", "value": 4}, {"color": "darkgrey", "from": "Joey + Rory", "labelHighlightBold": true, "opacity": 0.1, "to": "Jason Aldean", "value": 4}, {"color": "darkgrey", "from": "Joey + Rory", "labelHighlightBold": true, "opacity": 0.1, "to": "Vince Gill", "value": 4}, {"color": "darkgrey", "from": "Joey + Rory", "labelHighlightBold": true, "opacity": 0.1, "to": "Toby Keith", "value": 6}, {"color": "darkgrey", "from": "Joey + Rory", "labelHighlightBold": true, "opacity": 0.1, "to": "Merle Haggard", "value": 3}, {"color": "darkgrey", "from": "Joey + Rory", "labelHighlightBold": true, "opacity": 0.1, "to": "John Michael Montgomery", "value": 3}, {"color": "darkgrey", "from": "Joey + Rory", "labelHighlightBold": true, "opacity": 0.1, "to": "Johnny Cash", "value": 5}, {"color": "darkgrey", "from": "Dolly Parton", "labelHighlightBold": true, "opacity": 0.1, "to": "Willie Nelson", "value": 947}, {"color": "darkgrey", "from": "Dolly Parton", "labelHighlightBold": true, "opacity": 0.1, "to": "Johnny Cash", "value": 415}, {"color": "darkgrey", "from": "Dolly Parton", "labelHighlightBold": true, "opacity": 0.1, "to": "Kenny Rogers", "value": 1436}, {"color": "darkgrey", "from": "Dolly Parton", "labelHighlightBold": true, "opacity": 0.1, "to": "Carrie Underwood", "value": 552}, {"color": "darkgrey", "from": "Dolly Parton", "labelHighlightBold": true, "opacity": 0.1, "to": "Loretta Lynn", "value": 307}, {"color": "darkgrey", "from": "Joey + Rory", "labelHighlightBold": true, "opacity": 0.1, "to": "Emmylou Harris", "value": 7}, {"color": "darkgrey", "from": "Dolly Parton", "labelHighlightBold": true, "opacity": 0.1, "to": "Emmylou Harris", "value": 458}, {"color": "darkgrey", "from": "Joey + Rory", "labelHighlightBold": true, "opacity": 0.1, "to": "Reba McEntire", "value": 6}, {"color": "darkgrey", "from": "Dolly Parton", "labelHighlightBold": true, "opacity": 0.1, "to": "Reba McEntire", "value": 389}, {"color": "darkgrey", "from": "Joey + Rory", "labelHighlightBold": true, "opacity": 0.1, "to": "Heidi Feek", "value": 4}, {"color": "darkgrey", "from": "Joey + Rory", "labelHighlightBold": true, "opacity": 0.1, "to": "Lee Ann Womack", "value": 4}, {"color": "darkgrey", "from": "Joey + Rory", "labelHighlightBold": true, "opacity": 0.1, "to": "James Arthur", "value": 4}, {"color": "darkgrey", "from": "Dolly Parton", "labelHighlightBold": true, "opacity": 0.1, "to": "Linda Ronstadt", "value": 478}, {"color": "darkgrey", "from": "Joey + Rory", "labelHighlightBold": true, "opacity": 0.1, "to": "Taylor Swift", "value": 4}, {"color": "darkgrey", "from": "Dolly Parton", "labelHighlightBold": true, "opacity": 0.1, "to": "Taylor Swift", "value": 392}, {"color": "darkgrey", "from": "Dolly Parton", "labelHighlightBold": true, "opacity": 0.1, "to": "Whitney Houston", "value": 1079}, {"color": "darkgrey", "from": "Dolly Parton", "labelHighlightBold": true, "opacity": 0.1, "to": "Miley Cyrus", "value": 711}, {"color": "darkgrey", "from": "Dolly Parton", "labelHighlightBold": true, "opacity": 0.1, "to": "Beyonc\u00e9", "value": 406}, {"color": "darkgrey", "from": "Joey + Rory", "labelHighlightBold": true, "opacity": 0.1, "to": "John Legend", "value": 3}, {"color": "darkgrey", "from": "Joey + Rory", "labelHighlightBold": true, "opacity": 0.1, "to": "Travis Barker", "value": 3}, {"color": "darkgrey", "from": "Dolly Parton", "labelHighlightBold": true, "opacity": 0.1, "to": "Patti LaBelle", "value": 2114}, {"color": "darkgrey", "from": "Dolly Parton", "labelHighlightBold": true, "opacity": 0.1, "to": "Eminem", "value": 514}, {"color": "darkgrey", "from": "Dolly Parton", "labelHighlightBold": true, "opacity": 0.1, "to": "Neil Young", "value": 400}, {"color": "darkgrey", "from": "Dolly Parton", "labelHighlightBold": true, "opacity": 0.1, "to": "Lionel Richie", "value": 335}, {"color": "darkgrey", "from": "Dolly Parton", "labelHighlightBold": true, "opacity": 0.1, "to": "RuPaul", "value": 278}, {"color": "darkgrey", "from": "Dolly Parton", "labelHighlightBold": true, "opacity": 0.1, "to": "Duran Duran", "value": 269}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {"nodes": {"font": {"size": 25}}, "physics": {"forceAtlas2Based": {"springLength": 50, "springConstant": 0.205}, "minVelocity": 0.75, "solver": "forceAtlas2Based"}};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>
