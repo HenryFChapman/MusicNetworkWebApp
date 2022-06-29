@@ -15,7 +15,6 @@ def getQuery(endpoint, queryString, limit):
 	text_file = open("api.txt", "r")
 	key = text_file.read()
 	text_file.close()
-	#key = "9dWTcTFzvUoir0Ox21QGOcIjSsVLv66A"
 	url = "https://atlas.infegy.com/api/v3/" + endpoint + "?api_key=" + key +  "&limit=" + str(limit) + "&q="+ queryString
 
 	data = requests.get(url).json()

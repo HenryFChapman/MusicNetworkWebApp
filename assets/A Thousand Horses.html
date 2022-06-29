@@ -1,0 +1,80 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-network@latest/styles/vis-network.css" type="text/css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vis-network@latest/dist/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100%;
+            height: 100%;
+            background-color: #FFFFFF;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"color": "#B97899", "font": {"color": "black"}, "font_size": 1000, "id": "A Thousand Horses", "label": "A Thousand Horses", "shape": "dot", "title": "Southern Rock Neighbors:\u003cbr\u003eAshley Tisdale\u003cbr\u003ePatti Smith", "value": 2}, {"color": "#F7AD71", "font": {"color": "black"}, "font_size": 1000, "id": "Patti Smith", "label": "Patti Smith", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003eNeil Young\u003cbr\u003eJoni Mitchell\u003cbr\u003eRage Against the Machine\u003cbr\u003eDiana Ross\u003cbr\u003eThe Beatles\u003cbr\u003eDavid Bowie\u003cbr\u003eThe Beach Boys\u003cbr\u003ePJ Harvey\u003cbr\u003eJoan Jett\u003cbr\u003eBruce Springsteen\u003cbr\u003eJimi Hendrix\u003cbr\u003eKate Bush\u003cbr\u003eDebbie Harry\u003cbr\u003eBob Dylan\u003cbr\u003eThe Rolling Stones\u003cbr\u003ePatti LaBelle\u003cbr\u003eStevie Nicks\u003cbr\u003eA Thousand Horses\u003cbr\u003eElvis Costello\u003cbr\u003eTalking Heads\u003cbr\u003eLou Reed\u003cbr\u003eJohn Lennon\u003cbr\u003eJanis Joplin", "value": 23}, {"color": "#F7AD71", "font": {"color": "black"}, "font_size": 1000, "id": "Bob Dylan", "label": "Bob Dylan", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003ePatti Smith", "value": 1}, {"color": "#F7AD71", "font": {"color": "black"}, "font_size": 1000, "id": "Bruce Springsteen", "label": "Bruce Springsteen", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003ePatti Smith", "value": 1}, {"color": "#F7AD71", "font": {"color": "black"}, "font_size": 1000, "id": "Lou Reed", "label": "Lou Reed", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003ePatti Smith", "value": 1}, {"color": "#F7AD71", "font": {"color": "black"}, "font_size": 1000, "id": "Talking Heads", "label": "Talking Heads", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003ePatti Smith", "value": 1}, {"color": "#F7AD71", "font": {"color": "black"}, "font_size": 1000, "id": "PJ Harvey", "label": "PJ Harvey", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003ePatti Smith", "value": 1}, {"color": "#F7AD71", "font": {"color": "black"}, "font_size": 1000, "id": "Jimi Hendrix", "label": "Jimi Hendrix", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003ePatti Smith", "value": 1}, {"color": "#F7AD71", "font": {"color": "black"}, "font_size": 1000, "id": "Rage Against the Machine", "label": "Rage Against the Machine", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003ePatti Smith", "value": 1}, {"color": "#F7AD71", "font": {"color": "black"}, "font_size": 1000, "id": "The Rolling Stones", "label": "The Rolling Stones", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003ePatti Smith", "value": 1}, {"color": "#F7AD71", "font": {"color": "black"}, "font_size": 1000, "id": "Janis Joplin", "label": "Janis Joplin", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003ePatti Smith", "value": 1}, {"color": "#F7AD71", "font": {"color": "black"}, "font_size": 1000, "id": "The Beach Boys", "label": "The Beach Boys", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003ePatti Smith", "value": 1}, {"color": "#F7AD71", "font": {"color": "black"}, "font_size": 1000, "id": "John Lennon", "label": "John Lennon", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003ePatti Smith", "value": 1}, {"color": "#F7AD71", "font": {"color": "black"}, "font_size": 1000, "id": "Stevie Nicks", "label": "Stevie Nicks", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003ePatti Smith", "value": 1}, {"color": "#F7AD71", "font": {"color": "black"}, "font_size": 1000, "id": "Elvis Costello", "label": "Elvis Costello", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003ePatti Smith", "value": 1}, {"color": "#F7AD71", "font": {"color": "black"}, "font_size": 1000, "id": "Joan Jett", "label": "Joan Jett", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003ePatti Smith", "value": 1}, {"color": "#859230", "font": {"color": "black"}, "font_size": 1000, "id": "Ashley Tisdale", "label": "Ashley Tisdale", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eBritney Spears\u003cbr\u003eAriana Grande\u003cbr\u003eA Thousand Horses\u003cbr\u003eBobby Brown\u003cbr\u003eSelena Gomez\u003cbr\u003eTaylor Swift\u003cbr\u003eZac Efron\u003cbr\u003eThe Beatles\u003cbr\u003eMiley Cyrus\u003cbr\u003eLady Gaga\u003cbr\u003eJustin Bieber\u003cbr\u003eVanessa Hudgens\u003cbr\u003eJessica Simpson\u003cbr\u003eDemi Lovato\u003cbr\u003eBridgit Mendler\u003cbr\u003eHilary Duff\u003cbr\u003eHannah Montana", "value": 17}, {"color": "#F7AD71", "font": {"color": "black"}, "font_size": 1000, "id": "Vanessa Hudgens", "label": "Vanessa Hudgens", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003eAshley Tisdale", "value": 1}, {"color": "#F7AD71", "font": {"color": "black"}, "font_size": 1000, "id": "Hannah Montana", "label": "Hannah Montana", "shape": "dot", "title": "Rock Neighbors:\u003cbr\u003eAshley Tisdale", "value": 1}, {"color": "#859230", "font": {"color": "black"}, "font_size": 1000, "id": "Debbie Harry", "label": "Debbie Harry", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003ePatti Smith", "value": 1}, {"color": "#859230", "font": {"color": "black"}, "font_size": 1000, "id": "The Beatles", "label": "The Beatles", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eAshley Tisdale\u003cbr\u003ePatti Smith", "value": 2}, {"color": "#859230", "font": {"color": "black"}, "font_size": 1000, "id": "Miley Cyrus", "label": "Miley Cyrus", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eAshley Tisdale", "value": 1}, {"color": "#859230", "font": {"color": "black"}, "font_size": 1000, "id": "Selena Gomez", "label": "Selena Gomez", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eAshley Tisdale", "value": 1}, {"color": "#859230", "font": {"color": "black"}, "font_size": 1000, "id": "Hilary Duff", "label": "Hilary Duff", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eAshley Tisdale", "value": 1}, {"color": "#859230", "font": {"color": "black"}, "font_size": 1000, "id": "Lady Gaga", "label": "Lady Gaga", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eAshley Tisdale", "value": 1}, {"color": "#859230", "font": {"color": "black"}, "font_size": 1000, "id": "Jessica Simpson", "label": "Jessica Simpson", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eAshley Tisdale", "value": 1}, {"color": "#859230", "font": {"color": "black"}, "font_size": 1000, "id": "Britney Spears", "label": "Britney Spears", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eAshley Tisdale", "value": 1}, {"color": "#859230", "font": {"color": "black"}, "font_size": 1000, "id": "Justin Bieber", "label": "Justin Bieber", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eAshley Tisdale", "value": 1}, {"color": "#859230", "font": {"color": "black"}, "font_size": 1000, "id": "Ariana Grande", "label": "Ariana Grande", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eAshley Tisdale", "value": 1}, {"color": "#859230", "font": {"color": "black"}, "font_size": 1000, "id": "Taylor Swift", "label": "Taylor Swift", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eAshley Tisdale", "value": 1}, {"color": "#859230", "font": {"color": "black"}, "font_size": 1000, "id": "Bridgit Mendler", "label": "Bridgit Mendler", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eAshley Tisdale", "value": 1}, {"color": "#859230", "font": {"color": "black"}, "font_size": 1000, "id": "Demi Lovato", "label": "Demi Lovato", "shape": "dot", "title": "Pop Neighbors:\u003cbr\u003eAshley Tisdale", "value": 1}, {"color": "#2A87A0", "font": {"color": "black"}, "font_size": 1000, "id": "David Bowie", "label": "David Bowie", "shape": "dot", "title": "Glam Rock Neighbors:\u003cbr\u003ePatti Smith", "value": 1}, {"color": "#0734BD", "font": {"color": "black"}, "font_size": 1000, "id": "Neil Young", "label": "Neil Young", "shape": "dot", "title": "Alternative Neighbors:\u003cbr\u003ePatti Smith", "value": 1}, {"color": "#0734BD", "font": {"color": "black"}, "font_size": 1000, "id": "Kate Bush", "label": "Kate Bush", "shape": "dot", "title": "Alternative Neighbors:\u003cbr\u003ePatti Smith", "value": 1}, {"color": "#54E2C3", "font": {"color": "black"}, "font_size": 1000, "id": "Joni Mitchell", "label": "Joni Mitchell", "shape": "dot", "title": "Blues/Folk Neighbors:\u003cbr\u003ePatti Smith", "value": 1}, {"color": "#A461C5", "font": {"color": "black"}, "font_size": 1000, "id": "Patti LaBelle", "label": "Patti LaBelle", "shape": "dot", "title": "Soul Neighbors:\u003cbr\u003ePatti Smith", "value": 1}, {"color": "#73CE9C", "font": {"color": "black"}, "font_size": 1000, "id": "Diana Ross", "label": "Diana Ross", "shape": "dot", "title": "R\u0026B/Soul Neighbors:\u003cbr\u003ePatti Smith", "value": 1}, {"color": "#73CE9C", "font": {"color": "black"}, "font_size": 1000, "id": "Bobby Brown", "label": "Bobby Brown", "shape": "dot", "title": "R\u0026B/Soul Neighbors:\u003cbr\u003eAshley Tisdale", "value": 1}, {"color": "#E2D2C1", "font": {"color": "black"}, "font_size": 1000, "id": "Zac Efron", "label": "Zac Efron", "shape": "dot", "title": "Hip-Hop/Rap Neighbors:\u003cbr\u003eAshley Tisdale", "value": 1}]);
+        edges = new vis.DataSet([{"color": "darkgrey", "from": "A Thousand Horses", "labelHighlightBold": true, "opacity": 0.1, "to": "Patti Smith", "value": 100}, {"color": "darkgrey", "from": "Patti Smith", "labelHighlightBold": true, "opacity": 0.1, "to": "Bob Dylan", "value": 2135}, {"color": "darkgrey", "from": "Patti Smith", "labelHighlightBold": true, "opacity": 0.1, "to": "Bruce Springsteen", "value": 2062}, {"color": "darkgrey", "from": "Patti Smith", "labelHighlightBold": true, "opacity": 0.1, "to": "Lou Reed", "value": 1467}, {"color": "darkgrey", "from": "Patti Smith", "labelHighlightBold": true, "opacity": 0.1, "to": "Talking Heads", "value": 888}, {"color": "darkgrey", "from": "Patti Smith", "labelHighlightBold": true, "opacity": 0.1, "to": "PJ Harvey", "value": 816}, {"color": "darkgrey", "from": "Patti Smith", "labelHighlightBold": true, "opacity": 0.1, "to": "Jimi Hendrix", "value": 786}, {"color": "darkgrey", "from": "Patti Smith", "labelHighlightBold": true, "opacity": 0.1, "to": "Rage Against the Machine", "value": 690}, {"color": "darkgrey", "from": "Patti Smith", "labelHighlightBold": true, "opacity": 0.1, "to": "The Rolling Stones", "value": 775}, {"color": "darkgrey", "from": "Patti Smith", "labelHighlightBold": true, "opacity": 0.1, "to": "Janis Joplin", "value": 519}, {"color": "darkgrey", "from": "Patti Smith", "labelHighlightBold": true, "opacity": 0.1, "to": "The Beach Boys", "value": 535}, {"color": "darkgrey", "from": "Patti Smith", "labelHighlightBold": true, "opacity": 0.1, "to": "John Lennon", "value": 508}, {"color": "darkgrey", "from": "Patti Smith", "labelHighlightBold": true, "opacity": 0.1, "to": "Stevie Nicks", "value": 453}, {"color": "darkgrey", "from": "Patti Smith", "labelHighlightBold": true, "opacity": 0.1, "to": "Elvis Costello", "value": 452}, {"color": "darkgrey", "from": "Patti Smith", "labelHighlightBold": true, "opacity": 0.1, "to": "Joan Jett", "value": 443}, {"color": "darkgrey", "from": "Ashley Tisdale", "labelHighlightBold": true, "opacity": 0.1, "to": "Vanessa Hudgens", "value": 8482}, {"color": "darkgrey", "from": "Ashley Tisdale", "labelHighlightBold": true, "opacity": 0.1, "to": "Hannah Montana", "value": 612}, {"color": "darkgrey", "from": "A Thousand Horses", "labelHighlightBold": true, "opacity": 0.1, "to": "Ashley Tisdale", "value": 139}, {"color": "darkgrey", "from": "Patti Smith", "labelHighlightBold": true, "opacity": 0.1, "to": "Debbie Harry", "value": 971}, {"color": "darkgrey", "from": "Patti Smith", "labelHighlightBold": true, "opacity": 0.1, "to": "The Beatles", "value": 1285}, {"color": "darkgrey", "from": "Ashley Tisdale", "labelHighlightBold": true, "opacity": 0.1, "to": "The Beatles", "value": 169}, {"color": "darkgrey", "from": "Ashley Tisdale", "labelHighlightBold": true, "opacity": 0.1, "to": "Miley Cyrus", "value": 1397}, {"color": "darkgrey", "from": "Ashley Tisdale", "labelHighlightBold": true, "opacity": 0.1, "to": "Selena Gomez", "value": 599}, {"color": "darkgrey", "from": "Ashley Tisdale", "labelHighlightBold": true, "opacity": 0.1, "to": "Hilary Duff", "value": 319}, {"color": "darkgrey", "from": "Ashley Tisdale", "labelHighlightBold": true, "opacity": 0.1, "to": "Lady Gaga", "value": 275}, {"color": "darkgrey", "from": "Ashley Tisdale", "labelHighlightBold": true, "opacity": 0.1, "to": "Jessica Simpson", "value": 234}, {"color": "darkgrey", "from": "Ashley Tisdale", "labelHighlightBold": true, "opacity": 0.1, "to": "Britney Spears", "value": 200}, {"color": "darkgrey", "from": "Ashley Tisdale", "labelHighlightBold": true, "opacity": 0.1, "to": "Justin Bieber", "value": 164}, {"color": "darkgrey", "from": "Ashley Tisdale", "labelHighlightBold": true, "opacity": 0.1, "to": "Ariana Grande", "value": 162}, {"color": "darkgrey", "from": "Ashley Tisdale", "labelHighlightBold": true, "opacity": 0.1, "to": "Taylor Swift", "value": 168}, {"color": "darkgrey", "from": "Ashley Tisdale", "labelHighlightBold": true, "opacity": 0.1, "to": "Bridgit Mendler", "value": 147}, {"color": "darkgrey", "from": "Ashley Tisdale", "labelHighlightBold": true, "opacity": 0.1, "to": "Demi Lovato", "value": 157}, {"color": "darkgrey", "from": "Patti Smith", "labelHighlightBold": true, "opacity": 0.1, "to": "David Bowie", "value": 1367}, {"color": "darkgrey", "from": "Patti Smith", "labelHighlightBold": true, "opacity": 0.1, "to": "Neil Young", "value": 677}, {"color": "darkgrey", "from": "Patti Smith", "labelHighlightBold": true, "opacity": 0.1, "to": "Kate Bush", "value": 448}, {"color": "darkgrey", "from": "Patti Smith", "labelHighlightBold": true, "opacity": 0.1, "to": "Joni Mitchell", "value": 554}, {"color": "darkgrey", "from": "Patti Smith", "labelHighlightBold": true, "opacity": 0.1, "to": "Patti LaBelle", "value": 422}, {"color": "darkgrey", "from": "Patti Smith", "labelHighlightBold": true, "opacity": 0.1, "to": "Diana Ross", "value": 405}, {"color": "darkgrey", "from": "Ashley Tisdale", "labelHighlightBold": true, "opacity": 0.1, "to": "Bobby Brown", "value": 219}, {"color": "darkgrey", "from": "Ashley Tisdale", "labelHighlightBold": true, "opacity": 0.1, "to": "Zac Efron", "value": 1889}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {"nodes": {"font": {"size": 25}}, "physics": {"forceAtlas2Based": {"springLength": 50, "springConstant": 0.205}, "minVelocity": 0.75, "solver": "forceAtlas2Based"}};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>
