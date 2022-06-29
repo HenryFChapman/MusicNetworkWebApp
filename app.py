@@ -57,9 +57,8 @@ app.layout = html.Div(
 @app.callback(
     Output("my-output", "src"), Input("input", "value"), prevent_initial_call=False)
 
-
 def update_output_div(input_value):
-    return f"{input_value}"
+    return f"assets/{input_value}"
 
 if __name__ == "__main__":
     app.run_server()
