@@ -28,7 +28,6 @@ from flask import Flask, request, render_template
 
 def grabListPopulation():
     assetList = os.listdir("assets")
-
     return assetList
 
 available_indicators = grabListPopulation()
@@ -39,17 +38,19 @@ app.layout = html.Div(
     [
         dcc.Dropdown(
         	id="input",
-			options=[{'label': i.split(".html")[0], 'value': i} for i in available_indicators],
-            value="TheRollingStones.html",
+			options=[{'label': i.split(".html")[0], 'value': "https://musicnetwork-296bf.firebaseapp.com/" + i} for i in available_indicators],
+            value="https://musicnetwork-296bf.firebaseapp.com/" +"TheRollingStones.html",
             multi=False,
             placeholder="Enter a band or an artist.",
         ),
 
+        
         html.Iframe(
             id="my-output",
-            src="TheRollingStones.html",
+            src="https://musicnetwork-296bf.firebaseapp.com/" +"TheRollingStones.html",
             style={"height": "800px", "width": "100%"},
         ),
+
     ]
 )
 
@@ -58,7 +59,7 @@ app.layout = html.Div(
     Output("my-output", "src"), Input("input", "value"), prevent_initial_call=False)
 
 def update_output_div(input_value):
-    return f"assets/{input_value}"
+    return f"{input_value}"
 
 if __name__ == "__main__":
     app.run_server()
